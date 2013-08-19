@@ -1,0 +1,77 @@
+\documentclass[a4paper,11pt,fleqn]{article}
+\usepackage{tikz}
+\tikzstyle{mybox} = [draw=blue, fill=green!20, very thick,
+rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\usepackage{amsmath}\allowdisplaybreaks
+\usepackage{amssymb}
+\setlength{\mathindent}{0pt}
+\usepackage{vmargin}
+\usepackage{multicol}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\selectlanguage{polish}
+
+\usepackage{color}
+\usepackage[bookmarks]{hyperref}
+\hypersetup{%
+  colorlinks=false,
+  pdfborder={0 0 0},
+}
+
+\usepackage{fancyhdr}
+\fancyhead[L]{Autorzy: \textbf{Szemek}, \textbf{mariuszm}}
+\fancyhead[R]{\url{http://www.matematyka.pl/82336.htm}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyfoot[L]{}%left
+\fancyfoot[R]{%right
+  \includegraphics[height=20pt]{graphics/logo.pdf}
+}
+\pagestyle{fancy}
+
+\setlength{\textheight}{24cm}
+\setlength{\textwidth}{15.92cm}
+\setlength{\footskip}{20mm}
+\setlength{\oddsidemargin}{20mm}
+\setlength{\evensidemargin}{20mm}
+\setlength{\topmargin}{20mm}
+\setlength{\headsep}{5mm}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0mm}
+
+\newcommand{\sectionbookmark}[1]{%
+  \bigskip
+  \pdfbookmark[2]{#1}{#1}
+  \hypertarget{#1}{}\textbf{#1}
+  \vspace{-10pt}
+}
+\newcommand{\subsectionbookmark}[1]{%
+  \bigskip
+  \pdfbookmark[3]{#1}{#1}
+  \hypertarget{#1}{}\textbf{#1}
+  \vspace{-10pt}
+}
+\newcommand{\link}[1]{%
+  \hyperlink{#1}{#1}
+}
+\newcommand{\indexedsection}[1]{%
+  \section*{#1}
+  \addcontentsline{toc}{section}{#1}
+}
+\newcommand{\indexedsubsection}[1]{%
+  \subsection*{#1}
+  \addcontentsline{toc}{subsection}{#1}
+}
+
+\begin{document}
+\input{exercises}
+\setcounter{section}{14}
+\input{chapters/15}
+\input{chapters/16}
+\input{chapters/17}
+\input{chapters/18}
+\end{document}

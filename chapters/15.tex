@@ -1,0 +1,970 @@
+\section{Całki nieoznaczone. Całkowanie przez podstawienie i całkowanie przez części.}
+
+\sectionbookmark{15.22}
+
+\begin{gather*}
+  \int \left(5x^2-6x+3-\frac{2}{x}+\frac{5}{x^2}\right)
+  = \frac{5}{3}x^3-3x^2+3x-2\ln|x|-\frac{5}{x}+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      Podstawowe prawa całkowania i wzory na całki funkcji elementarnych:
+
+      Całka z iloczynu funkcji przez stałą:
+      \begin{gather*} \int a \cdot f(x) dx = a \cdot \int f(x)dx \text{, gdzie } a\in R\end{gather*}
+      Całka z sumy (różnicy) funkcji:
+      \begin{gather*} \int [f(x)\pm g(x)]dx = \int f(x)dx \pm \int g(x)dx \end{gather*}
+      \begin{gather*} \int ax^ndx = \frac{a}{n+1}x^{n+1}+C \text{, gdzie } a\in R \wedge n\neq -1\end{gather*}
+      \begin{gather*} \int \frac{dx}{x} = \ln|x|+C \end{gather*}
+
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{15.23}
+
+\begin{gather*}
+  \int \frac{(x^2-1)^3}{x}dx
+  = \int \frac{x^6-3x^4+3x^2-1}{x}dx
+  = \int \left(x^5-3x^3+3x-\frac{1}{x}\right)dx = \\
+  = \frac{1}{6}x^6-\frac{3}{4}x^4+\frac{3}{2}x^2-\ln|x|+C
+\end{gather*}
+
+\sectionbookmark{15.24}
+
+\begin{gather*}
+  \int (x^2-x+1)(x^2+x+1)dx
+  = \int (x^4+x^2+1)dx
+  = \frac{1}{5}x^5+\frac{1}{3}x^3+x+C
+\end{gather*}
+
+\sectionbookmark{15.25}
+
+\begin{gather*}
+  \int (x^2+4)^5xdx =
+  \begin{vmatrix}
+    t=x^2+4 \\
+    dt=2xdx \\
+    \frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int t^5dt
+  = \frac{1}{12}t^6+C
+  = \frac{1}{12}(x^2+4)^6+C
+\end{gather*}
+
+\sectionbookmark{15.26}
+
+\begin{gather*}
+  \int \frac{xdx}{1+x^2} =
+  \begin{vmatrix}
+    t=1+x^2 \\
+    dt=2xdx \\
+    \frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int \frac{dt}{t}
+  = \frac{1}{2}\ln|t|+C
+  = \frac{1}{2}\ln|1+x^2|+C
+\end{gather*}
+
+\sectionbookmark{15.27}
+
+\begin{gather*}
+  \int \frac{xdx}{(x^2+3)^6} =
+  \begin{vmatrix}
+    t = x^2+3 \\
+    dt = 2xdx \\
+    \frac{1}{2}dt = xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int \frac{dt}{t^6}
+  = \frac{1}{2} \int t^{-6}dt
+  = -\frac{1}{10}t^{-5}+C
+  = \frac{-1}{10(x^2+3)^5}+C
+\end{gather*}
+
+\sectionbookmark{15.28}
+
+\begin{gather*}
+  \int \frac{x^2dx}{a^3+x^3}, \ a\neq 0, \ x\neq -a \\
+  = \begin{vmatrix}
+    t=a^3+x^3 \\
+    dt=3x^2dx \\
+    \frac{1}{3}dt=x^2dx
+  \end{vmatrix}
+  = \frac{1}{3} \int \frac{dt}{t}
+  = \frac{1}{3}\ln|t|+C
+  = \frac{1}{3}\ln|a^3+x^3|+C
+\end{gather*}
+
+\sectionbookmark{15.29}
+
+\begin{gather*}
+  \int \frac{x\sqrt[3]{x}+\sqrt[4]{x}}{x^2}dx
+  = \int \frac{x^{\frac{4}{3}}+x^{\frac{1}{4}}}{x^2}dx
+  = \int \left( x^{-\frac{2}{3}}+x^{-\frac{7}{4}}\right)dx
+  = 3x^{\frac{1}{3}}-\frac{4}{3}x^{-\frac{3}{4}}+C
+\end{gather*}
+
+\sectionbookmark{15.30}
+
+\begin{gather*}
+  \int \frac{x\sqrt{x}-x\sqrt[4]{x}}{\sqrt[3]{x}}dx
+  = \int \frac{x^{\frac{3}{2}}-x^{\frac{5}{4}}}{x^{\frac{1}{3}}}dx
+  = \int \left( x^{\frac{7}{6}} - x^{\frac{11}{12}}\right)dx
+  = \frac{6}{13}x^{\frac{13}{6}} - \frac{12}{23}x^{\frac{23}{12}}+C
+\end{gather*}
+
+\sectionbookmark{15.31}
+
+\begin{gather*}
+  \int (3+2\sqrt[4]{x})^3dx
+  = \int \left(27+54x^{\frac{1}{4}}+36x^{\frac{1}{2}}+8x^{\frac{3}{4}}\right)dx
+  = 27x+\frac{216}{5}x^{\frac{5}{4}}+24x^{\frac{3}{2}}+\frac{32}{7}x^{\frac{7}{4}}+C
+\end{gather*}
+
+\sectionbookmark{15.32}
+
+\begin{gather*}
+  \int \frac{\sqrt{x}-2\sqrt[3]{x^2}+4\sqrt[4]{5x^3}}{6\sqrt[3]{x}}dx
+  = \int \frac{x^{\frac{1}{2}}-2x^{\frac{2}{3}}+4\sqrt[4]{5} \cdot x^{\frac{3}{4}}}{6x^{\frac{1}{3}}}dx = \\
+  = \frac{1}{6}\int x^{\frac{1}{6}}dx - \frac{1}{3}\int x^{\frac{1}{3}}dx + \frac{2\sqrt[3]{5}}{3} \int x^{\frac{5}{12}}dx
+  = \frac{1}{7}x^{\frac{7}{6}}-\frac{1}{4}x^{\frac{4}{3}}+\frac{8\sqrt[4]{5}}{17}x^{\frac{17}{12}}+C
+\end{gather*}
+
+\sectionbookmark{15.33}
+
+\begin{gather*}
+  \int \frac{3+5\sqrt[3]{x^2}}{\sqrt{x^3}}dx
+  = 3\int x^{-\frac{3}{2}}dx+5\int x^{-\frac{5}{6}}dx
+  = -6x^{-\frac{1}{2}}+30x^{\frac{1}{6}}+C
+  = \frac{-6}{\sqrt{x}}+30\sqrt[6]{x}+C
+\end{gather*}
+
+\sectionbookmark{15.34}
+
+\begin{gather*}
+  \int \sqrt{3x+1} \mbox{d}x
+  = \begin{vmatrix}
+    t=3x+1 \\
+    dt=3dx \\
+    \frac{1}{3} dt=dx
+  \end{vmatrix}
+  = \frac{1}{3} \int t^{\frac{1}{2}}dt
+  = \frac{2}{9} t^{\frac{3}{2}} + C
+  = \frac{2}{9}(3x+1)^{\frac{3}{2}}+C
+\end{gather*}
+
+\sectionbookmark{15.35}
+
+\begin{gather*}
+  \int \sqrt{a+bx}dx =
+  \begin{vmatrix}
+    t=a+bx \\
+    dt=bdx \\
+    \frac{1}{b}dt=dx
+  \end{vmatrix}
+  = \frac{1}{b} \int t^{\frac{1}{2}}dt
+  = \frac{2}{3b}t^{\frac{3}{2}}+C
+  = \frac{2}{3b}(a+bx)^{\frac{3}{2}}+C \text{, gdzie } b\neq 0
+\end{gather*}
+
+\sectionbookmark{15.36}
+
+\begin{gather*}
+  \int \frac{xdx}{\sqrt[3]{2x^2-1}} =
+  \begin{vmatrix}
+    t=2x^2-1 \\
+    dt=4xdx \\
+    \frac{1}{4}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{4} \int t^{-\frac{1}{3}}dt
+  = \frac{3}{8}t^{\frac{2}{3}}+C
+  = \frac{3}{8}(2x^2-1)^{\frac{2}{3}}+C \text{, gdzie } x\neq \frac{1}{\sqrt{2}}
+\end{gather*}
+
+\sectionbookmark{15.37}
+
+\begin{gather*}
+  \int x\sqrt{1+x^2}dx =
+  \begin{vmatrix}
+    t=1+x^2 \\
+    dt=2xdx \\
+    \frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int t^{\frac{1}{2}}dt
+  = \frac{1}{3}t^{\frac{3}{2}}+C
+  = \frac{1}{3}(1+x^2)^{\frac{3}{2}}+C
+\end{gather*}
+
+\sectionbookmark{15.38}
+
+\begin{gather*}
+  \int \frac{x}{\sqrt{3-5x^2}}dx =
+  \begin{vmatrix}
+    t=3-5x^2 \\
+    dt=-10xdx \\
+    -\frac{1}{10}dt=xdx
+  \end{vmatrix}
+  = -\frac{1}{10} \int t^{-\frac{1}{2}}dt
+  = -\frac{1}{5}t^{\frac{1}{2}}+C
+  = -\frac{1}{5}\sqrt{3-5x^2}+C
+\end{gather*}
+
+\sectionbookmark{15.39}
+
+\begin{gather*}
+  \int \frac{x-1}{\sqrt[3]{x+1}}dx
+  = \int \frac{(x+1)-2}{\sqrt[3]{x+1}}dx
+  = \int (x+1)^{\frac{2}{3}}dx - 2 \int (x+1)^{-\frac{1}{3}}dx = \\
+  = \frac{3}{5}(x+1)^{\frac{5}{3}}-3(x+1)^{\frac{2}{3}}+C
+  = \frac{3}{5}(x+1)(x+1)^{\frac{2}{3}}-3(x+1)^{\frac{2}{3}} + C = \\
+  = \frac{3}{5}(x+1-5)(x+1)^{\frac{2}{3}}
+  = \frac{3}{5}(x-4)(x+1)^{\frac{2}{3}}+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int (ax+b)^ndx = \frac{1}{a(n+1)}(ax+b)^{n+1}+C \text{, dla } n\neq -1 $
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+
+\sectionbookmark{15.40}
+
+\begin{gather*}
+  \int \frac{x}{\sqrt{x^2-6}}dx
+  = \int \frac{2x}{2\sqrt{x^2-6}}dx
+  = \sqrt{x^2-6}+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle  \int \frac{f'(x)}{2\sqrt{f(x)}}dx = \sqrt{f(x)}+C $
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\begin{gather*}
+\end{gather*}
+
+\sectionbookmark{15.41}
+
+\begin{gather*}
+  \int \frac{x^2}{\sqrt[5]{x^3+1}}dx =
+  \begin{vmatrix}
+    t=x^3+1 \\
+    dt=3x^2dx \\
+    \frac{1}{3}dt=x^2dx
+  \end{vmatrix}
+  = \frac{1}{3}\int t^{-\frac{1}{5}}dt
+  = \frac{5}{12}t^{\frac{4}{5}}+C
+  = \frac{5}{12}(x^3+1)^{\frac{4}{5}}+C
+\end{gather*}
+
+\sectionbookmark{15.42}
+
+\begin{gather*}
+  \int \frac{e^{\frac{1}{x}}}{x^2}dx =
+  \begin{vmatrix}
+    t = \frac{1}{x} \\
+    dt = \frac{-dx}{x^2} \\
+    -dt = \frac{dx}{x^2}
+  \end{vmatrix}
+  = -\int e^t dt
+  = -e^t+C
+  = -e^{\frac{1}{x}}+C
+\end{gather*}
+
+\sectionbookmark{15.43}
+
+\begin{gather*}
+  \int xe^{-x^2} =
+  \begin{vmatrix}
+    t=-x^2 \\
+    dt=-2xdx \\
+    -\frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = -\frac{1}{2}\int e^tdt
+  = -\frac{1}{2}e^t+C
+  = -\frac{1}{2}e^{-x^2}+C
+\end{gather*}
+
+\sectionbookmark{15.44}
+
+\begin{gather*}
+  \int \frac{dx}{2\cos^2 3x} =
+  \begin{vmatrix}
+    t=3x \\
+    dt=3dx \\
+    \frac{1}{3}dt=dx
+  \end{vmatrix}
+  = \frac{1}{6} \int \frac{dt}{\cos^2 t}
+  = \frac{1}{6} \tan t + C
+  = \frac{1}{6}\tan 3x +C \int \frac{dx}{\cos^2x}
+  = \tan x + C
+\end{gather*}
+
+\sectionbookmark{15.45}
+
+\begin{gather*}
+  \int x\sin(2x^2+1)dx =
+  \begin{vmatrix}
+    t=2x^2+1 \\
+    dt=4xdx \\
+    \frac{1}{4}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{4}\int \sin{t} dt
+  = -\frac{1}{4}\cos t + C
+  = -\frac{1}{4}\cos (2x^2+1)+C
+\end{gather*}
+
+\sectionbookmark{15.46}
+
+\begin{gather*}
+  \int \sin^5x\cos{x} dx =
+  \begin{vmatrix}
+    t = \sin{x} \\
+    dt=\cos x \ dx
+  \end{vmatrix}
+  = \int t^5dt
+  = \frac{1}{6}t^6+C
+  = \frac{1}{6}\sin^6x+C
+\end{gather*}
+
+\sectionbookmark{15.47}
+
+\begin{gather*}
+  \int \frac{\cos x}{\sqrt{1+\sin x}}dx =
+  \begin{vmatrix}
+    t=1+\sin x \\
+    dt=\cos x \ dx
+  \end{vmatrix}
+  = \int t^{-\frac{1}{2}}dt
+  = 2t^{\frac{1}{2}}+C
+  = 2\sqrt{1+\sin x}+C
+\end{gather*}
+
+\sectionbookmark{15.48}
+
+\begin{gather*}
+  \int \frac{\sin x}{a+b\cos x}dx, b\neq 0 \\
+  = \begin{vmatrix}
+    t=a+b\cos x \\
+    dt=-b\sin x \ dx \\
+    -\frac{1}{b}dt=\sin x \ dx
+  \end{vmatrix}
+  = -\frac{1}{b} \int \frac{dt}{t}
+  = -\frac{1}{b}\ln|t|+C
+  = -\frac{1}{b}\ln|a+b\cos x|+C
+\end{gather*}
+
+\sectionbookmark{15.49}
+
+\begin{gather*} \int \cos x \cdot e^{\sin x} = e^{\sin x}+C \end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int f'(x) \cdot e^{f(x)} = e^{f(x)}+C $
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{15.50}
+
+\begin{gather*}
+  \int \frac{x^3dx}{\cos^2 x^4} =
+  \begin{vmatrix}
+    t=x^4 \\
+    dt=4x^3dx \\
+    \frac{1}{4}dt=x^3dx
+  \end{vmatrix}
+  = \frac{1}{4} \int \frac{dt}{\cos^2 t}
+  = \frac{1}{4} \tan t + C
+  = \frac{1}{4} \tan x^4 + C
+\end{gather*}
+
+\sectionbookmark{15.51}
+
+\begin{gather*}
+  \int \frac{\tan x}{\cos^2 x}dx =
+  \begin{vmatrix}
+    t=\tan x \\
+    dt=\frac{dx}{\cos^2 x}
+  \end{vmatrix}
+  = \int tdt
+  = \frac{1}{2}t^2+C
+  = \frac{1}{2}\tan^2 x+C
+\end{gather*}
+
+\sectionbookmark{15.52}
+
+\begin{gather*}
+  \int \frac{x^2dx}{\cos^2(x^3+1)} =
+  \begin{vmatrix}
+    t=x^3+1 \\
+    dt=3x^2dx \\
+    \frac{1}{3}dt=x^2dx
+  \end{vmatrix}
+  = \frac{1}{3}\int \frac{dt}{\cos^2 t}
+  = \frac{1}{3}\tan t +C
+  = \frac{1}{3}\tan (x^3+1)+C
+\end{gather*}
+
+\sectionbookmark{15.53}
+
+\begin{gather*}
+  \int \frac{(\ln x)^2}{x}dx =
+  \begin{vmatrix}
+    t=\ln x \\
+    dt=\frac{dx}{x}
+  \end{vmatrix}
+  = \int t^2dt
+  = \frac{1}{3}t^3+C
+  = \frac{1}{3}(\ln x)^3+C
+\end{gather*}
+
+\sectionbookmark{15.54}
+
+\begin{gather*}
+  \int \frac{dx}{e^x+e^{-x}}
+  = \int \frac{e^xdx}{e^{2x}+1} =
+  \begin{vmatrix}
+    t=e^x \\
+    dt=e^xdx
+  \end{vmatrix}
+  = \int \frac{\mbox{d}t}{t^2+1}
+  = \arctan t + C
+  = \arctan (e^x) + C
+\end{gather*}
+
+\sectionbookmark{15.55}
+
+\begin{gather*}
+  \int \frac{e^xdx}{2e^x+1} =
+  \begin{vmatrix}
+    t=2e^x+1 \\
+    dt =2e^xdx \\
+    \frac{1}{2}dt=e^xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int \frac{dt}{t}
+  = \frac{1}{2} \ln|t| + C
+  = \frac{1}{2}\ln|2e^x+1|+C
+\end{gather*}
+
+\sectionbookmark{15.56}
+
+\begin{gather*}
+  \int x\ln(1+x^2)dx =
+  \begin{vmatrix}
+    t=1+x^2 \\
+    dt=2xdx \\
+    \frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int \ln t \ dt =
+  \begin{vmatrix}
+    u=\ln t & dv=dt \\
+    du=\frac{dt}{t} & v=t
+  \end{vmatrix}
+  = \frac{1}{2} \left( t\ln t - \int dt \right) = \\
+  = \frac{1}{2}t\ln t - \frac{1}{2}t + C
+  = \frac{1}{2}(1+x^2)\ln(1+x^2)-\frac{1}{2}(1+x^2)+C
+  = \frac{1}{2}(1+x^2)\ln(1+x^2)-\frac{1}{2}x^2+C
+\end{gather*}
+
+Uwaga: liczbę $-\frac{1}{2}$ włączono do stałej całkowania
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      Wzór całkowania przez części:
+      \begin{gather*} \int u \mbox{d}v = uv-\int v \mbox{d}u \end{gather*}
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+
+\sectionbookmark{15.57}
+
+\begin{gather*}
+  \int \frac{\sqrt{2+\ln|x|}}{x}dx =
+  \begin{vmatrix}
+    t=2+\ln|x| \\
+    dt=\frac{dx}{x}
+  \end{vmatrix}
+  = \int t^{\frac{1}{2}}dt
+  = \frac{2}{3}t^{\frac{3}{2}}+C
+  = \frac{2}{3}(2+\ln|x|)^{\frac{3}{2}}+C
+\end{gather*}
+
+\sectionbookmark{15.58}
+
+\begin{gather*}
+  \int 6^{1-x}dx =
+  \begin{vmatrix}
+    t=1-x \\
+    dt=-dx \\
+    -dt=dx
+  \end{vmatrix}
+  = -\int 6^tdt
+  = -\frac{6^t}{\ln 6} + C
+  = -\frac{6^{1-x}}{\ln 6}+C
+\end{gather*}
+
+\sectionbookmark{15.59}
+
+\begin{gather*}
+  \int \frac{dx}{x\sqrt{1-\ln^2|x|}} =
+  \begin{vmatrix}
+    t=\ln|x| \\
+    dt=\frac{dx}{x}
+  \end{vmatrix}
+  = \int \frac{dt}{\sqrt{1-t^2}}
+  = \arcsin t + C
+  = \arcsin (\ln|x|)+C
+\end{gather*}
+
+\sectionbookmark{15.60}
+
+\begin{gather*}
+  \int \frac{\ln|\arctan x|dx}{1+x^2} =
+  \begin{vmatrix}
+    t=\arctan x \\
+    dt = \frac{dx}{1+x^2}
+  \end{vmatrix}
+  = \int \ln t \ dt
+  = \begin{vmatrix}
+    u=\ln{t} & dv=dt \\
+    du=\frac{dt}{t} & v=t
+  \end{vmatrix}
+  = t\ln t - \int dt = \\
+  = t\ln t - t + C
+  = \arctan x [\ln (\arctan x) - 1] +C
+\end{gather*}
+
+\begin{gather*}\int \ln |x| \ dx = x(\ln |x|-1)+C \end{gather*}
+
+\sectionbookmark{15.61}
+
+\begin{gather*}
+  \int xe^{x^2}(x^2+1)dx
+  = \int \frac{xe^{x^2+1}(x^2+1)}{e}dx =
+  \begin{vmatrix}
+    t=x^2+1 \\
+    dt=2xdx \\
+    \frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{2e} \int te^t dt = \\
+  = \begin{vmatrix}
+    u=t & dv=e^tdt \\
+    du=dt & v=e^t
+  \end{vmatrix}
+  = \frac{1}{2e} \left( te^t - \int e^tdt\right) +C
+  = \frac{1}{2e}\left((x^2+1)e^{x^2+1}-e^{x^2+1}\right)+C = \\
+  = \frac{1}{2}x^2e^{x^2}+C
+\end{gather*}
+
+\sectionbookmark{15.62}
+
+\begin{gather*}
+  \int \frac{x^2dx}{\sqrt{1-x^6}} =
+  \begin{vmatrix}
+    t=x^3 \\
+    \frac{1}{3}dt=x^2dx
+  \end{vmatrix}
+  = \frac{1}{3}\int \frac{dt}{\sqrt{1-t^2}}
+  = \frac{1}{3} \arcsin t + C
+  = \frac{1}{3} \arcsin (x^3)+C
+\end{gather*}
+
+\sectionbookmark{15.63}
+
+\begin{gather*}
+  \int \frac{dx}{(1+x^2)\arctan x} =
+  \begin{vmatrix}
+    t=\arctan x \\
+    dt=\frac{dx}{1+x^2}
+  \end{vmatrix}
+  = \int \frac{dt}{t}
+  = \ln|t|+C
+  = \ln|\arctan x|+C
+\end{gather*}
+
+\sectionbookmark{15.64}
+
+\begin{gather*}
+  \int \frac{(\pi -\arcsin x)dx}{\sqrt{1-x^2}} =
+  \begin{vmatrix}
+    t=\arcsin x \\
+    dt=\frac{dx}{\sqrt{1-x^2}}
+  \end{vmatrix}
+  = \int (\pi - t)dt
+  = \pi t - \frac{1}{2}t^2 + C = \\
+  = \pi \arcsin x - \frac{1}{2}\arcsin^2 x+C
+\end{gather*}
+
+\sectionbookmark{15.65}
+
+\begin{gather*}
+  \int \frac{xdx}{x^4+1} =
+  \begin{vmatrix}
+    t=x^2 \\
+    \frac{1}{2}dt=xdx
+  \end{vmatrix}
+  = \frac{1}{2} \int \frac{dt}{t^2+1}
+  = \frac{1}{2}\arctan t + C
+  = \frac{1}{2}\arctan (x^2)+C
+\end{gather*}
+
+\sectionbookmark{15.66}
+
+\begin{gather*}
+  \int x^4(1+x)^3dx
+  = \int (x^4+3x^5+3x^6+x^7)dx
+  = \frac{1}{5}x^5+\frac{1}{2}x^6+\frac{3}{7}x^7+\frac{1}{8}x^8+C
+\end{gather*}
+
+\sectionbookmark{15.67}
+
+\begin{gather*}
+  \int x^2e^xdx =
+  \begin{vmatrix}
+    u=x^2 & dv=e^xdx \\
+    du=2xdx & v=e^x
+  \end{vmatrix}
+  = x^2e^x - 2 \int xe^x dx =
+  \begin{vmatrix}
+    u=x & dv=e^x dx \\
+    du=dx & v=e^x
+  \end{vmatrix} = \\
+  = x^2e^x - 2xe^x + 2 \int e^x dx
+  = x^2e^x - 2xe^x + 2e^x + C
+  = e^x(x^2-2x+2)+C
+\end{gather*}
+
+\sectionbookmark{15.68}
+
+\begin{gather*}
+  \int x^3e^x dx =
+  \begin{vmatrix}
+    u=x^3 & dv=e^xdx \\
+    du=3x^2dx & v=e^x
+  \end{vmatrix}
+  = x^3e^x - 3\int x^2e^x =
+  \begin{vmatrix}
+    u=x^2 & dv=e^xdx \\
+    du=2xdx & v=e^x
+  \end{vmatrix} = \\
+  = x^3e^x - 3x^2e^x + 6 \int xe^x dx =
+  \begin{vmatrix}
+    u=x & dv=e^x dx \\
+    du=dx & v=e^x
+  \end{vmatrix}
+  = x^3e^x - 3x^2e^x + 6xe^x - 6\int e^x dx = \\
+  = x^3e^x - 3x^2e^x + 6xe^x - 6e^x + C
+  = e^x(x^3-3x^2+6x-6)+C
+\end{gather*}
+
+\sectionbookmark{15.69}
+
+\begin{gather*}
+  \int x^4e^{2x} dx =
+  \begin{vmatrix}
+    u=x^4 & dv=e^{2x}dx \\
+    du=4x^3dx & v=\frac{1}{2}e^{2x}
+  \end{vmatrix}
+  = \frac{1}{2}x^4e^{2x} - 2\int x^3e^{2x} =
+  \begin{vmatrix}
+    u=x^3 & dv=e^{2x}dx \\
+    du=3x^2dx & v=\frac{1}{2}e^{2x}
+  \end{vmatrix} = \\
+  = \frac{1}{2}x^4e^{2x} - x^3e^{2x} + 3\int x^2e^{2x} =
+  \begin{vmatrix}
+    u=x^2 & dv=e^{2x}dx \\
+    du=2xdx & v=\frac{1}{2}e^{2x}
+  \end{vmatrix} = \\
+  = \frac{1}{2}x^4e^{2x} - x^3e^{2x}  + \frac{3}{2}x^2e^{2x} - 3 \int xe^{2x} dx =
+  \begin{vmatrix}
+    u=x & dv=e^{2x} dx \\
+    du=dx & v=\frac{1}{2}e^{2x}
+  \end{vmatrix} = \\
+  = \frac{1}{2}x^4e^{2x} - x^3e^{2x}  + \frac{3}{2}x^2e^{2x} - \frac{3}{2}xe^{2x} + \frac{3}{2} \int e^{2x} dx = \\
+  = \frac{1}{2}x^4e^{2x} - x^3e^{2x}  + \frac{3}{2}x^2e^{2x} - \frac{3}{2}xe^{2x} + \frac{3}{4}e^{2x} + C = \\
+  = e^{2x}\left(\frac{1}{2}x^4-x^3+\frac{3}{2}x^2-\frac{3}{2}x+\frac{3}{4}\right)+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int e^{ax}dx = \frac{1}{a}e^{ax}+C \text{, gdzie } a\neq 0 $
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+
+\sectionbookmark{15.70}
+
+\begin{gather*}
+  \int x\cos x dx =
+  \begin{vmatrix}
+    u=x & dv=\cos xdx \\
+    du=dx & v=\sin x
+  \end{vmatrix}
+  = x\sin x - \int \sin x dx
+  = x\sin x + \cos x+C
+\end{gather*}
+
+\sectionbookmark{15.71}
+
+\begin{gather*}
+  \int x^2\cos x dx =
+  \begin{vmatrix}
+    u=x^2 & dv=\cos{x} \mbox{d}x \\
+    du=2x \mbox{d}x & v=\sin{x}
+  \end{vmatrix}
+  = x^2\sin x - 2\int x\sin x \mbox{d} x = \\
+  = \begin{vmatrix}
+    u=x & dv=\sin x dx\\
+    du=dx & v=-\cos x
+  \end{vmatrix}
+  = x^2\sin x + 2x\cos x - 2\int \cos x \mbox{d}x = \\
+  = x^2\sin x + 2x\cos x - 2\sin x +C
+\end{gather*}
+
+\sectionbookmark{15.72}
+
+\begin{gather*}
+  \int x^2\sin 5x dx =
+  \begin{vmatrix}
+    u=x^2 & dv=\sin 5xdx \\
+    du=2xdx & v=-\frac{1}{5}\cos 5x
+  \end{vmatrix}
+  = -\frac{1}{5}x^2\cos 5x + \frac{2}{5}\int x\cos 5x = \\
+  = \begin{vmatrix}
+    u=x & dv=\cos 5x \\
+    du=dx & v=\frac{1}{5}\sin 5x
+  \end{vmatrix}
+  = -\frac{1}{5}x^2\cos 5x + \frac{2}{25}x\sin 5x - \frac{2}{25}\int \sin 5x dx = \\
+  = -\frac{1}{5}x^2\cos 5x + \frac{2}{25}x\sin 5x + \frac{2}{125}\cos 5x+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle
+        \int \cos ax dx = \frac{1}{a}\sin ax+C \text{, gdzie } a \neq 0 \\
+        \int \sin ax dx = -\frac{1}{a}\cos ax+C \text{, gdzie } a \neq 0
+      $
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+
+\sectionbookmark{15.73}
+
+\begin{gather*}
+  \int e^x\cos x dx =
+  \begin{vmatrix}
+    u=e^x & dv=\cos x dx \\
+    du=e^x dx & v=\sin x
+  \end{vmatrix}
+  = e^x\sin x - \int e^x \sin x dx = \\
+  = \begin{vmatrix}
+    u=e^x & dv=\sin x \\
+    du=e^xdx & v=-\cos x
+  \end{vmatrix}
+  = e^x\sin x + e^x\cos x - \int e^x\cos x dx \\
+  \int e^x\cos x dx = e^x\sin x + e^x\cos x - \int e^x\cos x dx \\
+  2 \int e^x\cos x dx = e^x (\sin x + \cos x) \\
+  \int e^x\cos x dx = \frac{1}{2}e^x (\sin x + \cos x)+C
+\end{gather*}
+
+\sectionbookmark{15.74}
+
+\begin{gather*}
+  \int e^{-2x} \sin 3x =
+  \begin{vmatrix}
+    u=e^{-2x} & dv=\sin 3x dx \\
+    du=-2e^{-2x}dx & v=-\frac{1}{3}\cos 3x
+  \end{vmatrix}
+  = -\frac{1}{3}e^{-2x}\cos 3x - \frac{2}{3} \int e^{-2x}\cos 3x dx = \\
+  = \begin{vmatrix}
+    u=e^{-2x} & dv=\cos 3x dx \\
+    du=-2e^{-2x} & v=\frac{1}{3}\sin 3x
+  \end{vmatrix}
+  = -\frac{1}{3}e^{-2x}\cos 3x - \frac{2}{9}e^{-2x}\sin 3x - \frac{4}{9}\int e^{-2x}\sin 3x dx \\
+  \int e^{-2x} \sin 3x dx= -\frac{1}{3}e^{-2x}\cos 3x - \frac{2}{9}e^{-2x}\sin 3x - \frac{4}{9}\int e^{-2x}\sin 3x dx \\
+  \frac{13}{9} \int e^{-2x} \sin 3x dx = -\frac{1}{3}e^{-2x}\cos 3x - \frac{2}{9}e^{-2x}\sin 3x \\
+  \int e^{-2x} \sin 3x dx = -\frac{3}{13}e^{-2x}\cos 3x - \frac{2}{13}e^{-2x}\sin 3x+C
+\end{gather*}
+
+
+\sectionbookmark{15.75}
+
+\begin{gather*}
+  \int e^x\cos (\tfrac{2}{3}x)dx =
+  \begin{vmatrix}
+    u=e^x & dv=\cos(\tfrac{2}{3}x)dx \\
+    du=e^x dx & v=\frac{3}{2}\sin (\tfrac{2}{3}x)
+  \end{vmatrix}
+  = \frac{3}{2}e^x\sin (\tfrac{2}{3}x) - \frac{3}{2} \int e^x\sin (\tfrac{2}{3}x)dx = \\
+  = \begin{vmatrix}
+    u=e^x & dv=\sin (\tfrac{2}{3}x)dx \\
+    du=e^x & v=-\frac{3}{2}\cos(\tfrac{2}{3}x)
+  \end{vmatrix}
+  = \frac{3}{2}e^x\sin (\tfrac{2}{3}x) + \frac{9}{4}e^x\cos(\tfrac{2}{3}x) - \frac{9}{4}\int e^x\cos(\tfrac{2}{3}x) \\
+  \int e^x\cos (\tfrac{2}{3}x)dx = \frac{3}{2}e^x\sin (\tfrac{2}{3}x) + \frac{9}{4}e^x\cos(\tfrac{2}{3}x) - \frac{9}{4}\int e^x\cos(\tfrac{2}{3}x) \\
+  \frac{13}{4}\int e^x\cos (\tfrac{2}{3}x)dx = \frac{3}{2}e^x\sin (\tfrac{2}{3}x) + \frac{9}{4}e^x\cos(\tfrac{2}{3}x) \\
+  \int e^x\cos (\tfrac{2}{3}x)dx = \frac{6}{13}e^x\sin (\tfrac{2}{3}x) + \frac{9}{13}e^x\cos(\tfrac{2}{3}x) + C
+\end{gather*}
+
+
+\sectionbookmark{15.76}
+
+\begin{gather*}
+  \int \sqrt{x}\ln x dx =
+  \begin{vmatrix}
+    u=\ln x & dv=\sqrt{x}dx \\
+    du=\frac{dx}{x} & v=\frac{2}{3}x^{\frac{3}{2}}
+  \end{vmatrix}
+  = \frac{2}{3}x^{\frac{3}{2}}\ln x - \frac{2}{3} \int x^{\frac{1}{2}}dx
+  = \frac{2}{3}x^{\frac{3}{2}}\ln x - \frac{4}{9} x^{\frac{3}{2}}+C
+\end{gather*}
+
+
+\sectionbookmark{15.77}
+
+\begin{gather*}
+  \int (\ln|x|)^3 dx =
+  \begin{vmatrix}
+    u=\ln^3|x| & dv=dx \\
+    du=\frac{3\ln^2|x|}{x}dx & v=x
+  \end{vmatrix}
+  = x\ln^3|x| - 3\int \ln^2|x|dx = \\
+  = \begin{vmatrix}
+    u= \ln^2|x| & dv=dx \\
+    u=\frac{2\ln|x|}{x}dx & v=x
+  \end{vmatrix}
+  = x\ln^3|x| - 3x\ln^2|x| + 6\int \ln|x|dx =
+  \begin{vmatrix}
+    u=\ln|x| & dv=dx \\
+    du=\frac{dx}{x} & u=x
+  \end{vmatrix} = \\
+  = x\ln^3|x| - 3x\ln^2|x| + 6x\ln|x| - 6\int dx
+  = x\ln^3|x| - 3x\ln^2|x| + 6x\ln|x| - 6x + C
+\end{gather*}
+
+
+\sectionbookmark{15.78}
+
+\begin{gather*}
+  \int \frac{(\ln|x|)^2}{x^5}dx =
+  \begin{vmatrix}
+    u=\ln^2|x| & dv=x^{-5}dx \\
+    du=\frac{2\ln|x|}{x}dx & v=-\frac{1}{4}x^{-4}
+  \end{vmatrix}
+  = -\frac{\ln^2|x|}{4x^4} + \frac{1}{2} \int \frac{\ln|x|}{x^5}dx = \\
+  = \begin{vmatrix}
+    u=\ln|x| & dv=x^{-5}dx \\
+    du=\frac{dx}{x} & v=-\frac{1}{4}x^{-4}
+  \end{vmatrix}
+  = -\frac{\ln^2|x|}{4x^4} - \frac{\ln|x|}{8x^4} + \frac{1}{8} \int \frac{dx}{x^5}
+  = -\frac{\ln^2|x|}{4x^4} - \frac{\ln|x|}{8x^4} - \frac{1}{32x^4} + C
+\end{gather*}
+
+
+\sectionbookmark{15.79}
+
+\begin{gather*}
+  \int \sqrt{x} (\ln|x|)^3 dx =
+  \begin{vmatrix}
+    u=\ln^3|x| & dv=\sqrt{x}dx \\
+    du=\frac{3\ln^2|x|}{x}dx & v=\frac{2}{3}x^{\frac{3}{2}}
+  \end{vmatrix}
+  = \frac{2}{3}x^{\frac{3}{2}}\ln^3|x| - 2 \int \sqrt{x}\ln^2|x| = \\
+  = \begin{vmatrix}
+    u=\ln^2|x| & dv=\sqrt{x}dx \\
+    du=\frac{2\ln|x|}{x}dx & v=\frac{2}{3}x^{\frac{3}{2}}
+  \end{vmatrix}
+  = \frac{2}{3}x^{\frac{3}{2}}\ln^3|x| - \frac{4}{3}x^{\frac{3}{2}}\ln^2|x| + \frac{8}{3}\int \sqrt{x}\ln|x|dx = \\
+  = \begin{vmatrix}
+    u=\ln|x| & dv=\sqrt{x}dx \\
+    du=\frac{dx}{x} & v=\frac{2}{3}x^{\frac{3}{2}}
+  \end{vmatrix}
+  = \frac{2}{3}x^{\frac{3}{2}}\ln^3|x| - \frac{4}{3}x^{\frac{3}{2}}\ln^2|x| + \frac{16}{9}x^{\frac{3}{2}}\ln|x| - \frac{16}{9} \int \sqrt{x}dx = \\
+  = \frac{2}{3}x^{\frac{3}{2}}\ln^3|x| - \frac{4}{3}x^{\frac{3}{2}}\ln^2|x| + \frac{16}{9}x^{\frac{3}{2}}\ln|x| - \frac{32}{27}x^{\frac{3}{2}}+C
+\end{gather*}
+
+
+\sectionbookmark{15.80}
+
+\begin{gather*}
+  \int \frac{\ln|x|}{x^4}dx
+  = \begin{vmatrix}
+    u=\ln|x| & dv=x^{-4}dx \\
+    du=\frac{dx}{x} & v=-\frac{1}{3}x^{-3}
+  \end{vmatrix}
+  = -\frac{\ln|x|}{3x^3} + \frac{1}{3} \int \frac{dx}{x^4}
+  = -\frac{\ln|x|}{3x^3} - \frac{1}{9x^3} +C
+\end{gather*}
+
+\sectionbookmark{15.81}
+
+\begin{gather*}
+  \int \frac{(\ln x)^2}{\sqrt{x}}dx =
+  \begin{vmatrix}
+    t=\sqrt{x} \\
+    2dt=\frac{dx}{\sqrt{x}}
+  \end{vmatrix}
+  = 2 \int (\ln t^2)^2dt = 8\int \ln^2{t} \mbox{d}t =
+  \begin{vmatrix}
+    u=\ln^2t & dv=dt \\
+    du=\frac{2\ln t}{t}dt & v=t
+  \end{vmatrix} = \\
+  = 8t\ln^2t - 16\int \ln t dt =
+  \begin{vmatrix}
+    u=\ln t & dv=dt \\
+    du=\frac{dt}{t} & v=t
+  \end{vmatrix}
+  = 8t\ln^2t - 16t\ln t + 16\int dt = \\
+  = 8t\ln^2t - 16t\ln t + 16t + C
+  = 8\sqrt{x}\ln^2(\sqrt{x}) - 16\sqrt{x}\ln (\sqrt{x}) + 16\sqrt{x} +C = \\
+  = 2\sqrt{x}\ln^2x - 8\sqrt{x}\ln x + 16\sqrt{x} + C
+\end{gather*}
+
+
+\sectionbookmark{15.82}
+
+\begin{gather*}
+  \int x^3(\ln x)^2dx =
+  \begin{vmatrix}
+    u=\ln^2x & dv=x^3dx \\
+    du=\frac{2\ln x}{x}dx & v=\frac{1}{4}x^4
+  \end{vmatrix}
+  = \frac{1}{4}x^4\ln^2x - \frac{1}{2}\int x^3\ln x dx = \\
+  = \begin{vmatrix}
+    u=\ln x & dv=x^3dx \\
+    du=\frac{dx}{x} & v=\frac{1}{4}x^4
+  \end{vmatrix}
+  = \frac{1}{4}x^4\ln^2x - \frac{1}{8}x^4\ln x + \frac{1}{8} \int x^3 dx
+  = \frac{1}{4}x^4\ln^2x - \frac{1}{8}x^4\ln x + \frac{1}{32}x^4+C
+\end{gather*}
+
+
+\sectionbookmark{15.83}
+
+\begin{gather*}
+  \int x^n\ln x \ dx, n\neq -1 \\
+  = \begin{vmatrix}
+    u=\ln x & dv=x^ndx \\
+    du=\frac{dx}{x} & v=\frac{1}{n+1}x^{n+1}
+  \end{vmatrix}
+  = \frac{1}{n+1}x^{n+1}\ln x - \frac{1}{n+1}\int x^ndx = \\
+  = \frac{1}{n+1}x^{n+1}\ln x - \frac{1}{(n+1)^2}x^{n+1}+C
+  = \frac{x^{n+1}}{n+1}\left(\ln x-\frac{1}{n+1}\right)+C
+\end{gather*}
+
