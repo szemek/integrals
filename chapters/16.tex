@@ -1,0 +1,773 @@
+\section{Całki funkcji wymiernych.}
+
+\sectionbookmark{16.26}
+
+\begin{gather*}\int (2x+1)^3dx = \begin{vmatrix} t=2x+1 \\ \frac{1}{2}dt=dx \end{vmatrix} = \frac{1}{2}\int t^3 dt = \frac{1}{8}t^4+C = \frac{1}{8}(2x+1)^4+C\end{gather*}
+
+
+\sectionbookmark{16.27}
+
+\begin{gather*}\int \frac{dx}{(3x-2)^4} = \begin{vmatrix} t=3x-2 \\ \frac{1}{3}dt=dx \end{vmatrix} = \frac{1}{3} \int t^{-4}dt = -\frac{1}{9}t^{-3}+C = -\frac{1}{9(3x-2)^3}+C\end{gather*}
+
+
+\sectionbookmark{16.28}
+
+\begin{gather*}\int \frac{3x-4}{x^2-x-6}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{3x-4}{x^2-x-6} = \frac{3x-4}{(x-3)(x+2)} \equiv \frac{A}{x-3}+\frac{B}{x+2} \\
+3x-4 \equiv A(x+2) + B(x-3) \\
+3x-4 \equiv (A+B)x+(2A-3B) \\
+\begin{cases} A+B=3 \\ 2A-3B=-4 \end{cases} \\
+\begin{cases} A=1 \\ B=2 \end{cases} \\
+\ldots = \int \frac{dx}{x-3} + \int \frac{2dx}{x+2} = \ln|x-3|+2\ln|x+2|+C\end{gather*}
+
+
+\sectionbookmark{16.29}
+
+\begin{gather*}\int \frac{2x-3}{x^2-3x+3}dx = \ln|x^2-3x+3|+C \end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \frac{f'(x)}{f(x)}dx = \ln|f(x)|+C$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{16.30}
+
+\begin{gather*}\int \frac{x+13}{x^2-4x-5}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{x+13}{x^2-4x-5} = \frac{x+13}{(x-5)(x+1)} \equiv \frac{A}{x-5}+\frac{B}{x+1} \\
+x+13 \equiv A(x+1)+B(x-5) \\
+x+13 \equiv (A+B)x+(A-5B) \\
+\begin{cases} A+B=1 \\ A-5B=13 \end{cases} \\
+\begin{cases} A=3 \\ B=-2 \end{cases} \\
+\ldots = \int \frac{3dx}{x-5} + \int \frac{-2dx}{x+1} = 3\ln|x-5|-2\ln|x+1|+C\end{gather*}
+
+
+\sectionbookmark{16.31}
+
+\begin{gather*}\int \frac{2x+6}{2x^2+3x+1}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{2x+6}{2x^2+3x+1} = \frac{2x+6}{(2x+1)(x+1)} \equiv \frac{A}{2x+1}+\frac{B}{x+1} \\
+2x+6 \equiv A(x+1)+B(2x+1) \\
+2x+6 \equiv (A+2B)x+(A+B) \\
+\begin{cases} A+2B=2 \\ A+B=6 \end{cases} \\
+\begin{cases} A=10 \\ B=-4 \end{cases} \\
+\ldots = \int \frac{10}{2x+1}dx + \int \frac{-4}{x+1}dx = 5\ln|2x+1|-4\ln|x+1|+C\\
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \frac{dx}{ax+b} = \frac{1}{a}\ln|ax+b|+C \text{, gdzie } a \neq 0$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{16.32}
+
+\begin{gather*}\int \frac{6x-13}{x^2-\frac{7}{2}x+\frac{3}{2}}dx = \int \frac{12x-26}{2x^2-7x+3}dx = \int \frac{12x-26}{(2x-1)(x-3)}dx = \ldots \end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{12x-26}{(2x-1)(x-3)} \equiv \frac{A}{2x-1}+\frac{B}{x-3} \\
+12x-26 \equiv A(x-3)+B(2x-1) \\
+12x-26 \equiv (A+2B)x+(-3A-B) \\
+\begin{cases} A+2B=12 \\ -3A-B=-26 \end{cases} \\
+\begin{cases} A=8 \\ B=2 \end{cases} \\
+\ldots = \int \frac{8}{2x-1}dx + \int \frac{2}{x-3}dx = 4\ln|2x-1|+2\ln|x-3|+C\end{gather*}
+
+
+\sectionbookmark{16.33}
+
+\begin{gather*}\int \frac{4x-5}{2x^2-5x+3}dx = \int \frac{(2x^2-5x+3)'}{2x^2-5x+3}dx = \ln|2x^2-5x+3|+C\end{gather*}
+
+
+\sectionbookmark{16.34}
+
+\begin{gather*}\int \frac{5x+11}{x^2+3x-10}dx = \int \frac{5x+11}{(x+5)(x-2)}dx =\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{5x+11}{(x+5)(x-2)} \equiv \frac{A}{x+5}+\frac{B}{x-2} \\
+5x+11 \equiv A(x-2)+B(x+5) \\
+5x+11 \equiv (A+B)x+(-2A+5B) \\
+\begin{cases} A+B=5 \\ -2A+5B=11 \end{cases} \\
+\begin{cases} A=2 \\ B=3 \end{cases} \\
+\ldots = \int \frac{2}{x+5}dx+\int\frac{3}{x-2}dx = 2\ln|x+5|+3\ln|x-2|+C\end{gather*}
+
+
+\sectionbookmark{16.35}
+
+\begin{gather*}\int \frac{\frac{5}{6}x-16}{x^2+3x-18}dx = \int \frac{\frac{5}{6}x-16}{(x+6)(x-3)}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{\frac{5}{6}x-16}{(x+6)(x-3)} \equiv \frac{A}{x+6}+\frac{B}{x-3} \\
+\frac{5}{6}x-16 \equiv A(x-3)+B(x+6) \\
+\frac{5}{6}x-16 \equiv (A+B)x+(-3A+6B) \\
+\begin{cases} A+B=\frac{5}{6} \\ -3A+6B=-16 \end{cases} \\
+\begin{cases} A=\frac{7}{3} \\ B=-\frac{3}{2} \end{cases} \\
+\ldots = \int \frac{\frac{7}{3}}{x+6}dx + \int \frac{-\frac{3}{2}}{x-3}dx = \frac{7}{3}\ln|x+6|-\frac{3}{2}\ln|x-3|+C\end{gather*}
+
+
+\sectionbookmark{16.36}
+
+\begin{gather*}\int \frac{dx}{x^2+2x-1} = \int \frac{dx}{(x+1)^2-2} = \int \frac{dx}{(x+1+\sqrt{2})(x+1-\sqrt{2})} =\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{(x+1+\sqrt{2})(x+1-\sqrt{2})} \equiv \frac{A}{x+1+\sqrt{2}}+\frac{B}{x+1-\sqrt{2}} \\
+1 \equiv A(x+1-\sqrt{2})+B(x+1+\sqrt{2}) \\
+1 \equiv (A+B)x+[A(1-\sqrt{2})+B(1+\sqrt{2})] \\
+\begin{cases} A+B=0 \\ A(1-\sqrt{2})+B(1+\sqrt{2})=1 \end{cases} \\
+\begin{cases} A=-\frac{1}{2\sqrt{2}} \\ B=\frac{1}{2\sqrt{2}} \end{cases} \\
+\ldots = \int \frac{-\frac{1}{2\sqrt{2}}}{x+1+\sqrt{2}} + \int \frac{\frac{1}{2\sqrt{2}}}{x+1-\sqrt{2}} \\
+ -\frac{1}{2\sqrt{2}}\ln|x+1+\sqrt{2}|+\frac{1}{2\sqrt{2}}\ln|x+1-\sqrt{2}|+C = \frac{1}{2\sqrt{2}}\ln\left|\frac{x+1-\sqrt{2}}{x+1+\sqrt{2}}\right|+C\end{gather*}
+
+
+\sectionbookmark{16.37}
+
+\begin{gather*}\int \frac{dx}{6x^2-13x+6} = \int \frac{dx}{(3x-2)(2x-3)} = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{(3x-2)(2x-3)} \equiv \frac{A}{3x-2}+\frac{B}{2x-3} \\
+1 \equiv A(2x-3)+B(3x-2) \\
+1 \equiv (2A+3B)+(-3A-2B) \\
+\begin{cases} 2A+3B=0 \\ -3A-2B=1 \end{cases} \\
+\begin{cases} A=-\frac{3}{5} \\ B=\frac{2}{5} \end{cases} \\
+\ldots = \int \frac{-\frac{3}{5}}{3x-2}dx + \int \frac{\frac{2}{5}}{2x-3}dx = -\frac{1}{5}\ln|3x-2|+\frac{1}{5}\ln|2x-3|+C\end{gather*}
+
+
+\sectionbookmark{16.38}
+
+\begin{gather*}\int \frac{5+x}{10x+x^2}dx = \int \frac{\frac{1}{2}(10+2x)}{10x+x^2}dx = \frac{1}{2}\ln|10x+x^2|+C\end{gather*}
+
+
+\sectionbookmark{16.39}
+
+\begin{gather*}\int \frac{7x}{4+5x^2}dx = \int \frac{\frac{7}{10} \cdot 10x}{4+5x^2}dx = \frac{7}{10}\ln|4+5x^2|+C\end{gather*}
+
+
+\sectionbookmark{16.40}
+
+\begin{gather*}
+  \int \frac{dx}{-5+6x-x^2}
+  = \int \frac{dx}{2^2-(x-3)^2}
+  = \frac{1}{4}\ln\left|\frac{2+(x-3)}{2-(x-3)}\right|+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \frac{dx}{a^2-x^2}=\frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right|+C \text{, dla } a>0 \wedge |x|\neq a$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{16.41}
+
+\begin{gather*}\int \frac{dx}{1+x-x^2} = -\int \frac{dx}{x^2-x-1} = -\int \frac{dx}{(x-\frac{1}{2})^2-\frac{5}{4}} = -\int \frac{dx}{(x-\frac{1+\sqrt{5}}{2})(x-\frac{1-\sqrt{5}}{2})}=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{(x-\frac{1+\sqrt{5}}{2})(x-\frac{1-\sqrt{5}}{2})} \equiv \frac{A}{x-\frac{1+\sqrt{5}}{2}}+\frac{B}{x-\frac{1-\sqrt{5}}{2}} \\
+1 \equiv A(x-\frac{1-\sqrt{5}}{2})+B(x-\frac{1+\sqrt{5}}{2}) \\
+1 \equiv (A+B)x+ \left(-A \cdot \frac{1-\sqrt{5}}{2}-B \cdot \frac{1+\sqrt{5}}{2} \right) \\
+\begin{cases} A+B=0 \\ -A \cdot \frac{1-\sqrt{5}}{2}-B \cdot \frac{1+\sqrt{5}}{2}=1 \end{cases} \\
+\begin{cases} A=\frac{1}{\sqrt{5}} \\ B=-\frac{1}{\sqrt{5}} \end{cases} \\
+\ldots = - \left[ \int \frac{\frac{1}{\sqrt{5}}}{x-\frac{1+\sqrt{5}}{2}}dx + \int \frac{-\frac{1}{\sqrt{5}}}{x-\frac{1-\sqrt{5}}{2}}dx \right] = \frac{\ln|x-\frac{1-\sqrt{5}}{2}|-\ln|x-\frac{1+\sqrt{5}}{2}|}{\sqrt{5}}+C\end{gather*}
+
+
+\sectionbookmark{16.42}
+
+\begin{gather*}\int \frac{dx}{2x-3x^2} = \int \frac{dx}{x(2-3x)} = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{x(2-3x)} \equiv \frac{A}{x}+\frac{B}{2-3x} \\
+1 \equiv A(2-3x)+Bx \\
+1 \equiv (-3A+B)x+2A \\
+\begin{cases} -3A+B=0 \\ 2A=1 \end{cases} \\
+\begin{cases} A=\frac{1}{2} \\ B=\frac{3}{2} \end{cases} \\
+\ldots = \int \frac{\frac{1}{2}}{x}dx + \int \frac{\frac{3}{2}}{2-3x}dx = \frac{1}{2}\ln|x|-\frac{1}{2}\ln|2-3x|+C\end{gather*}
+
+
+\sectionbookmark{16.43}
+
+\begin{gather*}\int \frac{3x+2}{x^2-x-2}dx = \int \frac{3x+2}{(x+1)(x-2)}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{3x+2}{(x+1)(x-2)} \equiv \frac{A}{x+1}+\frac{B}{x-2} \\
+3x+2 \equiv A(x-2)+B(x+1) \\
+3x+2 \equiv (A+B)x+(-2A+B) \\
+\begin{cases} A+B=3 \\ -2A+B=2 \end{cases} \\
+\begin{cases} A=\frac{1}{3} \\ B=\frac{8}{3} \end{cases} \\
+\ldots = \int \frac{\frac{1}{3}}{x+1}dx + \int \frac{\frac{8}{3}}{x-2}dx = \frac{1}{3}\ln|x+1|+\frac{8}{3}\ln|x-2|+C\end{gather*}
+
+
+\sectionbookmark{16.44}
+
+\begin{gather*}\int \frac{2x-1}{x^2-6x+9}dx = \int \frac{2x-6+5}{x^2-6x+9}dx = \int \frac{(x^2-6x+9)'}{x^2-6x+9}dx + \int \frac{5}{(x-3)^2}dx \\
+ \ln|x^2-6x+9|-\frac{5}{x-3}+C\end{gather*}
+
+
+\sectionbookmark{16.45}
+
+\begin{gather*}\int \frac{x-1}{4x^2-4x+1}dx = \int \frac{\frac{1}{8}(4x^2-4x+1)'-\frac{1}{2}}{4x^2-4x+1}dx = \frac{1}{8}\ln|4x^2-4x+1|-\frac{1}{2}\int \frac{dx}{(2x-1)^2} \\
+ \frac{1}{8}\ln|(2x-1)^2|-\frac{1}{2} \cdot \frac{-1}{2(2x-1)} + C = \frac{1}{4}\ln|2x-1|+\frac{1}{4(2x-1)}+C\end{gather*}
+
+
+\sectionbookmark{16.46}
+
+\begin{gather*}\int \frac{2x-13}{(x-5)^2}dx = \int \frac{2(x-5)-3}{(x-5)^2}dx = \int \frac{2}{x-5}dx-\int \frac{3}{(x-5)^2} \\
+ 2\ln|x-5|+\frac{3}{x-5}+C\end{gather*}
+
+
+\sectionbookmark{16.47}
+
+\begin{gather*}\int \frac{3x+1}{(x+2)^2}dx = \int \frac{3(x+2)-5}{(x+2)^2}dx = \int \frac{3}{x+2}dx - \int \frac{5}{(x+2)^2}dx \\
+ 3\ln|x+2|+\frac{5}{x+2}+C\end{gather*}
+
+
+\sectionbookmark{16.48}
+
+\begin{gather*}
+  \int \frac{dx}{2x^2-2x+5}
+  = \frac{1}{2}\int \frac{dx}{(x-\frac{1}{2})^2+(\frac{3}{2})^2}
+  = \frac{1}{3}\arctan \left(\frac{2x-1}{3}\right)+C
+\end{gather*}
+
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \frac{dx}{x^2+a^2}=\frac{1}{a}\arctan \frac{x}{a}+C \text{, gdzie } a\neq 0$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{16.49}
+
+\begin{gather*}\int \frac{dx}{3x^2+2x+1} = \frac{1}{3} \int \frac{dx}{(x+\frac{1}{3})^2+(\frac{\sqrt{2}}{3})^2} = \frac{1}{\sqrt{2}}\arctan \left( \frac{3x+1}{\sqrt{2}}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.50}
+
+\begin{gather*}\int \frac{dx}{13-6x+x^2}=\int \frac{dx}{(x-3)^2+2^2}=\frac{1}{2}\arctan \left(\frac{x-3}{2}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.51}
+
+\begin{gather*}\int \frac{3dx}{9x^2-6x+2}=\int \frac{3dx}{(3x-1)^2+1} = \begin{vmatrix} t=3x-1 \\ dt=3dx \end{vmatrix} = \int \frac{dt}{t^2+1} \\
+ \arctan t + C = \arctan (3x-1)+C\end{gather*}
+
+
+\sectionbookmark{16.52}
+
+\begin{gather*}\int \frac{x+1}{x^2-x+1}dx = \int \frac{\frac{1}{2}(x^2-x+1)'+\frac{3}{2}}{x^2-x+1}dx = \frac{1}{2}\ln|x^2-x+1|+\frac{3}{2}\int \frac{dx}{(x-\frac{1}{2})^2-(\frac{\sqrt{3}}{2})^2} \\
+ \frac{1}{2}\ln|x^2-x+1|+\sqrt{3}\arctan \left(\frac{2x-1}{\sqrt{3}}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.53}
+
+\begin{gather*}\int \frac{4x-1}{2x^2-2x+1}dx=\int \frac{(2x^2-2x+1)'+1}{2x^2-2x+1}dx=\ln|2x^2-2x+1|+\frac{1}{2}\int \frac{dx}{(x-\frac{1}{2})^2+(\frac{1}{2})^2}\\
+\ln|2x^2-2x+1|+\arctan (2x-1)+C\end{gather*}
+
+
+\sectionbookmark{16.54}
+
+\begin{gather*}\int \frac{2x-1}{x^2-2x+5}dx=\int \frac{(x^2-2x+5)'+1}{x^2-2x+5}dx = \ln|x^2-2x+5|+\int \frac{dx}{(x-1)^2+2^2} \\
+ \ln|x^2-2x+5|+\frac{1}{2}\arctan \left(\frac{x-1}{2}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.55}
+
+\begin{gather*}\int \frac{2x-10}{x^2-2x+10}dx = \int \frac{(x^2-2x+10)'-8}{x^2-2x+10}dx = \ln|x^2-2x+10|-8\int \frac{dx}{(x-1)^2+3^2} \\
+ \ln|x^2-2x+10|- \frac{8}{3}\arctan \left( \frac{x-1}{3} \right) +C\end{gather*}
+
+
+\sectionbookmark{16.56}
+
+\begin{gather*}\int \frac{2x-20}{x^2-8x+25}dx = \int \frac{(x^2-8x+25)'-12}{x^2-8x+25}dx = \ln|x^2-8x+25|-12\int \frac{dx}{(x-4)+3^2} \\
+ \ln|x^2-8x+25|-4\arctan \left( \frac{x-4}{3} \right)+C\end{gather*}
+
+
+\sectionbookmark{16.57}
+
+\begin{gather*}\int \frac{3x+4}{x^2+4x+8}dx = \int \frac{\frac{3}{2}(x^2+4x+8)'-2}{x^2+4x+8}dx = \frac{3}{2}\ln|x^2+4x+8|-2\int \frac{dx}{(x+2)^2+2^2}\\
+\frac{3}{2}\ln|x^2+4x+8|-\arctan \left( \frac{x+2}{2} \right) +C\end{gather*}
+
+
+\sectionbookmark{16.58}
+
+\begin{gather*}\int \frac{x+6}{x^2-3}dx = \int \frac{\frac{1}{2}(x^2-3)'+6}{x^2-3}dx= \frac{1}{2}\ln|x^2-3|+6\int \frac{dx}{x^2-3}\\
+\frac{1}{2}\ln|x^2-3|-6\int \frac{dx}{3-x^2} = \frac{1}{2}\ln|x^2-3|-\sqrt{3}\ln\left|\frac{\sqrt{3}+x}{\sqrt{3}-x}\right|+C\end{gather*}
+
+
+\sectionbookmark{16.59}
+
+\begin{gather*}\int \frac{x+6}{x^2+3}dx = \int \frac{\frac{1}{2}(x^2+3)'+6}{x^2+3}dx=\frac{1}{2}\ln|x^2+3|+2\sqrt{3}\arctan \left( \frac{x}{\sqrt{3}} \right)+C\end{gather*}
+
+
+\sectionbookmark{16.60}
+
+\begin{gather*}\int \frac{6x}{x^2+4x+13}dx = \int \frac{3(x^2+4x+13)'-12}{x^2+4x+13} = 3\ln|x^2+4x+13|-12\int \frac{dx}{(x+2)^2+3^2} \\
+ 3\ln|x^2+4x+13|-4\arctan \left( \frac{x+2}{3} \right)+C\end{gather*}
+
+
+\sectionbookmark{16.61}
+
+\begin{gather*}\int \frac{10x-44}{x^2-4x+20}dx = \int \frac{5(x^2-4x+20)'-24}{x^2-4x+20}dx = 5\ln|x^2-4x+20|-24\int \frac{dx}{(x-2)^2+4^2} \\
+ 5\ln|x^2-4x+20|-6\arctan \left( \frac{x-2}{4} \right)+C\end{gather*}
+
+
+\sectionbookmark{16.62}
+
+\begin{gather*}\int \frac{4x-5}{x^2-6x+10}dx = \int \frac{2(x^2-6x+10)'+7}{x^2-6x+10}dx = 2\ln|x^2-6x+10|+7\int \frac{dx}{(x-3)^2+1}\\
+2\ln|x^2-6x+10|+7\arctan (x-3)+C\end{gather*}
+
+
+\sectionbookmark{16.63}
+
+\begin{gather*}\int \frac{5x}{2+3x}dx = \int \frac{\frac{5}{3}(3x+2)-\frac{10}{3}}{3x+2}dx = \frac{5}{3}x-\frac{10}{9}\ln|3x+2|+C\end{gather*}
+
+
+\sectionbookmark{16.64}
+
+\begin{gather*}\int \frac{x^2}{5x^2+12}dx = \frac{1}{5}\int \frac{x^2+\frac{12}{5}-\frac{12}{5}}{x^2+\frac{12}{5}} = \frac{1}{5}x-\frac{12}{25}\int \frac{dx}{x^2+(2\sqrt{\frac{3}{5}})^2} \\
+ \frac{1}{5}x-\frac{6}{25}\sqrt{\frac{5}{3}}\arctan \left( \frac{x}{2}\sqrt{\frac{5}{3}}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.65}
+
+\begin{gather*}\int \frac{2x^2+7x+20}{x^2+6x+25}dx = \int \frac{2(x^2+6x+25)-5x-30}{x^2+6x+25}dx = 2x - \int \frac{\frac{5}{2}(x^2+6x+30)'+15}{x^2+6x+25}dx \\
+ 2x -\frac{5}{2}\ln|x^2+6x+30|-15\int \frac{dx}{(x+3)^2+4^2} \\
+ 2x -\frac{5}{2}\ln|x^2+6x+30|-\frac{15}{4}\arctan \left(\frac{x+3}{4}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.66}
+
+\begin{gather*}\int \frac{7x^2+7x-176}{x^3-9x^2+6x+56}dx = \int \frac{7x^2+7x-176}{(x+2)(x-4)(x-7)}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{7x^2+7x-176}{(x+2)(x-4)(x-7)} \equiv \frac{A}{x+2}+\frac{B}{x-4}+\frac{C}{x-7} \\
+7x^2+7x-176 \equiv A(x-4)(x-7)+B(x+2)(x-7)+C(x+2)(x-4) \\
+7x^2+7x-176 \equiv (A+B+C)x^2+(-11A-5B-2C)x+(28A-14B-8C) \\
+\begin{cases} A+B+C=7 \\ -11A-5B-2C=7 \\ 28A-14B-8C=-176 \end{cases} \\
+\begin{cases} A=-3 \\ B=2 \\ C=8 \end{cases} \\
+\ldots = \int \frac{-3}{x+2}dx+\int \frac{2}{x-4}dx+\int \frac{8}{x-7}dx \\
+ -3\ln|x+2|+2\ln|x-4|+8\ln|x-7|+C\end{gather*}
+
+
+\sectionbookmark{16.67}
+
+\begin{gather*}\int \frac{x^3-4x^2+1}{(x-2)^4}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\int \frac{x^3-4x^2+1}{(x-2)^4} \equiv \frac{A}{x-2}+\frac{B}{(x-2)^2}+\frac{C}{(x-2)^3}+\frac{D}{(x-2)^4} \\
+x^3-4x^2+1 \equiv A(x-2)^3+B(x-2)^2+C(x-2)+D \\
+x^3-4x^2+1 \equiv Ax^3+(-6A+B)x^2+(12Ax-4B+C)x+(-8A+4B-2C+D) \\
+\begin{cases} A=1 \\ -6A+B=-4 \\ 12A-4B+C=0 \\ -8A+4B-2C+D=1 \end{cases} \\
+\begin{cases} A=1 \\ B=2 \\ C=-4 \\ D=-7 \end{cases} \\
+\ldots = \int \frac{dx}{x-2} + \int\frac{2}{(x-2)^2}dx + \int\frac{-4}{(x-2)^3}dx + \int\frac{-7}{(x-2)^4}dx = \\
+= \ln|x-2|-\frac{2}{x-2}+\frac{2}{(x-2)^2}+\frac{7}{3(x-2)^3}+C\end{gather*}
+
+
+\sectionbookmark{16.68}
+
+\begin{gather*}\int \frac{3x^2-5x+2}{x^3-2x^2+3x-6} =\int \frac{3x^2-5x+2}{(x^2+3)(x-2)}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{3x^2-5x+2}{(x^2+3)(x-2)} \equiv \frac{Ax+B}{x^2+3}+\frac{C}{x-2} \\
+3x^2-5x+2 \equiv (Ax+B)(x-2)+C(x^2+3) \\
+3x^2-5x+2 \equiv (A+C)x^2+(-2A+B)x+(-2B+3C) \\
+\begin{cases} A+C=3 \\ -2A+B=-5 \\ -2B+3C=2 \end{cases} \\
+\begin{cases} A=\frac{17}{7} \\ B=-\frac{1}{7} \\ C=\frac{4}{7} \end{cases} \\
+\ldots = \int \frac{\frac{17}{7}x-\frac{1}{7}}{x^2+3}dx+\int \frac{\frac{4}{7}}{x-2} = \frac{17}{14}\ln|x^2+3|-\frac{1}{7}\int \frac{dx}{x^2+3}+\frac{4}{7}\ln|x-2|= \\
+= \frac{17}{14}\ln|x^2+3|-\frac{1}{7\sqrt{3}}\arctan \left( \frac{x}{\sqrt{3}}\right)+\frac{4}{7}\ln|x-2|+C\end{gather*}
+
+
+\sectionbookmark{16.69}
+
+\begin{gather*}\int \frac{2x+1}{(x^2+1)^2}dx = \underbrace{\int \frac{2x}{(x^2+1)^2}dx}_{1} + \underbrace{\int \frac{dx}{(x^2+1)^2}}_{2}=\ldots\\
+1)\\
+ \int \frac{2x}{(x^2+1)^2}dx = \begin{vmatrix}t=x^2+1 \\ dt=2xdx \end{vmatrix} = \int t^{-2}dt = -\frac{1}{t}+C = -\frac{1}{x^2+1}+C\\
+2) \\
+\int \frac{dx}{(x^2+1)^2} = \int \frac{x^2+1-x^2}{(x^2+1)^2}dx = \int \frac{dx}{x^2+1} - \int \frac{x^2}{(x^2+1)^2}dx = \\
+\qquad = \arctan x - \begin{vmatrix}
+u=x & dv=\frac{xdx}{(x^2+1)^2} \\
+du=dx & v=-\frac{1}{2(x^2+1)}
+\end{vmatrix} = \arctan x + \frac{x}{2(x^2+1)} - \frac{1}{2} \int \frac{dx}{x^2+1} = \\
+= \frac{1}{2}\arctan x + \frac{x}{2(x^2+1)}+C\\
+\ldots = -\frac{1}{x^2+1}+\frac{1}{2}\arctan x + \frac{x}{2(x^2+1)}+C = \frac{x-2}{2(x^2+1)}+\frac{1}{2}\arctan x +C\end{gather*}
+
+
+\sectionbookmark{16.70}
+
+\begin{gather*}\int \frac{x^3+2x-6}{x^2-x-2}dx = \int \frac{x(x^2-x-2)+x^2+4x-6}{x^2-x-2}dx = \frac{1}{2}x^2 + \int \frac{(x^2-x-2)+5x-4}{x^2-x-2}dx = \\
+= \frac{1}{2}x^2+x+\int \frac{5x-4}{x^2-x-2}dx= \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{5x-4}{x^2-x-2} \equiv \frac{A}{x+1}+\frac{B}{x-2} \\
+5x-4 \equiv A(x-2)+B(x+1) \\
+5x-4 \equiv (A+B)x+(-2A+B) \\
+\begin{cases} A+B=5 \\ -2A+B=-4 \end{cases} \\
+\begin{cases} A=3 \\ B=2 \end{cases} \\
+\ldots = \frac{1}{2}x^2+x+\int \frac{3dx}{x+1}+\int \frac{2dx}{x-2} = \frac{1}{2}x^2+x+3\ln|x+1|+2\ln|x-2|+C\end{gather*}
+
+
+\sectionbookmark{16.71}
+
+\begin{gather*}\int \frac{2x^3-19x^2+58x-42}{x^2-8x+16}dx = \int \frac{2x(x^2-8x+16)-3x^2+26x-42}{x^2-8x+16}dx = \\
+= x^2 + \int \frac{-3(x^2-8x+16)+2x+6}{x^2-8x+16}dx = x^2-3x+\int \frac{(x^2-8x+16)'+14}{(x-4)^2}dx = \\
+= x^2-3x+2\ln|x-4|-\frac{14}{x-4}+C\end{gather*}
+
+
+\sectionbookmark{16.72}
+
+\begin{gather*}\int \frac{x^4}{x^2+1}dx = \int \frac{(x^2-1)(x^2+1)+1}{x^2+1}dx=\int (x^2-1)dx+\int \frac{dx}{x^2+1}= \\
+=\frac{1}{3}x^3-x+\arctan x +C\end{gather*}
+
+
+\sectionbookmark{16.73}
+
+\begin{gather*}\int \frac{72x^6}{3x^2+2}dx = \int \frac{24x^4(3x^2+2)-48x^4}{3x^2+2}dx = \int 24x^4dx - \int \frac{16x^2(3x^2+2)-32x^2}{3x^2+2} = \\
+= \frac{24}{5}x^5 - \int 16x^2dx + \int \frac{\frac{32}{3}(3x^2+2)-\frac{64}{3}}{3x^2+2}dx = \frac{24}{5}x^5 - \frac{16}{3}x^3 +\frac{32}{3}x-\frac{64}{9}\int \frac{dx}{x^2+\frac{2}{3}}= \\
+= \frac{24}{5}x^5 - \frac{16}{3}x^3 +\frac{32}{3}x-\frac{32}{3}\sqrt{\frac{2}{3}}\arctan \left( x\sqrt{\frac{3}{2}}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.74}
+
+\begin{gather*}
+  \int \frac{2x^4-10x^3+21x^2-20x+5}{x^2-3x+2}dx
+  = \int \frac{2x^2(x^2-3x+2)-4x^3+17x^2-20x+5}{x^2-3x+2}dx = \\
+  = \frac{2}{3}x^3 + \int \frac{-4x(x^2-3x+2)+5x^2-12x+5}{x^2-3x+2}dx = \\
+  = \frac{2}{3}x^3-2x^2+\int \frac{5(x^2-3x+2)+3x-5}{x^2-3x+2}dx
+  = \frac{2}{3}x^3-2x^2+5x+\int \frac{3x-5}{x^2-3x+2}dx = \ldots \\
+  \text{rozkład na ułamki proste:} \\
+  \frac{3x-5}{x^2-3x+2} \equiv \frac{A}{x-1}+\frac{B}{x-2} \\
+  3x-5 \equiv A(x-2)+B(x-1) \\
+  3x-5 \equiv (A+B)x+(-2A-B) \\
+  \begin{cases} A+B=3 \\ -2A-B=-5 \end{cases} \\
+  \begin{cases} A=2 \\ B=1 \end{cases} \\
+  \ldots = \frac{2}{3}x^3-2x^2+5x+\int \frac{2dx}{x-1}+\int \frac{dx}{x-2} = \\
+= \frac{2}{3}x^3-2x^2+5x+2\ln|x-1|+\ln|x-2|+C\end{gather*}
+
+
+\sectionbookmark{16.75}
+
+\begin{gather*}
+  \int \frac{x^2+5x+41}{(x+3)(x-1)(x-\frac{1}{2})}dx = \ldots \\
+  \text{rozkład na ułamki proste:} \\
+  \frac{x^2+5x+41}{(x+3)(x-1)(x-\frac{1}{2})} \equiv \frac{A}{x+3}+\frac{B}{x-1}+\frac{C}{x-\frac{1}{2}} \\
+  x^2+5x+41 \equiv A(x-1)(x-\frac{1}{2})+B(x+3)(x-\frac{1}{2})+C(x+3)(x-1) \\
+  x^2+5x+41 \equiv (A+B+C)x^2+(-\frac{3}{2}A+\frac{5}{2}B+2C)x+(\frac{1}{2}A-\frac{3}{2}B-3 C) \\
+  \begin{cases} A+B+C=1 \\ -3A+5B+4C=10 \\ A-3B-6C=82 \end{cases} \\
+  \begin{cases} A=\frac{5}{2} \\ B=\frac{47}{2} \\ C=-25 \end{cases} \\
+  \ldots = \int \frac{\frac{5}{2}}{x+3}dx + \int \frac{\frac{47}{2}}{x-1}dx + \int \frac{-25}{x-\frac{1}{2}}dx = \\
+= \frac{5}{2}\ln|x+3|+\frac{47}{2}\ln|x-1|-25\ln|x-\frac{1}{2}|+C\end{gather*}
+
+
+\sectionbookmark{16.76}
+
+\begin{gather*}
+  \int \frac{17x^2-x-26}{(x^2-1)(x^2-4)}dx = \ldots \\
+  \text{rozkład na ułamki proste:} \\
+  \frac{17x^2-x-26}{(x^2-1)(x^2-4)} \equiv \frac{A}{x+1}+\frac{B}{x-1}+\frac{C}{x+2}+\frac{D}{x-2} \\
+  17x^2-x-26 \equiv A(x-1)(x^2-4)+B(x+1)(x^2-4)+C(x^2-1)(x-2)+D(x^2-1)(x+2) \\
+  \begin{cases} A+B+C+D=0 \\ -A+B-2C+2D=17 \\ -4A-4B-C-D=-1 \\ 4A-4B+2C-2D=-26 \end{cases} \\
+  \begin{cases} A=-\frac{4}{3} \\ B=\frac{5}{3} \\ C=-\frac{11}{3} \\ D=\frac{10}{3} \end{cases} \\
+  \ldots = \int \frac{-\frac{4}{3}}{x+1}dx + \int \frac{\frac{5}{3}}{x-1}dx + \int \frac{-\frac{11}{3}}{x+2}dx+\int \frac{\frac{10}{3}}{x-2}dx = \\
+  = -\frac{4}{3}\ln|x+1| +\frac{5}{3}\ln|x-1| -\frac{11}{3}\ln|x+2|+\frac{10}{3}\ln|x-2|+C
+\end{gather*}
+
+
+\sectionbookmark{16.77}
+
+\begin{gather*}
+  \int \frac{2x}{(x^2+1)(x^2+3)}dx = \ldots \\
+  \text{rozkład na ułamki proste:} \\
+  \frac{2x}{(x^2+1)(x^2+3)} \equiv \frac{Ax+B}{x^2+1}+\frac{Cx+D}{x^2+3} \\
+  2x \equiv (Ax+B)(x^2+3)+(Cx+D)(x^2+1) \\
+  2x \equiv (A+C)x^3+(B+D)x^2+(3A+C)x+(3B+D) \\
+  \begin{cases} A+C=0 \\ B+D=0 \\ 3A+C=2 \\ 3B+D=0 \end{cases} \\
+  \begin{cases} A=1 \\ B=0 \\ C=-1 \\ D=0 \end{cases} \\
+  \ldots = \int \frac{xdx}{x^2+1} - \int \frac{xdx}{x^2+3} = \frac{1}{2}\ln|x^2+1|-\frac{1}{2}\ln|x^2+3|+C
+\end{gather*}
+
+
+\sectionbookmark{16.78}
+
+\begin{gather*}
+  \int \frac{10x^3+110x+400}{(x^2-4x+29)(x^2-2x+5)}dx = \ldots \\
+  \text{rozkład na ułamki proste:} \\
+  \frac{10x^3+110x+400}{(x^2-4x+29)(x^2-2x+5)} \equiv \frac{Ax+B}{x^2-4x+29}+\frac{Cx+D}{x^2-2x+5} \\
+  10x^3+110x+400 \equiv (Ax+B)(x^2-2x+5)+(Cx+D)(x^2-4x+29) \\
+  \begin{cases} A+C=10 \\ -2A+B-4C+D=0 \\ 5A-2B+29C-4D=110 \\ 5B+29D=400 \end{cases} \\
+  \begin{cases} A=4 \\ B=22 \\ C=6 \\ D=10 \end{cases} \\
+  \ldots = \int \frac{4x+22}{x^2-4x+29}dx + \int \frac{6x+10}{x^2-2x+5}dx = \\
+  = \int \frac{2(x^2-4x+29)'+30}{(x-2)^2+5^2}dx + \int \frac{3(x^2-2x+5)'+16}{(x-1)^2+2^2}dx = \\
+  = 2\ln|x^2-4x+29|+6\arctan \left(\frac{x-2}{5}\right)+3\ln|x^2-2x+5|+8\arctan\left(\frac{x-1}{2}\right)+C
+\end{gather*}
+
+
+\sectionbookmark{16.79}
+
+\begin{gather*}\int \frac{4x^3-2x^2+6x-13}{x^4+3x^2-4}dx = \int \frac{4x^3-2x^2+6x-13}{(x^2+4)(x^2-1)}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{4x^3-2x^2+6x-13}{(x^2+4)(x^2-1)} \equiv \frac{Ax+B}{x^2+4}+\frac{C}{x+1}+\frac{D}{x-1} \\
+4x^3-2x^2+6x-13 \equiv (Ax+B)(x^2-1)+C(x^2+4)(x-1)+D(x^2+4)(x+1) \\
+4x^3-2x^2+6x-13 \equiv (A+C+D)x^3+(B-C+D)x^2+(-A+4C+4D)x+(-B-4C+4D) \\
+\begin{cases} A+C+D=4 \\ B-C+D=-2 \\ -A+4C+4D=6 \\ -B-4C+4D=-13 \end{cases} \\
+\ldots \\
+\begin{cases} A=2 \\ B=1 \\ C=\frac{5}{2} \\ D=-\frac{1}{2} \end{cases} \\
+\ldots = \int \frac{2x+1}{x^2+4}+ \int \frac{\frac{5}{2}}{x+1}+ \int \frac{-\frac{1}{2}}{x-1} = \\
+= \ln|x^2+4|+\frac{1}{2}\arctan \left(\frac{x}{2}\right) +\frac{5}{2}\ln|x+1|-\frac{1}{2}\ln|x-1|+C\end{gather*}
+
+
+\sectionbookmark{16.80}
+
+\begin{gather*}\int \frac{10x^3+40x^2+40x+6}{x^4+6x^3+11x^2+6x}dx = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{10x^3+40x^2+40x+6}{x^4+6x^3+11x^2+6x} \equiv \frac{A}{x}+\frac{B}{x+1}+\frac{C}{x+2}+\frac{D}{x+3} \\
+10x^3+40x^2+40x+6 \equiv A(x+1)(x+2)(x+3)+Bx(x+2)(x+3)+Cx(x+1)(x+3)+Dx(x+1)(x+2) \\
+10x^3+40x^2+40x+6 \equiv (A+B+C+D)x^3+(6A+5B+4C+3D)x^2+(11A+6B+3C+2D)x+6A \\
+\begin{cases} A+B+C+D=10 \\ 6A+5B+4C+3D=40 \\ 11A+6B+3C+2D=40 \\ 6A=6 \end{cases} \\
+\ldots \\
+\begin{cases} A=1 \\ B=2 \\ C=3 \\ D=4 \end{cases} \\
+\ldots = \int \frac{dx}{x} + \int \frac{2dx}{x+1}+\int \frac{3dx}{x+2}+\int \frac{4dx}{x+3} = \\
+= \ln|x|+2\ln|x+1|+3\ln|x+2|+4\ln|x+3|+C\end{gather*}
+
+
+\sectionbookmark{16.81}
+
+\begin{gather*}\int \frac{6x^3+4x+1}{x^4+x^2}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{6x^3+4x+1}{x^4+x^2} \equiv \frac{A}{x}+\frac{B}{x^2}+\frac{Cx+D}{x^2+1} \\
+6x^3+4x+1 \equiv A(x^3+x)+B(x^2+1)+(Cx+D)x^2 \\
+6x^3+4x+1 \equiv (A+C)x^3+(B+D)x^2+Ax+B \\
+\begin{cases} A+C=6 \\ B+D=0 \\ A=4 \\ B=1 \end{cases} \\
+\begin{cases} A=4 \\ B=1 \\ C=2 \\ D=-1 \end{cases} \\
+\ldots = \int \frac{4dx}{x}+ \int \frac{dx}{x^2}+ \int \frac{2x-1}{x^2+1}dx = 4\ln|x|-\frac{1}{x}+\ln|x^2+1|-\arctan x+C\end{gather*}
+
+
+\sectionbookmark{16.82}
+
+\begin{gather*}\int \frac{dx}{x^3-a^2x}=\ldots\end{gather*}
+dla \begin{gather*}a=0 \to \int \frac{dx}{x^3} = -\frac{1}{2x^2}+C\end{gather*}
+
+dla \begin{gather*}a\neq 0\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{x^3-a^2x} \equiv \frac{A}{x}+\frac{Bx+C}{x^2-a^2} \\
+1 \equiv A(x^2-a^2)+(Bx+C)x \\
+1 \equiv (A+B)x^2+Cx-a^2A \\
+\begin{cases} A+B=0 \\ C=0 \\ -a^2A=1 \end{cases} \\
+\begin{cases} A=-\frac{1}{a^2} \\ B=\frac{1}{a^2} \\ C=0 \end{cases} \\
+\ldots = \int \frac{-\frac{1}{a^2}}{x} + \int \frac{\frac{1}{a^2}x}{x^2-a^2} = -\frac{1}{a^2}\ln|x|+\frac{1}{2a^2}\ln|x^2-a^2|+C\end{gather*}
+
+
+\sectionbookmark{16.83}
+
+\begin{gather*}\int \frac{dx}{x^3+x^2+x}=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{x^3+x^2+x} \equiv \frac{A}{x}+\frac{Bx+C}{x^2+x+1} \\
+1 \equiv A(x^2+x+1)+(Bx+C)x \\
+1 \equiv (A+B)x^2+(A+C)x+A \\
+\begin{cases} A+B=0 \\ A+C=0 \\ A=1 \end{cases} \\
+\begin{cases} A=1 \\ B=-1 \\ C=-1 \end{cases} \\
+\ldots = \int \frac{dx}{x} + \int \frac{-x-1}{x^2+x+1} = \ln|x|+\int \frac{-\frac{1}{2}(x^2+x+1)'-\frac{1}{2}}{(x+\frac{1}{2})^2+ (\frac{\sqrt{3}}{2})^2}dx = \\
+= \ln|x|-\frac{1}{2}\ln|x^2+x+1|-\frac{1}{\sqrt{3}}\arctan \left(\frac{2x+1}{\sqrt{3}}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.84}
+
+\begin{gather*}\int \frac{dx}{x^4+x^2+1}=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{x^4+x^2+1} \equiv \frac{Ax+B}{x^2-x+1}+\frac{Cx+D}{x^2+x+1} \\
+1 \equiv (Ax+B)(x^2+x+1)(Cx+D)(x^2-x+1) \\
+1 \equiv (A+C)x^3+(A+B-C+D)x^2+(A+B+C-D)x+(B+D) \\
+\begin{cases} A+C=0 \\ A+B-C+D=0 \\ A+B+C-D=0 \\ B+D=0 \end{cases} \\
+\ldots \\
+\begin{cases} A=-\frac{1}{2} \\ B=\frac{1}{2} \\ C=\frac{1}{2} \\ D=\frac{1}{2} \end{cases} \\
+\ldots = \int \frac{-\frac{1}{2}x+\frac{1}{2}}{x^2-x+1}dx + \int \frac{\frac{1}{2}x+\frac{1}{2}}{x^2+x+1} = \int \frac{-\frac{1}{4}(x^2-x+1)'+\frac{1}{4}}{x^2-x+1}dx + \int \frac{\frac{1}{4}(x^2+x+1)'+\frac{1}{4}}{x^2+x+1}dx = \\
+= -\frac{1}{4}\ln|x^2-x+1|+\int \frac{\frac{1}{4}}{(x-\frac{1}{2})^2+(\frac{\sqrt{3}}{2})^2} + \frac{1}{4}\ln|x^2+x+1|+\int \frac{\frac{1}{4}}{(x+\frac{1}{2})^2+(\frac{\sqrt{3}}{2})^2}dx = \\
+= \frac{1}{4}\ln\left|\frac{x^2+x+1}{x^2-x+1}\right|+\frac{1}{2\sqrt{3}}\arctan \left(\frac{2x-1}{\sqrt{3}}\right)+\frac{1}{2\sqrt{3}}\arctan \left(\frac{2x+1}{\sqrt{3}}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.85}
+
+\begin{gather*}\int \frac{5x^3+3x^2+12x-12}{x^4-16}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{5x^3+3x^2+12x-12}{x^4-16} \equiv \frac{A}{x-2}+\frac{B}{x+2}+\frac{Cx+D}{x^2+4} \\
+5x^3+3x^2+12x-12 \equiv A(x+2)(x^2+4)+B(x-2)(x^2+4)+(Cx+D)(x^2-4) \\
+5x^3+3x^2+12x-12 \equiv (A+B+C)x^3+(2A-2B+D)x^2+(4A+4B-4C)x+(8A-8B-4D) \\
+\begin{cases} A+B+C=5 \\ 2A-2B+D=3 \\ 4A+4B-4C=12 \\ 8A-8B-4D=-12 \end{cases} \\
+\begin{cases} A=2 \\ B=2 \\ C=1 \\ D=3 \end{cases} \\
+\ldots = \int \frac{2dx}{x-2}+\int \frac{2dx}{x+2}+\int \frac{x+3}{x^2+4}dx = \\
+= 2\ln|x-2|+2\ln|x+2|+\frac{1}{2}\ln|x^2+4|+\frac{3}{2}\arctan \frac{x}{2}+C\end{gather*}
+
+
+\sectionbookmark{16.86}
+
+\begin{gather*}\int \frac{15x^2+66x+21}{(x-1)(x^2+4x+29)}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{15x^2+66x+21}{(x-1)(x^2+4x+29)} \equiv \frac{A}{x-1}+\frac{Bx+C}{x^2+4x+29} \\
+15x^2+66x+21 \equiv A(x^2+4x+29)+(Bx+C)(x-1) \\
+15x^2+66x+21 \equiv (A+B)x^2+(4A-B+C)x+(29A-C) \\
+\begin{cases} A+B=15 \\ 4A-B+C=66 \\ 29A-C=21 \end{cases} \\
+\begin{cases} A=3 \\ B=12 \\ C=66 \end{cases} \\
+\ldots = \int \frac{3dx}{x-1} + \int \frac{12x+66}{x^2+4x+29}dx = 3\ln|x-1| + \int \frac{6(x^2+4x+29)'+42}{(x+2)^2+5^2}dx = \\
+= 3\ln|x-1|+6\ln|x^2+6x+29|+\frac{42}{5}\arctan \left(\frac{x+2}{5}\right)+C\end{gather*}
+
+
+\sectionbookmark{16.87}
+
+\begin{gather*}\int \frac{4x^3+9x^2+4x+1}{x^4+3x^3+3x^2+x}dx = \int \frac{(x^4+3x^3+3x^2+x)'-2x}{x^4+3x^3+3x^2+x}dx = \\
+= \ln|x^4+3x^3+3x^2+x|-\int \frac{2x}{x(x+1)^3}dx = \ln|x^4+3x^3+3x^2+x| - \int \frac{2dx}{(x+1)^3} = \\
+= \ln|x^4+3x^3+3x^2+x| + \frac{1}{(x+1)^2}+C\end{gather*}
+
+
+\sectionbookmark{16.88}
+
+\begin{gather*}\int \frac{dx}{x^3(x-1)^2(x+1)}=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{x^3(x-1)^2(x+1)} \equiv \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x^3} + \frac{D}{x-1}+\frac{E}{(x-1)^2}+\frac{F}{x+1} \\
+1 \equiv Ax^2(x-1)^2(x+1)+Bx(x-1)^2(x+1)+C(x-1)^2(x+1) + \\
+  \qquad \qquad + Dx^3(x-1)(x+1)+Ex^3(x+1)+Fx^3(x-1)^2 \\
+1 \equiv (A+D+F)x^5+(-A+B+E-2F)x^4+(-A-B+C-D+E+F)x^3 + \\
+  \qquad \qquad +(A-B-C)x^2+(B-C)x+C \\
+\begin{cases} A+D+F=0 \\ -A+B+E-2F=0 \\ -A-B+C-D+E+F=0 \\ A-B-C=0 \\ B-C=0 \\ C=1 \end{cases} \\
+\ldots \\
+\begin{cases} A=2 \\ B=1 \\ C=1 \\ D=-\frac{7}{4} \\ E=\frac{1}{2} \\ F=-\frac{1}{4} \end{cases} \\
+\ldots = \int \frac{2dx}{x} + \int \frac{dx}{x^2} + \int \frac{dx}{x^3} + \int \frac{-\frac{7}{4}dx}{x-1}+\int \frac{\frac{1}{2}dx}{(x-1)^2}+\int \frac{-\frac{1}{4}dx}{x+1} = \\
+= 2\ln|x| - \frac{1}{x} - \frac{1}{2x^2} -\frac{7}{4}\ln|x-1|-\frac{1}{2(x-1)}-\frac{1}{4}\ln|x+1|+C\end{gather*}
+
+
+\sectionbookmark{16.89}
+
+\begin{gather*}
+  \int \frac{dx}{(x^2+x+1)^2}
+  = \int \frac{dx}{[(x+\frac{1}{2})^2+(\frac{\sqrt{3}}{2})^2]^2}
+  = \left(\frac{4}{3}\right)^2\int \frac{dx}{\left[\left(\frac{x+\frac{1}{2}}{\frac{\sqrt{3}}{2}}\right)^2+1\right]^2} = \\
+  = \frac{16}{9} \int \frac{dx}{\left[\left(\frac{2x+1}{\sqrt{3}}\right)^2+1\right]^2} =
+  \begin{vmatrix}
+    t=\frac{2x+1}{\sqrt{3}} \\
+    dt=\frac{2}{\sqrt{3}}dx \\
+    \frac{\sqrt{3}}{2}dt=dx
+  \end{vmatrix}
+  = \frac{8}{3\sqrt{3}}\int \frac{dt}{(t^2+1)^2} = \ldots
+\end{gather*}
+korzystając z wyliczonej całki w zadaniu (16.69) :
+\begin{gather*}\ldots = \frac{8}{3\sqrt{3}} \left( \frac{1}{2}\arctan t + \frac{t}{2(t^2+1)}+C \right)
+ = \frac{4}{3\sqrt{3}} \arctan t + \frac{4t}{3\sqrt{3}(t^2+1)}+C = \\
+= \frac{4}{3\sqrt{3}} \arctan \left( \frac{2x+1}{\sqrt{3}}\right) + \frac{2x+1}{3(x^2+x+1)} +C
+\end{gather*}
+
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      Wzór rekurencyjny:
+      \begin{gather*}
+        \mathcal{I}_n = \frac{1}{2n-2}\cdot\frac{x}{(x^2+1)^{n-1}}+\frac{2n-3}{2n-2}\mathcal{I}_{n-1} \text{, gdzie } \mathcal{I}_n=\int \frac{dx}{(x^2+1)^n}
+      \end{gather*}
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\sectionbookmark{16.90}
+
+\begin{gather*}
+  \int \frac{3x^2-17x+21}{(x-2)^3}dx = \ldots \\
+  [(x-2)^3]' =3(x-2)^2=3x^2-12x+12 \\
+  \ldots = \int\frac{(3x^2-12x+12)-5x+9}{(x-2)^3}dx
+  = \ln|(x-2)^3|+\int \frac{-5(x-2)-1}{(x-2)^3}dx = \\
+  = 3\ln|x-2|-5\int \frac{dx}{(x-2)^2}-\int \frac{dx}{(x-2)^3}
+  = 3\ln|x-2|+\frac{5}{x-2}+\frac{1}{2(x-2)^2}+C
+\end{gather*}
+
+
+\sectionbookmark{16.91}
+
+\begin{gather*}\int \frac{dx}{(x^2+4x+8)^3} = \int \frac{dx}{[(x+2)^2+2^2]^3} = \frac{1}{(2^2)^3} \int \frac{dx}{\left[\left( \frac{x+2}{2} \right)^2 + 1\right]^3} = \begin{vmatrix} t=\frac{x+2}{2} \\ dt=\frac{1}{2}dx \\ 2dt=dx \end{vmatrix} = \\
+= \frac{1}{32} \int \frac{dt}{(t^2+1)^3}=\ldots\end{gather*}
+korzystając z wzoru rekurencyjnego pod zadaniem (16.89):
+\begin{gather*}\ldots = \frac{1}{32} \left[ \frac{1}{4}\cdot \frac{t}{(t^2+1)^2} + \frac{3}{4}\int \frac{dt}{(t^2+1)^2} \right] = \\= \frac{1}{32} \left[ \frac{t}{4(t^2+1)^2} + \frac{3}{4} \left( \frac{1}{2} \cdot \frac{t}{t^2+1} + \frac{1}{2} \int \frac{dt}{x^2+1} \right) \right]  = \\
+= \frac{1}{32} \left[ \frac{t}{4(t^2+1)^2} + \frac{3t}{8(t^2+1)} + \frac{3}{8}\arctan t \right] +C = \\
+= \frac{1}{16} \cdot \frac{x+2}{(x^2+4x+8)^2} + \frac{3}{128} \cdot \frac{x+2}{x^2+4x+8} + \frac{3}{256} \arctan \left( \frac{x+2}{2} \right)+C\end{gather*}
+
+
+\sectionbookmark{16.92}
+
+\begin{gather*}\int \frac{x^3-2x^2+7x+4}{(x-1)^2(x+1)^2}dx=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{x^3-2x^2+7x+4}{(x-1)^2(x+1)^2} \equiv \frac{A}{x-1}+\frac{B}{(x-1)^2}+\frac{C}{x+1}+\frac{D}{(x+1)^2} \\
+x^3-2x^2+7x+4 \equiv A(x-1)(x+1)^2+B(x+1)^2+C(x-1)^2(x+1)+D(x-1)^2 \\
+x^3-2x^2+7x+4 \equiv (A+C)x^3+(A+B-C+D)x^2+(-A+2B-C-2D)x+(-A+B+C+D) \\
+\begin{cases} A+C=1 \\ A+B-C+D=-2 \\ -A+2B-C-2D=7 \\ -A+B+C+D=4 \end{cases} \\
+\begin{cases} A=-1 \\ B=\frac{5}{2} \\ C=2 \\ D=-\frac{3}{2} \end{cases} \\
+\ldots = \int \frac{-dx}{x-1}+\int \frac{\frac{5}{2}dx}{(x-1)^2}+\int \frac{2dx}{x+1}+\int \frac{-\frac{3}{2}dx}{(x+1)^2} = \\
+= -\ln|x-1|+\frac{5}{2(x-1)}+2\ln|x+1|+\frac{3}{2(x+1)}+C\end{gather*}
+
+
+\sectionbookmark{16.93}
+
+\begin{gather*}\int \frac{dx}{x^4+64}=\int \frac{dx}{(x^2-4x+8)(x^2+4x+8)}=\ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{(x^2-4x+8)(x^2+4x+8)} \equiv \frac{Ax+B}{x^2-4x+8}+\frac{Cx+D}{x^2+4x+8} \\
+1 \equiv (Ax+B)(x^2+4x+8)+(Cx+D)(x^2-4x+8) \\
+1 \equiv (A+C)x^3+(4A+B-4C+D)x^2+(8A+4B+8C-4D)x+(8B+8D) \\
+\begin{cases} A+C=0 \\ 4A+B-4C+D=0 \\ 8A+4B+8C-4D=0 \\ 8B+8D=1 \end{cases} \\
+\begin{cases} A=-\frac{1}{64} \\ B=\frac{1}{16} \\ C=\frac{1}{64} \\ D=\frac{1}{16} \end{cases} \\
+\ldots = \int\frac{-\frac{1}{64}x+\frac{1}{16}}{x^2-4x+8} +\int\frac{\frac{1}{64}x+\frac{1}{16}}{x^2+4x+8} = \\
+= \int\frac{-\frac{1}{128}(x^2-4x+8)'+\frac{1}{32}}{(x-2)^2+2^2} +\int\frac{\frac{1}{128}(x^2+4x+8)'+\frac{1}{32}}{(x+2)^2+2^2} = \\
+= -\frac{1}{128}\ln|x^2-4x+8|+\frac{1}{64}\arctan \left( \frac{x-2}{2} \right) + \frac{1}{128}\ln|x^2+4x+8|+\frac{1}{64}\arctan \left( \frac{x+2}{2} \right)+C \end{gather*}
+
+
+\sectionbookmark{16.94}
+
+\begin{gather*}\int \frac{5x^3-11x^2+5x+4}{(x-1)^4}dx=\int \frac{5(x^3-3x^2+3x-1)+4x^2-10x+9}{(x-1)^4}dx = \\
+= \int \frac{5}{x-1}dx + \int \frac{4(x^2-2x+1)-2x+5}{(x-1)^4}dx = \\
+= 5\ln|x-1|+\int \frac{4}{(x-1)^2}dx + \int \frac{-2(x-1)+3}{(x-1)^4}dx = \\
+= 5\ln|x-1|-\frac{4}{x-1} +\int \frac{-2}{(x-1)^3}dx + \int \frac{3}{(x-1)^4}dx = \\
+= 5\ln|x-1|-\frac{4}{x-1} + \frac{1}{(x-1)^2} - \frac{1}{(x-1)^3}+C\end{gather*}
+
+
+\sectionbookmark{16.95}
+
+\begin{gather*}\int \frac{dx}{x^4+6x^2+25} = \int \frac{dx}{(x^2-2x+5)(x^2+2x+5)} = \ldots\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{1}{(x^2-2x+5)(x^2+2x+5)} \equiv \frac{Ax+B}{x^2-2x+5}+\frac{Cx+D}{x^2+2x+5} \\
+1 \equiv (Ax+B)(x^2+2x+5)+(Cx+D)(x^2-2x+5) \\
+1 \equiv (A+C)x^3+(2A+B-2C+D)x^2+(5A+2B+5C-2D)x+(5B+5D) \\
+\begin{cases} A+C=0 \\ 2A+B-2C+D=0 \\ 5A+2B+5C-2D=0 \\ 5B+5D=1 \end{cases} \\
+\begin{cases} A=-\frac{1}{20} \\ B=\frac{1}{10} \\ C=\frac{1}{20} \\ D=\frac{1}{10} \end{cases} \\
+\ldots = \int\frac{-\frac{1}{20}x+\frac{1}{10}}{x^2-2x+5}+\int \frac{\frac{1}{20}x+\frac{1}{10}}{x^2+2x+5} = \\
+= \int\frac{-\frac{1}{40}(x^2-2x+5)'+\frac{1}{20}}{(x-1)+2^2}+\int \frac{\frac{1}{40}(x^2+2x+5)'+\frac{1}{20}}{(x+1)^2+2^2}  = \\
+= -\frac{1}{40}\ln|x^2-2x+5|+\frac{1}{40}\arctan \left( \frac{x-1}{2} \right)+\frac{1}{40}\ln|x^2+2x+5|+\frac{1}{40}\arctan \left(\frac{x+1}{2} \right)+C \end{gather*}
+
+
+\sectionbookmark{16.96}
+
+\begin{gather*}\int \frac{9x^4-3x^3-23x^2+30x-1}{(x-1)^4(x+3)}dx\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\frac{9x^4-3x^3-23x^2+30x-1}{(x-1)^4(x+3)} \equiv \frac{A}{x-1}+ \frac{B}{(x-1)^2}+ \frac{C}{(x-1)^3}+ \frac{D}{(x-1)^4}+ \frac{E}{x+3} \\
+9x^4-3x^3-23x^2+30x-1 \equiv A(x-1)^3(x+3)+B(x-1)^2(x+3)+C(x-1)(x+3)+ \\
+  \qquad \qquad +D(x+3)+E(x-1)^4 \\
+9x^4-3x^3-23x^2+30x-1 \equiv (A+E)x^4+(B-4E)x^3+ (-6A+B+C+6E)x^2+ \\
+  \qquad \qquad +(8A-5B+2C+D-4E)x+(-3A+3B-3C+3D+E) \\
+\begin{cases} A+E=9 \\ B-4E=-3 \\ -6A+B+C+6E=-23 \\ 8A-5B+2C+D-4E=30 \\ -3A+3B-3C+3D+E=-1 \end{cases} \\
+\ldots \\
+\begin{cases} A=7 \\ B=5 \\ C=2 \\ D=3 \\ E=2 \end{cases} \\
+\ldots = \int \frac{7}{x-1}dx + \int \frac{5}{(x-1)^2}dx + \int \frac{2}{(x-1)^3}dx + \int \frac{3}{(x-1)^4}dx + \int \frac{2}{x+3} = \\
+= 7\ln|x-1|-\frac{5}{x-1}-\frac{1}{(x-1)^2}-\frac{1}{(x-1)^3}+2\ln|x+3|+C\end{gather*}
+
+
+\sectionbookmark{16.97}
+
+\begin{gather*}\int \frac{x^3-2x^2+5x-8}{x^4+8x^2+16}dx = \int \frac{x^3-2x^2+5x-8}{(x^2+4)^2}dx = \int \frac{x(x^2+4)-2(x^2+4)+x}{(x^2+4)^2}dx = \\
+= \int \frac{x}{x^2+4}-2\int \frac{dx}{x^2+2^2}+\int \frac{x}{(x^2+4)^2}= \frac{1}{2}\ln|x^2+4|-\arctan \left( \frac{x}{2} \right) - \frac{1}{2(x^2+4)}+C \\
+\int \frac{x}{(x^2+4)^2} = \begin{vmatrix} t=x^2+4 \\ dt=2xdx \\ \frac{1}{2}dt=xdx \end{vmatrix} = \frac{1}{2} \int \frac{dt}{t^2} = -\frac{1}{2t}+C = -\frac{1}{2(x^2+4)}+C\end{gather*}
+
+
+\sectionbookmark{16.98}
+
+\begin{gather*}
+  \int \frac{3x^2+x-2}{(x-1)^3(x^2+1)}dx = \ldots \\
+  \text{rozkład na ułamki proste:} \\
+  \frac{3x^2+x-2}{(x-1)^3(x^2+1)} \equiv \frac{A}{x-1}+ \frac{B}{(x-1)^2}+ \frac{C}{(x-1)^3}+ \frac{Dx+E}{x^2+1} \\
+  3x^2+x-2 \equiv A(x-1)^2(x^2+1)+ B(x-1)(x^2+1)+ C(x^2+1)+ (Dx+E)(x-1)^3 \\
+  3x^2+x-2 \equiv (A+D)x^4+(-2A+B-3D+E)x^3+(2A-B+C+3D-3E)x^2+ \\
+    \qquad \qquad +(-2A+B-D+3E)x+ (A-B+C-E) \\
+  \begin{cases} A+D=0 \\ -2A+B-3D+E=0 \\ 2A-B+C+3D-3E=3 \\ -2A+B-D+3E=1 \\ A-B+C-E=-2 \end{cases} \\
+  \begin{cases} A=-\frac{3}{2} \\ B=\frac{5}{2} \\ C=1 \\ D=\frac{3}{2} \\ E=-1 \end{cases} \\
+  \ldots = \int \frac{-\frac{3}{2}}{x-1}dx+ \int \frac{\frac{5}{2}}{(x-1)^2}dx+ \int \frac{1}{(x-1)^3}dx+ \int \frac{\frac{3}{2}x-1}{x^2+1}dx = \\
+  = -\frac{3}{2}\ln|x-1|-\frac{5}{2(x-1)}-\frac{1}{2(x-1)^2}+\int \frac{\frac{3}{4}(x^2+1)'-1}{x^2+1}dx = \\
+  = -\frac{3}{2}\ln|x-1|-\frac{5}{2(x-1)}-\frac{1}{2(x-1)^2}+\frac{3}{4}\ln|x^2+1|-\arctan x+C
+\end{gather*}
+

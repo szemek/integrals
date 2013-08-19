@@ -1,0 +1,964 @@
+\section{Całki funkcji przestępnych.}
+\subsection{§ Całki funkcji trygonometrycznych.}
+
+
+\subsectionbookmark{18.30}
+
+\begin{gather*}\int \cos 5x \cos 7x dx = \int \cos 7x \cos 5x dx = \int \frac{1}{2}[\cos(7x+5x)+\cos(7x-5x)]dx =  \\
+= \int \frac{1}{2}(\cos 12x + \cos 2x)dx = \frac{1}{24}\sin 12x + \frac{1}{4}\sin 2x + C\end{gather*}
+
+
+\subsectionbookmark{18.31}
+
+\begin{gather*}\int \sin 3x \cos 2x dx = \int \frac{1}{2}[\sin (3x+2x)+\sin (3x-2x)]dx = \int \frac{1}{2}[\sin 5x + \sin x]dx =  \\
+= -\frac{1}{10}\cos 5x - \frac{1}{2}\cos x + C\end{gather*}
+
+
+\subsectionbookmark{18.32}
+
+\begin{gather*}\int \cos 2x \cos 3x dx = \int \frac{1}{2}[\cos(2x+3x)+\cos(2x-3x)]dx = \int \frac{1}{2}[\cos 5x + \cos (-x)]dx =  \\
+= \int \frac{1}{2}[\cos 5x + \cos x]dx = \frac{1}{10}\sin 5x + \frac{1}{2} \sin x + C\end{gather*}
+
+
+\subsectionbookmark{18.33}
+
+\begin{gather*}\int \sin x \cos 3x dx = \int \frac{1}{2}[\sin (x+3x)+\sin (x-3x)]dx = \int \frac{1}{2}[\sin 4x + \sin (-2x)]dx =  \\
+= \int \frac{1}{2}[\sin 4x - \sin 2x]dx = -\frac{1}{8}\cos 4x + \frac{1}{4}\cos 2x + C\end{gather*}
+
+
+\subsectionbookmark{18.34}
+
+\begin{gather*}\int \cos 2x \sin 4x dx = \int \sin 4x \cos 2x dx = \int \frac{1}{2}[\sin(4x+2x)+\sin(4x-2x)]dx =  \\
+= \int \frac{1}{2}[\sin 6x + \sin 2x]dx = -\frac{1}{12}\cos 6x - \frac{1}{4}\cos 2x + C\end{gather*}
+
+
+\subsectionbookmark{18.35}
+
+\begin{gather*}\int \sin 2x \sin 5x dx = \int \frac{1}{2}[\cos (2x-5x) - \cos(2x+5x)]dx =  \\
+= \int \frac{1}{2}[\cos(-3x)-\cos 7x]dx = \int \frac{1}{2}[\cos 3x - \cos 7x]dx = \frac{1}{6}\sin 3x - \frac{1}{14}\sin 7x + C\end{gather*}
+
+
+\subsectionbookmark{18.36}
+
+\begin{gather*}\int \cos x \cos 3x dx = \int \frac{1}{2}[\cos(x+3x)+\cos(x-3x)]dx = \int \frac{1}{2}[\cos 4x + \cos (-2x)]dx =  \\
+= \int \frac{1}{2}[\cos 4x + \cos 2x]dx = \frac{1}{8}\sin 4x + \frac{1}{4} \sin 2x + C\end{gather*}
+
+
+\subsectionbookmark{18.37}
+
+\begin{gather*}\int \sin 3x \sin x dx = \int \frac{1}{2}[\cos (3x-x) - \cos(3x+x)]dx = \int \frac{1}{2}[\cos 2x -\cos 4x]dx =  \\
+= \frac{1}{4}\sin 2x - \frac{1}{8}\sin 4x + C\end{gather*}
+
+
+\subsectionbookmark{18.38}
+
+\begin{gather*}\int \sin 5x \sin 2x dx = \int \frac{1}{2}[\cos (5x-2x) - \cos(5x+2x)]dx = \int \frac{1}{2}[\cos 3x -\cos 7x]dx =  \\
+= \frac{1}{6}\sin 3x - \frac{1}{14}\sin 7x + C\end{gather*}
+
+
+\subsectionbookmark{18.39}
+
+\begin{gather*}\int \sin^3 x dx = \int (1-\cos^2x)\sin x dx = \begin{vmatrix} t=\cos x \\ dt=-\sin x dx \end{vmatrix} = \int (t^2-1)dt =  \\
+= \frac{1}{3}t^3-t+C = \frac{1}{3}\cos^3 x - \cos x+C\end{gather*}
+
+
+\subsectionbookmark{18.40}
+
+\begin{gather*}\int \sin^4 x dx = -\frac{1}{4}\sin^3 x \cos x + \frac{3}{4}\int \sin^2 x dx = -\frac{1}{4}\sin^3 x \cos x - \frac{3}{8}\sin x \cos x + \frac{3}{8}x + C \end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      Wzór redukcyjny
+      \begin{gather*} \int \sin^n x dx = -\frac{1}{n}\sin^{n-1} x \cos x + \frac{n-1}{n}\int \sin^{n-2} x \mbox{d}x\end{gather*}
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\subsectionbookmark{18.41}
+
+\begin{gather*}\int \cos^4 x dx = \int \sin^4 (\frac{\pi}{2}+x)dx = \begin{vmatrix} u=\frac{\pi}{2}+x \\ du=dx \end{vmatrix} = \int \sin^4 u du =  \\
+= -\frac{1}{4}\sin^3 u \cos u - \frac{3}{8}\sin u \cos u + \frac{3}{8}u + C =  \\
+= -\frac{1}{4}\sin^3 (\frac{\pi}{2}+x) \cos (\frac{\pi}{2}+x) - \frac{3}{8}\sin (\frac{\pi}{2}+x) \cos (\frac{\pi}{2}+x) + \frac{3}{8}(\frac{\pi}{2}+x) + C =  \\
+= \frac{1}{4}\sin^3 x \cos x + \frac{3}{8}\sin x \cos x + \frac{3}{8}x + C\end{gather*}
+
+
+\subsectionbookmark{18.42}
+
+\begin{gather*}
+  \int \cos^5 x dx
+  = \int (1-\sin^2x)^2\cos x dx =
+  \begin{vmatrix}
+    t=\sin x \\
+    dt=\cos x dx
+  \end{vmatrix}
+  = \int (1-t^2)^2dt
+  = \int (t^4-2t^2+1)dt = \\
+  = \frac{1}{5}t^5-\frac{2}{3}t^3+t+C = \frac{1}{5}\sin^5 x-\frac{2}{3}\sin^3 x+\sin x+C
+\end{gather*}
+
+
+\subsectionbookmark{18.43}
+
+\begin{gather*}\int \sin^5 x dx = \int (1-\cos^2x)^2\sin x dx = \begin{vmatrix} t=\cos x \\ dt=-\sin x dx \end{vmatrix} = -\int (1-t^2)^2dt =  \\
+= -\int (t^4-2t^2+1)dt = -\frac{1}{5}t^5+\frac{2}{3}t^3-t+C = -\frac{1}{5}\cos^5 x+\frac{2}{3}\cos^3 x-\cos x+C\end{gather*}
+
+
+\subsectionbookmark{18.44}
+
+\begin{gather*}
+  \int \tan^5 x dx =
+  \begin{vmatrix}
+    t=\tan x \\
+    \frac{dt}{t^2+1}=dx
+  \end{vmatrix}
+  = \int \frac{t^5}{t^2+1}dt
+  = \int \frac{t^3(t^2+1)-t(t^2+1)+t}{t^2+1}dt = \\
+  = \int t^3dt-\int tdt+\int \frac{\frac{1}{2}(t^2+1)'}{t^2+1}dt
+  = \frac{1}{4}t^4+\frac{1}{2}t^2+\frac{1}{2}\ln|t^2+1|+C =  \\
+  = \frac{1}{4}\tan^4 x+\frac{1}{2}\tan^2 x+\frac{1}{2}\ln|\tan^2 x+1|+C =  \\
+  = \frac{1}{4}\tan^4 x+\frac{1}{2}\tan^2 x-\ln|\cos x|+C
+\end{gather*}
+
+
+\subsectionbookmark{18.45}
+
+\begin{gather*}\int \cot^4 x dx = \begin{vmatrix} t=\cot x \\ -\frac{dt}{t^2+1}=x \end{vmatrix} = -\int \frac{t^4}{t^2+1}dt = -\int \frac{(t^2-1)(t^2+1)+1}{t^2+1}dt =  \\
+= -\int (t^2-1)dt - \int \frac{dt}{t^2+1} = -\frac{1}{3}t^3+t-\arctan (t)+C =  \\
+= -\frac{1}{3}\cot^3 x+\cot x - \arctan (\cot x)+C =  \\
+= -\frac{1}{3}\cot^3 x+\cot x - \arctan (\tan (\frac{\pi}{2}-x))+C =  \\
+= -\frac{1}{3}\cot^3 x+\cot x + x +C\end{gather*}
+
+
+\subsectionbookmark{18.46}
+
+\begin{gather*}\int ctg^6 x dx = \begin{vmatrix} t=\cot x \\ -\frac{dt}{t^2+1}=x \end{vmatrix} = -\int \frac{t^6}{t^2+1}dt = -\int \frac{t^4(t^2+1)-t^2(t^2+1)+(t^2+1)-1}{t^2+1}dt =  \\
+= -\int (t^4-t^2+1)dt+\int \frac{dt}{t^2+1} = -\frac{1}{5}t^5+\frac{1}{3}t^3-t+\arctan(t) + C =  \\
+= -\frac{1}{5}\cot^5 x+\frac{1}{3}\cot^3 x-\cot x+\arctan(\cot x) + C =  \\
+= -\frac{1}{5}\cot^5 x+\frac{1}{3}\cot^3 x-\cot x+\arctan(\tan (\frac{\pi}{2}-x)) + C =  \\
+= -\frac{1}{5}\cot^5 x+\frac{1}{3}\cot^3 x-\cot x-x + C\end{gather*}
+
+
+\subsectionbookmark{18.47}
+
+\begin{gather*}\int \sin^3 x \cos^4 x dx = \int \sin x(1-\cos^2 x)\cos^4 x dx = \begin{vmatrix} t=\cos x \\ dt=-\sin x dx \end{vmatrix} =  \\
+= -\int (1-t^2)t^4dt = \int (t^6-t^4)dt = \frac{1}{7}t^7-\frac{1}{5}t^5+C = \frac{1}{7}\cos^7 x - \frac{1}{5}\cos^5 x + C\end{gather*}
+
+
+\subsectionbookmark{18.48}
+
+\begin{gather*}\int \sin^7 x \cos^6 x dx = \int \sin x(1-\cos^2 x)^3\cos^6 x dx = \begin{vmatrix} t=\cos x \\ dt=-\sin x dx \end{vmatrix} =  \\
+= -\int (1-t^2)^3t^6dt = \int (t^{12}-3t^{10}+3t^8-t^6)dt = \frac{1}{13}t^{13}-\frac{3}{11}t^{11}+\frac{1}{3}t^9-\frac{1}{7}t^7 + C =  \\
+= \frac{1}{13}\cos^{13}x-\frac{3}{11}\cos^{11}x+\frac{1}{3}\cos^9x-\frac{1}{7}\cos^7 x+ C\end{gather*}
+
+
+\subsectionbookmark{18.49}
+
+\begin{gather*}\int \sin^5 x \cos^2 x dx = \int \sin x (1-cos^2 x)^2\cos^2 x dx = \begin{array}{|l|} t=\cos x \\ dt=-\sin x dx \end{array} =  \\
+= -\int (1-t^2)^2t^2dt = -\int (t^6-2t^4+t^2)dt = -\frac{1}{7}t^7+\frac{2}{5}t^5-\frac{1}{3}t^3+C =  \\
+= -\frac{1}{7}\cos^7x+\frac{2}{5}\cos^5x-\frac{1}{3}\cos^3x+C\end{gather*}
+
+
+\subsectionbookmark{18.50}
+
+\begin{gather*}\int \sin^2 x \cos^2 x dx = \int \frac{1}{4}\sin^2 2xdx = \int \frac{1-\cos 4x}{8}dx = \frac{1}{8}x-\frac{1}{32}\sin 4x +C\end{gather*}
+
+
+\subsectionbookmark{18.51}
+
+\begin{gather*}\int \sin^3 x \cos^3 x dx = \int \sin^{3}x \cos x(1-\sin^{2}x)dx = \begin{array}{|l|} t=\sin x \\ dt=\cos x \end{array} =  \\
+= \int t^3(1-t^2)dt = \int (t^3-t^5)dt = \frac{1}{4}t^4-\frac{1}{6}t^6+C = \frac{1}{4}\sin^4x-\frac{1}{6}\sin^6x+C\end{gather*}
+
+
+\subsectionbookmark{18.52}
+
+\begin{gather*}\int \sin^4 x \cos^5 x dx = \int \sin^4x \cos x(1-\sin^2 x)^2dx = \begin{array}{|l|} t=\sin x \\ dt=\cos dx \end{array} =  \\
+= \int t^4(1-t^2)^2dt = \int (t^4-2t^6+t^8)dt = \frac{1}{5}t^5-\frac{2}{7}t^7+\frac{1}{9}t^9+C =  \\
+= \frac{1}{5}\sin^5x-\frac{2}{7}\sin^7x+\frac{1}{9}\sin^9x+C\end{gather*}
+
+
+\subsectionbookmark{18.53}
+
+\begin{gather*}\int \frac{\cos x dx}{\sin^8 x} = \begin{array}{|l|} t=\sin x \\ dt=\cos x dx \end{array} = \int \frac{dt}{t^8} = -\frac{1}{7t^7}+C = -\frac{1}{7\sin^7x}+C\end{gather*}
+
+
+\subsectionbookmark{18.54}
+
+\begin{gather*}\int \sin x \tan x dx = \int \frac{\sin^2 x}{\cos x}dx = \begin{array}{|l|} t=\sin x \\ dt=\cos x dx \end{array} = \int \frac{t^2}{1-t^2}dt = \int \frac{t^2-1+1}{1-t^2} =  \\
+= -\int dt + \int \frac{dt}{1-t^2} = -t + \frac{1}{2}\ln\left|\frac{t+1}{t-1}\right|+C = -\sin x + \frac{1}{2}\ln\left|\frac{\sin x+1}{\sin x-1}\right|+C\end{gather*}
+
+
+\subsectionbookmark{18.55}
+
+\begin{gather*}\int \frac{\cos x}{\sqrt[3]{\sin^2 x}}dx = \begin{array}{|l|} t=\sin x \\ dt=\cos x dx \end{array} = \int t^{-\frac{2}{3}}dt = 3\sqrt[3]{t}+C = 3\sqrt[3]{\sin x}+C\end{gather*}
+
+
+\subsectionbookmark{18.56}
+
+\begin{gather*}\int \frac{\sin x dx}{\sqrt[3]{1+2\cos x}} = \begin{array}{|l|} t=1+2\cos x \\ dt=-2\sin x dx \\ -\frac{1}{2}dt=\sin x dx \end{array} = -\frac{1}{2}\int t^{-\frac{1}{3}}dt = -\frac{3}{4}t^{\frac{2}{3}}+C = -\frac{3}{4}\sqrt[3]{(1+2\cos x)^2}+C \end{gather*}
+
+
+\subsectionbookmark{18.57}
+
+\begin{gather*}\int \frac{\sin 2x dx}{\sqrt{1+\cos^2 x}} = \int \frac{2\sin x \cos x}{\sqrt{1+\cos^2 x}}dx = \int \frac{-(1+\cos^2 x)'}{\sqrt{1+\cos^2 x}}dx = -2\sqrt{1+\cos^2x}+C \end{gather*}
+
+
+\subsectionbookmark{18.58}
+
+\begin{gather*}\int \frac{\sin 2x}{1+\sin^2 x}dx = \int \frac{2\sin x\cos x}{1+\sin^2 x}dx = \int \frac{(1+\sin^2x)'}{1+\sin^2x}dx = \ln|1+\sin^2 x|+C\end{gather*}
+
+
+\subsectionbookmark{18.59}
+
+\begin{gather*}\int \frac{\sin 2x dx}{\sqrt{1-sin^4 x}} = \int \frac{2\sin x \cos x dx}{\sqrt{1-sin^4 x}} = \begin{array}{|l|} t=\sin^2 x \\ dt=2\sin x\cos xdx \end{array} = \int \frac{dt}{\sqrt{1-t^2}} =  \\
+= \arcsin (t)+C = \arcsin (\sin^2 x)+C\end{gather*}
+
+
+\subsectionbookmark{18.60}
+
+\begin{gather*}\int \frac{\cos^3 x}{\sin^2 x}dx = \int \frac{(1-\sin^2 x)\cos x}{\sin^2 x}dx = \begin{array}{|l|} t=\sin x \\ dt=\cos x dx \end{array} = \int \frac{1-t^2}{t^2}dt =  \\
+= \int \frac{dt}{t^2} - \int dt = -\frac{1}{t}-t +C = -\frac{1}{\sin x}-\sin x+C = -\frac{1+\sin^2x}{\sin x}+C\end{gather*}
+
+
+\subsectionbookmark{18.61}
+
+\begin{gather*}\int \frac{\sin^3 x+\cos^3 x}{\sin^2 x - \sin x \cos x + \cos^2 x}dx = \int (\sin x+\cos x)dx = -\cos x+\sin x+C\end{gather*}
+
+
+\subsectionbookmark{18.62}
+
+\begin{gather*}\int \frac{dx}{\sin^3 x} = \int \frac{\sin^2 x+\cos^2 x}{\sin^3 x}dx = \int \frac{dx}{\sin x}+\int \frac{\cos^2 x}{\sin^3 x}dx = -\frac{\cos x}{2\sin^2 x} + \frac{1}{2}\int \frac{dx}{\sin x} =  \\
+= -\frac{\cos x}{2\sin^2 x} + \frac{1}{2}\ln|\tan\frac{x}{2}|+C\end{gather*}
+całki obliczone pomocniczo:
+\begin{gather*}\int \frac{dx}{\sin x} = \begin{array}{|l|} u=\tan \frac{x}{2} \\ \frac{2du}{1+u^2}=dx \\ \frac{2u}{1+u^2}=\sin x \end{array} = \int \frac{du}{u} = \ln|u|+C = \ln|\tan \frac{x}{2}|+C \\
+\int \frac{\cos^2 x}{\sin^3 x}dx = \int \frac{\cos x}{\sin^3 x}\cos x dx = \begin{array}{|ll|}
+u=\cos x & dv=\frac{\cos x}{\sin^3 x}dx \\
+du=-\sin x & v= -\frac{1}{2\sin^2 x} \end{array} =  \\
+= -\frac{\cos x}{2\sin^2 x} - \frac{1}{2}\int \frac{dx}{\sin x} \\
+\int \frac{\cos x}{\sin^3 x}dx = \begin{array}{|l|} t=\sin x \\ dt=\cos x \end{array} = \int \frac{dt}{t^3} = -\frac{1}{2t^2}+C = -\frac{1}{2\sin^2 x}+C\end{gather*}
+
+
+
+\subsectionbookmark{18.63}
+
+\begin{gather*}\int \frac{dx}{\cos^3 x} = \int \frac{dx}{\sin^3(x+\frac{\pi}{2})} = \begin{array}{|l|} t=x+\frac{\pi}{2} \\ dt=dx \end{array} = \int \frac{dt}{\sin^3 t}=...\end{gather*}
+korzystając z rozwiązania w przykładzie (18.62) otrzymujemy:
+\begin{gather*}\nonumber ...= -\frac{\cos t}{2\sin^2 t} + \frac{1}{2}\ln|\tan\frac{t}{2}|+C = -\frac{\cos (x+\frac{\pi}{2})}{2\sin^2 (x+\frac{\pi}{2})} + \frac{1}{2}\ln|\tan\frac{(x+\frac{\pi}{2})}{2}|+C =  \\
+= \frac{\sin x}{2\cos^2 x} + \frac{1}{2}\ln|\tan(\frac{x}{2}+\frac{\pi}{4})|+C\end{gather*}
+
+
+\subsectionbookmark{18.64}
+
+\begin{gather*}\int \frac{dx}{\sin^4 x} = \int \frac{\sin^2x+\cos^2x}{\sin^4 x}dx=\int \frac{dx}{\sin^2x}+\int \frac{\cos^2x}{\sin^4x}dx = -\cot x - \frac{1}{3}\cot^3 x + C  \\
+\int \frac{\cos^2x}{\sin^4x}dx = \int \frac{\cot^2 x}{\sin^2 x}dx = \begin{array}{|l|} t=\cot x \\ -dt=\frac{dx}{\sin^2 x} \end{array} = -\int t^2dt = -\frac{1}{3}\cot^3x+C\end{gather*}
+
+
+\subsectionbookmark{18.65}
+
+\begin{gather*}\int \frac{dx}{\cos^5 x} = \int \frac{\sin^2 x+\cos^2 x}{\cos^5 x}dx = \int \frac{\sin^2 x}{\cos^5 x}+\int \frac{dx}{\cos^3 x} = -\frac{\sin x}{3\cos^3 x} + \frac{3}{4}\int \frac{dx}{\cos^3 x} =  \\
+= \frac{\sin x}{4\cos^4 x}+\frac{3\sin x}{8\cos^2 x} + \frac{3}{8}\ln|\tan(\frac{x}{2}+\frac{\pi}{4})|+C \\
+\int \frac{\sin^2 x}{\cos^5 x}dx = \begin{array}{|ll|}
+u=\sin x & dv=\frac{\sin x}{\cos^5 x}dx \\
+du=\cos dx & v=\frac{1}{4\cos^4 x} \end{array} = \frac{\sin x}{4\cos^4 x} - \frac{1}{4}\int \frac{dx}{\cos^3 x} \\
+\int \frac{\sin x}{\cos^5 x}dx = \begin{array}{|l|} t=\cos x \\ dt=-\sin x \end{array} = -\int \frac{dt}{t^5} = \frac{1}{4t^4}+C = \frac{1}{4\cos^4 x}+C\end{gather*}
+
+
+
+\subsectionbookmark{18.66}
+
+\begin{gather*}\int \frac{dx}{\sin^7 x} = \begin{array}{|l|}
+u=\tan \frac{x}{2} \\
+\frac{2du}{1+u^2}=dx \\
+\frac{2u}{1+u^2}=\sin x \end{array} = \int \frac{\frac{2du}{1+u^2}}{(\frac{2u}{1+u^2})^7} = \int \frac{(u^2+1)^6}{64u^7}du = \\
+= \frac{1}{64} \int \frac{u^{12}+6u^{10}+15u^8+20u^6+15u^4+6u^2+1}{u^7}du = \\
+= \frac{1}{64} \int \left(u^5+6u^3+15u+\frac{20}{u}+\frac{15}{u^3}+\frac{6}{u^5}+\frac{1}{u^7}\right)du = \\
+= \frac{1}{384}u^6+\frac{3}{128}u^4+\frac{15}{128}u^2+\frac{5}{16}\ln|u| -\frac{15}{128u^2}-\frac{3}{128u^4}-\frac{1}{384u^6}+C = \\
+ = \frac{1}{384}\tan^6\frac{x}{2}+\frac{3}{128}\tan^4\frac{x}{2} +\frac{15}{128}\tan^2\frac{x}{2}+\frac{5}{16}\ln|\tan\frac{x}{2}| -\frac{15}{128\tan^2\frac{x}{2}}-\frac{3}{128\tan^4\frac{x}{2}}- \frac{1}{384\tan^6\frac{x}{2}}+C
+\end{gather*}
+
+
+\subsectionbookmark{18.67}
+
+\begin{gather*}\int \frac{dx}{\sin^3 x \cos x} = \int \frac{\sin^2 x+\cos^2 x}{\sin^3 x \cos x}dx = \int \frac{dx}{\sin x\cos x}+\int \frac{\cos x}{\sin^3 x}dx =  \\
+= \int \frac{dx}{\frac{1}{2}\sin 2x}+\int \frac{\cot x}{\sin^2 x}dx = \ln|\tan x|-\frac{1}{2}\cot^2 x + C \\
+\int \frac{dx}{\frac{1}{2}\sin 2x} = \begin{array}{|l|} t=2x \\ \frac{1}{2}dt=dx \end{array} = \int \frac{dt}{\sin t} = \ln|\tan \frac{t}{2}|+C = \ln|\tan x|+C \\
+\int \frac{\cot x}{\sin^2 x}dx = \begin{array}{|l|} t=\cot x \\ -dt=\frac{dx}{\sin^2 x} \end{array} = -\int t dt = -\frac{1}{2}\cot^2 x + C\end{gather*}
+
+
+\subsectionbookmark{18.68}
+
+\begin{gather*}\int \frac{dx}{\sin x \cos^3 x} = \int \frac{\sin^2 x+\cos^2 x}{\sin x\cos^3 x}dx = \int \frac{\sin x}{\cos^3 x}dx + \int \frac{dx}{\sin x\cos x}=  \\
+= \int \frac{\tan x}{\cos^2 x}dx+\int \frac{dx}{\frac{1}{2}\sin 2x} = \frac{1}{2}\tan^2 x +\ln|\tan x|+ C \\
+\int \frac{dx}{\frac{1}{2}\sin 2x} = \begin{array}{|l|} t=2x \\ \frac{1}{2}dt=dx \end{array} = \int \frac{dt}{\sin t} = \ln|\tan \frac{t}{2}|+C = \ln|\tan x|+C \\
+\int \frac{\tan x}{\cos^2 x}dx = \begin{array}{|l|} t=\tan x \\ dt=\frac{dx}{\cos^2 x} \end{array} = \int t dt = \frac{1}{2}\tan^2 x + C\end{gather*}
+
+
+\subsectionbookmark{18.69}
+
+\begin{gather*}
+  \int \frac{dx}{\sin^5 x \cos^3 x} =
+  = \int \frac{\sin^2 x+\cos^2 x}{\sin^5 x \cos^3 x}dx = \\
+  = \int \frac{dx}{\sin^3 x \cos^3 x}+\int \frac{dx}{\sin^5 x \cos x} = \\
+  = \int \frac{\sin^2 x+\cos^2 x}{\sin^3 x\cos^3 x}+\int \frac{\sin^2x+\cos^2x}{\sin^5x\cos x}dx = \\
+  = \int \frac{dx}{\sin x\cos^3 x}+\int \frac{dx}{\sin^3\cos x}+\int \frac{dx}{\sin^3 x\cos x}+\int \frac{\cos x}{\sin^5 x}dx = \\
+  = \int \frac{\sin^2 x+\cos^2 x}{\sin x\cos^3 x}dx+2\int \frac{\sin^2 x+\cos^2 x}{\sin^3\cos x}+\int \frac{\cos x}{\sin^5 x}dx = \\
+  = \int \frac{\sin x}{\cos^3 x}dx + \int \frac{dx}{\sin x\cos x} + 2\int \frac{dx}{\sin x\cos x}+2\int \frac{\cos x}{\sin^3 x}+\int \frac{\cos x}{\sin^5 x}dx = \\
+  = \int \frac{\sin x}{\cos^3 x}dx + 3\int \frac{dx}{\sin x\cos x}+2\int \frac{\cos x}{\sin^3 x}dx+\int \frac{\cos x}{\sin^5 x}dx = \\
+  = \frac{1}{2\cos^2 x}+3\ln|\tan x|-\frac{1}{\sin^2 x}-\frac{1}{4\sin^4 x}+C \\
+  \text{całki obliczone pomocniczo} \\
+  \int \frac{\sin x}{\cos^3 x}dx =
+  \begin{vmatrix}
+    t=\cos x \\
+    -dt=\sin x dx
+  \end{vmatrix}
+  = -\int \frac{dt}{t^3} = \frac{1}{2t^2}+ C = \frac{1}{2\cos^2 x}+C \\
+  \int \frac{dx}{\sin x\cos x}
+  = \int \frac{dx}{\frac{1}{2}\sin 2x}
+  = \begin{vmatrix}
+    t=2x \\
+    \frac{1}{2}dt=dx
+  \end{vmatrix}
+  = \int \frac{dt}{\sin t}
+  = \ln|\tan \frac{t}{2}|+C
+  = \ln|\tan x|+C  \\
+  \int \frac{\cos x}{\sin^3 x}dx
+  = \begin{vmatrix}
+    t=\sin x \\
+    dt=\cos x
+  \end{vmatrix}
+  = \int \frac{dt}{t^3}
+  = -\frac{1}{2t^2}+C
+  = -\frac{1}{2\sin^2 x}+C  \\
+  \int \frac{\cos x}{\sin^5 x}dx =
+  \begin{vmatrix}
+    t=\sin x \\
+    dt=\cos x
+  \end{vmatrix}
+  = \int \frac{dt}{t^5}
+  = -\frac{1}{4t^4}+C
+  = -\frac{1}{4\sin^4 x}+C
+\end{gather*}
+
+
+
+\subsectionbookmark{18.70}
+
+\begin{gather*}\int \frac{dx}{\sin^2 x \cos^4 x} = \\
+= \int \frac{\sin^2+\cos^2 x}{\sin^2 x \cos^4 x}dx = \\
+= \int \frac{dx}{\cos^4 x}+\int \frac{dx}{\sin^2 x\cos^2x} = \\
+= \int \frac{\sin^2+\cos^2 x}{\cos^4 x}dx+\int \frac{\sin^2+\cos^2 x}{\sin^2 x\cos^2x}dx = \\
+= \int \frac{\sin^2}{\cos^4 x}dx+\int \frac{dx}{\cos^2 x}+\int \frac{dx}{\cos^2 x}+\int \frac{dx}{\sin^2 x} = \\
+= \int \frac{\tan^2 x}{\cos^2 x}dx+3\int \frac{dx}{\cos^2 x}+\int \frac{dx}{\sin^2 x} = \\
+= \frac{1}{3}\tan^3 x+3\tan x-\cot x+C \\
+\int \frac{\tan^2 x}{\cos^2 x}dx = \begin{array}{|l|} t=\tan x \\ dt=\frac{dx}{\cos^2 x} \end{array} = \int t^2 dt = \frac{1}{3}t^3+C = \frac{1}{3}\tan^3x+C\end{gather*}
+
+
+\subsectionbookmark{18.71}
+
+\begin{gather*}\int \frac{\sin^4 x}{\cos^3 x}dx = \int \frac{(1-\cos^2 x)\sin^2 x}{\cos^3 x}dx = \int \frac{\sin^2 x}{\cos^3 x}dx - \int \frac{\sin^2 x}{\cos x}dx =  \\
+= \int \frac{1-\cos^2 x}{\cos^3 x}dx - \int \frac{1-\cos^2 x}{\cos x}dx = \int \frac{dx}{\cos^3 x}-\int \frac{dx}{\cos x}-\int \frac{dx}{\cos x}+\int \cos x dx =  \\
+= \int \frac{dx}{\cos^3 x}-2\int \frac{dx}{\cos x}+\sin x =  \\
+= \frac{\sin x}{2\cos^2 x} + \frac{1}{2}\ln|\tan(\frac{x}{2}+\frac{\pi}{4})|-2\ln|\tan (\frac{x}{2}+\frac{\pi}{4})|+\sin x+C =  \\
+= \frac{\sin x}{2\cos^2 x} - \frac{3}{2}\ln|\tan(\frac{x}{2}+\frac{\pi}{4})|+\sin x+C\end{gather*}
+w przykładzie wykorzystano rozwiązania całek z przykładów (18.62), (18.63)
+
+\begin{gather*}\int \frac{dx}{\cos x}=\int \frac{dx}{\sin(x+\frac{\pi}{2})}=\ln|\tan (\frac{x}{2}+\frac{\pi}{4})|+C\end{gather*}
+
+
+\subsectionbookmark{18.72}
+
+\begin{gather*}\int \frac{\sin^4 x dx}{\cos x} = \int \frac{(1-\cos^2 x)}{\cos x}dx = \int \frac{\cos^4x-2\cos^2 x+1}{\cos x}dx =  \\
+= \int \cos^3x dx -2 \int \cos x+\int \frac{dx}{\cos x} =  \\
+= \int (1-\sin^2x)\cos xdx-2\sin x+\ln|\tan (\frac{x}{2}+\frac{\pi}{4})| =  \\
+= -\sin x-\frac{1}{3}\sin^3 x+\ln|\tan (\frac{x}{2}+\frac{\pi}{4})|+C \\
+\int (1-\sin^2x)\cos xdx = \begin{array}{|l|} t=\sin x \\ dt=\cos x dx \end{array} = \int (1-t^2)dt = t-\frac{1}{3}t^3+C =  \\
+=\sin x-\frac{1}{3}\sin^3 x+C\end{gather*}
+
+
+\subsectionbookmark{18.73}
+
+\begin{gather*}\int \frac{\cos^5 x dx}{\sin^3 x} = \int \frac{(1-\sin^2x)^2\cos x}{\sin^3 x}dx = \int \frac{\cos x}{\sin^3 x}dx-2\int \frac{\cos x}{\sin x}dx+\int \sin x\cos x dx =  \\
+= \begin{array}{|l|} t=\sin x \\ dt=\cos x dx \end{array} = \int \frac{dt}{t^3}-2\int \frac{dt}{t}+\int tdt = -\frac{1}{2t^2}-2\ln|t|+\frac{1}{2}t^2+C =  \\
+= -\frac{1}{2\sin^2 x}-2\ln|\sin x|+\frac{1}{2}\sin^2 x+C\end{gather*}
+
+
+\subsectionbookmark{18.74}
+
+\begin{gather*}\int \frac{\sin^3 x dx}{\cos^8 x} = \int \frac{(1-\cos^2 x)\sin x}{\cos^8 x}dx = \int \frac{\sin x}{\cos^8x}dx - \int \frac{\sin x}{\cos^6x}dx = \begin{array}{|l|} t=\cos x \\ -dt=\sin x dx \end{array} =  \\
+= -\int \frac{dt}{t^8}+\int \frac{dt}{t^6} = \frac{1}{7t^7}-\frac{1}{5t^5}+C = \frac{1}{7\cos^7x}-\frac{1}{5\cos^5x}+C\end{gather*}
+
+
+\subsectionbookmark{18.75}
+
+\begin{gather*}\int \frac{\cos 2x dx}{\cos^3 x} = \int \frac{2\cos^2x-1}{\cos^3x}dx = 2\int \frac{dx}{\cos x}-\int \frac{dx}{\cos^3 x} = \end{gather*}
+ \begin{gather*}= \frac{3}{2}\ln|\tan (\frac{x}{2}+\frac{\pi}{4})|-\frac{\sin x}{2\cos^2 x}+C\end{gather*}
+w przykładzie wykorzystano całki z przykładów (18.71), (18.63)
+
+\subsectionbookmark{18.76}
+
+\begin{gather*}\int \frac{dx}{5+4\cos x} = \begin{array}{|l|} u=\tan \frac{x}{2} \\ \frac{2du}{1+u^2}=dx \\ \frac{1-u^2}{1+u^2}=\cos x \end{array} = \int \frac{\frac{2du}{1+u^2}}{5+4\cdot\frac{1-u^2}{1+u^2}} = \int \frac{\frac{2du}{1+u^2}}{\frac{5+5u^2+4-4u^2}{1+u^2}} = \int \frac{2du}{9+u^2} = \end{gather*}
+ \begin{gather*}= \frac{2}{9} \int \frac{du}{(\frac{u}{3})^2+1} = \begin{array}{|l|} t=\frac{u}{3} \\ 3dt=du \end{array} = \frac{2}{3}\int \frac{dt}{t^2+1} = \frac{2}{3}\arctan\left(\frac{1}{3}\tan \frac{x}{2}\right)+C\end{gather*}
+
+
+\subsectionbookmark{18.77}
+
+\begin{gather*}\int \frac{dx}{1+\sin x} = \begin{array}{|l|} u=\tan \frac{x}{2} \\ \frac{2du}{1+u^2}=dx \\ \frac{2u}{1+u^2}=\sin x \end{array} = \int \frac{\frac{2du}{1+u^2}}{1+\frac{2u}{1+u^2}} = \int \frac{2du}{(u+1)^2} = \end{gather*}
+ \begin{gather*}= -\frac{2}{u+1}+C = -\frac{2}{\tan \frac{x}{2}+1}+C\end{gather*}
+
+
+\subsectionbookmark{18.78}
+
+\begin{gather*}\int \frac{dx}{\sin x + \cos x} = \int \frac{dx}{\sqrt{2}\sin (x+\frac{\pi}{4})} = \frac{1}{\sqrt{2}}\ln|\tan (\frac{x}{2}+\frac{\pi}{8})|+C\end{gather*}
+
+
+\subsectionbookmark{18.79}
+
+\begin{gather*}\int \frac{\sin x \cos x dx}{\sin^4 x + \cos^4 x}= \ldots \\
+  \text{zakładając, że } \cos x\neq 0 \\
+  \ldots = \int \frac{\frac{\sin x}{\cos^3x}}{\frac{\sin^4x}{\cos^4x}+1}dx =
+  \begin{vmatrix}
+    t=\tan^2 x \\
+    \frac{1}{2}dt=\frac{\sin x}{\cos^3 x}dx
+  \end{vmatrix}
+  = \frac{1}{2}\int \frac{dt}{t^2+1}
+  = \frac{1}{2}\arctan (t)+C =  \\
+  = \frac{1}{2}\arctan (\tan^2 x)+C
+\end{gather*}
+
+
+\subsectionbookmark{18.80}
+
+\begin{gather*}\int \frac{3+\sin^2 x}{2\cos^2 x - \cos^4 x}dx = \begin{array}{|l|}
+t=\tan x \\
+\frac{dt}{t^2+1}=dx \\
+\frac{t^2}{t^2+1}=\sin^2 x \\
+\frac{1}{t^2+1}=\cos^2 x
+\end{array} = \int \frac{3+\frac{t^2}{t^2+1}}{\frac{2}{t^2+1}-\frac{1}{(t^2+1)^2}}\cdot\frac{dt}{t^2+1} = \int \frac{\frac{4t^2+3}{t^2+1}}{\frac{2t^2+1}{t^2+1}}dt = \\  = \int \frac{4t^2+3}{2t^2+1}dt = \int \frac{2(2t^2+1)+1}{2t^2+1}dt = \int 2dt+\int \frac{dt}{2t^2+1}=2t+\frac{1}{\sqrt{2}}\arctan (\sqrt{2}t)+C =\\ = 2\tan x+\arctan (\sqrt{2}\tan x)+C \\
+\int \frac{dt}{2t^2+1} = \begin{array}{|l|} u=\sqrt{2}t \\ \frac{du}{\sqrt{2}}=dt \end{array} = \frac{1}{\sqrt{2}}\int \frac{du}{u^2+1} = \frac{1}{\sqrt{2}}\arctan(u)+C=\frac{1}{\sqrt{2}}\arctan (\sqrt{2}t)+C \end{gather*}
+
+
+\subsectionbookmark{18.81}
+
+\begin{gather*}\int \frac{\cos x + \sin x}{(\sin x - \cos x)^2}dx = \begin{array}{|l|} t=\sin x - \cos x \\ dt=(\cos x + \sin x)dx \end{array} = \int \frac{dt}{t^2}=-\frac{1}{t}+C = -\frac{1}{\sin x - \cos x}+C \end{gather*}
+
+
+\subsectionbookmark{18.82}
+
+\begin{gather*}\int \frac{\sin^2 x - \cos^2 x}{\sin^4 x + \cos^4 x}dx = \int \frac{-\cos 2x}{(\sin^2x+\cos^2x)^2-2\sin^2x\cos^2x}dx = -\int \frac{\cos 2x}{1-\frac{1}{2}\sin^{2} 2x}dx =  \\
+= \begin{array}{|l|} t=\sin 2x \\ \frac{1}{2}dt=\cos 2x dx \end{array} = -\frac{1}{2}\int \frac{dt}{1-\frac{1}{2}t^2} = \begin{array}{|l|} u=\frac{1}{\sqrt{2}}t \\ \sqrt{2}du=dt \end{array} = -\frac{1}{\sqrt{2}}\int \frac{du}{1-u^2} =  \\
+= -\frac{1}{2\sqrt{2}}\ln\left|\frac{1+u}{1-u}\right|+C = -\frac{1}{2\sqrt{2}}\ln\left|\frac{1+\frac{\sin 2x}{\sqrt{2}}}{1-\frac{\sin 2x}{\sqrt{2}}}\right|+C = -\frac{1}{2\sqrt{2}}\ln\left|\frac{\sqrt{2}+\sin 2x}{\sqrt{2}-\sin 2x}\right|+C\end{gather*}
+
+
+\subsectionbookmark{18.83}
+
+\begin{gather*}\int \frac{\sin x \cos x}{1+\sin^4 x}dx = \begin{array}{|l|} t=\sin^2x \\ \frac{1}{2}dt=\sin x\cos x \end{array} = \frac{1}{2}\int \frac{dt}{1+t^2} = \frac{1}{2}\arctan (t)+C = \frac{1}{2}\arctan(\sin^2x)+C \end{gather*}
+
+
+\subsectionbookmark{18.84}
+
+\begin{gather*}\int \frac{dx}{(\sin^2 x + 3\cos^2 x)^2} = \begin{array}{|l|}
+t=\tan x \\
+\frac{dt}{t^2+1}=dx \\
+\frac{t^2}{t^2+1}=\sin^2 x \\
+\frac{1}{t^2+1}=\cos^2 x
+\end{array} = \int \frac{\frac{dt}{t^2+1}}{(\frac{t^2}{t^2+1}+\frac{3}{t^2+1})^2} = \int \frac{\frac{dt}{t^2+1}}{\frac{(t^2+3)^2}{(t^2+1)^2}} =  \\
+= \int \frac{t^2+1}{(t^2+3)^2}dt =  \int \frac{t^2+3-2}{(t^2+3)^2}dt = \int \frac{dt}{t^2+3}-2\int \frac{dt}{(t^2+3)^2} =  \\
+= \frac{1}{3}\int \frac{dt}{\frac{t^2}{3}+1}-\frac{2}{9}\int \frac{dt}{(\frac{t^2}{3}+1)^2} = \begin{array}{|l|} u=\frac{t}{\sqrt{3}} \\ \sqrt{3}du=dt \end{array} = \frac{1}{\sqrt{3}}\int \frac{du}{u^2+1}-\frac{2}{3\sqrt{3}}\int \frac{du}{(u^2+1)^2}=...\end{gather*}
+korzystając z całki obliczonej w przykładzie (16.69) otrzymujemy:
+\begin{gather*}\nonumber ...=\frac{1}{\sqrt{3}}\arctan (u)-\frac{1}{3\sqrt{3}}\arctan (u) -\frac{1}{3\sqrt{3}}\cdot \frac{u}{u^2+1}+C = \\
+= \frac{2}{3\sqrt{3}}\arctan \left(\frac{\tan x}{\sqrt{3}}\right) - \frac{1}{3\sqrt{3}}\cdot \frac{\frac{\tan x}{\sqrt{3}}}{\frac{\tan^2 x}{3}+1}+C \\
+= \frac{2}{3\sqrt{3}}\arctan \left(\frac{\tan x}{\sqrt{3}}\right) - \frac{\tan x}{3\tan^2 x+9}+C\end{gather*}
+
+
+\subsectionbookmark{18.85}
+
+\begin{gather*}\int \frac{\sin^2 x \cos^2 x}{\sin^8 x + \cos^8 x}dx = \int \frac{\tfrac{1}{4} \sin^2 2 x}{ \left( \sin^4 x + \cos^4 x \right)^2 - \tfrac{1}{8} \sin^4 2x }dx = \int \frac{\tfrac{1}{4} \sin^2 2 x}{ \tfrac{1}{4} (1 + \cos^2 2x )^2 - \tfrac{1}{8} \sin^4 2x } dx =  \\
+=  \int \frac{\tfrac{1}{4} \sin^2 2 x}{ 1 - \sin^2 2x + \tfrac{1}{8} \sin^4 2x }dx = \int \frac{\tfrac{1}{8} \cdot \frac{2}{\cos^2 2x}}{\tfrac{1}{\sin^2 2x \cos^2 2x} - \tfrac{1}{\cos^2 2x} + \tfrac{1}{8} \tan^2 2x}dx
+= \int \frac{\tfrac{1}{8} \cdot \frac{2}{\cos^2 2x} dx}{1 + \tfrac{1}{\tan^2 2x} + \tfrac{1}{8} \tan^2 2x}dx =  \\
+= \begin{array}{|l|} t=\tan 2x \\ dt=\frac{2dx}{\cos^{2}2x} \end{array} = \int \frac{\frac{1}{8}dt}{1+\frac{1}{t^2}+\frac{1}{8}t^2} = \int \frac{t^2dt}{t^4+8t^2+8}=...\end{gather*}
+
+\begin{gather*}\nonumber t^4+8t^2+8 \equiv (t^2+a)(t^2+b) \\
+t^4+8t^2+8 \equiv t^4+(a+b)t^2+ab \\
+\begin{cases} a+b=8 \\ ab=8 \end{cases} \\
+\begin{cases} a=4-2\sqrt{2} \\ b=4+2\sqrt{2} \end{cases} \vee \begin{cases} a=4+2\sqrt{2} \\ b=4-2\sqrt{2} \end{cases}\end{gather*}
+
+rozkład na ułamki proste:
+\begin{gather*}\nonumber \frac{t^2}{(t^2+4-2\sqrt{2})(t^2+4+2\sqrt{2})} \equiv \frac{At+B}{t^2+4-2\sqrt{2}}+\frac{Ct+D}{t^2+4+2\sqrt{2}} \\
+t^2 \equiv (At+B)(t^2+4-2\sqrt{2})+(Ct+D)(t^2+4+2\sqrt{2}) \\
+t^2 \equiv (A+C)t^3+(B+D)t^2+[(4+2\sqrt{2})A+(4-2\sqrt{2})C]t+(4+2\sqrt{2})B+(4-2\sqrt{2})D \\
+\begin{cases} A+C=0 \\ B+D=1 \\ (4+2\sqrt{2})A+(4-2\sqrt{2})C=0 \\ (4+2\sqrt{2})B+(4-2\sqrt{2})D=0 \end{cases} \\
+\begin{cases} A=0 \\ B=\frac{1}{2}(1-\sqrt{2}) \\ C=0 \\ D=\frac{1}{2}(1+\sqrt{2}) \end{cases} \\
+... = \int \frac{\frac{1}{2}(1-\sqrt{2})}{t^2+4-2\sqrt{2}}dt + \int \frac{\frac{1}{2}(1+\sqrt{2})}{t^2+4+2\sqrt{2}}dt =  \\
+= \frac{\frac{1}{2}(1-\sqrt{2})}{4-2\sqrt{2}} \int \frac{dt}{(\frac{t}{\sqrt{4-2\sqrt{2}}})^2+1} + \frac{\frac{1}{2}(1+\sqrt{2})}{4+2\sqrt{2}} \int \frac{dt}{(\frac{t}{\sqrt{4+2\sqrt{2}}})^2+1} = \\
+= \begin{array}{|l|} u=\frac{t}{\sqrt{4-2\sqrt{2}}} \\ \sqrt{4-2\sqrt{2}}du=dt \end{array} \ \ + \ \ \begin{array}{|l|} v=\frac{t}{\sqrt{4+2\sqrt{2}}} \\ \sqrt{4+2\sqrt{2}}dv=dt \end{array} = \\= \frac{\frac{1}{2}(1-\sqrt{2})}{\sqrt{4-2\sqrt{2}}} \int \frac{du}{u^2+1} + \frac{\frac{1}{2}(1+\sqrt{2})}{\sqrt{4+2\sqrt{2}}} \int \frac{dv}{v^2+1} =  \\
+= \frac{\frac{1}{2}(1-\sqrt{2})}{\sqrt{4-2\sqrt{2}}} \arctan u + \frac{\frac{1}{2}(1+\sqrt{2})}{\sqrt{4+2\sqrt{2}}} \arctan v + C =  \\
+= \frac{\frac{1}{2}(1-\sqrt{2})}{\sqrt{4-2\sqrt{2}}}  \arctan \left(\frac{\tan 2x}{\sqrt{4-2\sqrt{2}}}\right) + \frac{\frac{1}{2}(1+\sqrt{2})}{\sqrt{4+2\sqrt{2}}} \arctan \left(\frac{\tan 2x}{\sqrt{4+2\sqrt{2}}}\right) + C\end{gather*}
+
+
+\subsectionbookmark{18.86}
+
+\begin{gather*}\int \frac{dx}{\sin^4 x + \cos^4 x}=...\end{gather*}
+korzystając ze wzorów:
+\begin{gather*}\nonumber \sin^4 x = \frac{\cos(4x) - 4\cos(2x)+3}{8} \qquad \cos^4 x = \frac{\cos(4x) + 4\cos(2x)+3}{8}\end{gather*}
+otrzymujemy:
+\begin{gather*}\nonumber ...=\int \frac{4dx}{\cos 4x+3} = \begin{array}{|l|} u=4x \\ \frac{1}{4}du=dx \end{array} = \int \frac{du}{\cos u+3} = \begin{array}{|l|}
+t=\tan \frac{u}{2} \\
+\frac{2dt}{t^2+1}=du \\
+\frac{-t^2+1}{t^2+1}=\cos u
+\end{array} = \int \frac{\frac{2dt}{t^2+1}}{\frac{-t^2+1}{t^2+1}+3}=  \\
+= \int \frac{\frac{2dt}{t^2+1}}{\frac{2t^2+4}{t^2+1}} = \int \frac{dt}{t^2+2} = \int \frac{dt}{t^2+(\sqrt{2})^2} = \frac{1}{\sqrt{2}}\arctan \left(\frac{t}{\sqrt{2}}\right)+C =  \\
+= \frac{1}{\sqrt{2}}\arctan \left(\frac{\tan 2x}{\sqrt{2}}\right)+C\end{gather*}
+
+
+\subsectionbookmark{18.87}
+
+\begin{gather*}\int \frac{dx}{1-\sin^4 x} = \int \frac{dx}{(1-\sin^2x)(1+\sin^2 x)} = \int \frac{dx}{\cos^2x(1+\sin^2x)}= \begin{array}{|l|}
+t=\tan x \\
+dt=\frac{dx}{\cos^2x} \\
+\frac{t^2}{t^2+1}=\sin^2 x \\
+\end{array} =  \\
+= \int \frac{dt}{1+\frac{t^2}{t^2+1}} = \int \frac{t^2+1}{2t^2+1}dt = \int \frac{1}{2} dt+ \frac{1}{2} \int \frac{dt}{2t^2+1} =  \\
+= \frac{1}{2}t-\frac{1}{2\sqrt{2}}\arctan (\sqrt{2}t)+C = \frac{1}{2}\tan x+\frac{1}{2\sqrt{2}}\arctan(\sqrt{2}x)+C \\
+\int \frac{dt}{2t^2+1} = \begin{array}{|l|} u=\sqrt{2}t \\ \frac{du}{\sqrt{2}}=dt \end{array} = \frac{1}{\sqrt{2}}\int \frac{du}{u^2+1} = \frac{1}{\sqrt{2}}\arctan(u)+C\end{gather*}
+
+\subsection{§ Całki funkcji cyklometrycznych (kołowych).}
+
+\subsectionbookmark{18.91}
+
+\begin{gather*}\int \frac{x^2}{\sqrt{1-x^2}}\arcsin x dx = \begin{vmatrix}
+u=\arcsin x & dv=\frac{x^2}{\sqrt{1-x^2}}dx \\
+du=\frac{dx}{\sqrt{1-x^2}} &  v=\frac{1}{2}\arcsin x - \frac{1}{2}x\sqrt{1-x^2}
+\end{vmatrix} =  \\
+= \frac{1}{2}\arcsin^2 x - \frac{1}{2}x\sqrt{1-x^2}\arcsin x - \frac{1}{2}\int \frac{\arcsin x}{\sqrt{1-x^2}} + \frac{1}{2}\int xdx = \\
+= \frac{1}{4}\arcsin^2 x - \frac{1}{2}x\sqrt{1-x^2}\arcsin x + \frac{1}{4}x^2 + C\end{gather*}
+całki obliczone pomocniczo:
+\begin{gather*}\int \frac{x^2}{\sqrt{1-x^2}}dx = \int \frac{x^2-1+1}{\sqrt{1-x^2}}dx = -\int \sqrt{1-x^2}dx+\int \frac{dx}{\sqrt{1-x^2}} =  \\
+= -\frac{1}{2}\arcsin x - \frac{1}{2}x\sqrt{1-x^2} + \arcsin x + C= \frac{1}{2}\arcsin x - \frac{1}{2}x\sqrt{1-x^2}+C \\
+\int \frac{\arcsin x}{\sqrt{1-x^2}} = \begin{vmatrix} t=\arcsin \\ dt=\frac{dx}{\sqrt{1-x^2}}\end{vmatrix} = \int tdt = \frac{1}{2}\arcsin^2 x +C\end{gather*}
+
+
+\subsectionbookmark{18.92}
+
+\begin{gather*}\int \frac{\arcsin x}{\sqrt{(1-x^2)^3}} dx = \begin{array}{|ll|}
+u=\arcsin x & dv=\frac{dx}{\sqrt{(1-x^2)^3}} \\
+du=\frac{dx}{\sqrt{1-x^2}} & v=\frac{x}{\sqrt{1-x^2}} \end{array} = \frac{x\arcsin x}{\sqrt{1-x^2}} - \int \frac{x}{1-x^2}dx =  \\
+= \frac{x\arcsin x}{\sqrt{1-x^2}} + \frac{1}{2}\ln|1-x^2|+C \\
+\int \frac{dx}{\sqrt{(1-x^2)^3}} = \begin{array}{|l|} t=\arcsin x \\ dt=\frac{dx}{\sqrt{1-x^2}} \\ \sin t = x \end{array} = \int \frac{dt}{1-\sin^2 t} = \int \frac{dt}{\cos^2 t} = \tan t+C =  \\
+= \tan (\arcsin x)+C = \tan(\arctan \frac{x}{\sqrt{1-x^2}})+C = \frac{x}{\sqrt{1-x^2}}+C \\
+\nonumber \arcsin x = \arctan \frac{x}{\sqrt{1-x^2}}\end{gather*}
+
+
+
+\subsectionbookmark{18.93}
+
+\begin{gather*}\int \frac{x^2}{1+x^2}\arctan x dx = \int \frac{x^2+1-1}{x^2+1}\arctan x dx = \int \arctan x - \int \frac{\arctan x}{x^2+1}dx =  \\
+= x\arctan x - \frac{1}{2}\ln|x^2+1|- \frac{1}{2}\arctan^2 x+C\end{gather*}
+całki obliczone pomocniczo:
+\begin{gather*}\int \arctan x dx = \begin{array}{|ll|}
+u=\arctan x & dv=dx \\
+du=\frac{dx}{x^2+1} & v=x \end{array} = x\arctan x - \int \frac{x}{x^2+1}dx =  \\
+= x\arctan x - \frac{1}{2}\ln|x^2+1|+C \\
+\int \frac{\arctan x}{x^2+1}dx = \begin{array}{|l|} t=\arctan \\ dt=\frac{dx}{x^2+1} \end{array} = \int t dt = \frac{1}{2}t^2+C = \frac{1}{2}\arctan^2 x+C\end{gather*}
+
+
+\subsectionbookmark{18.94}
+
+\begin{gather*}\int \frac{dx}{(1+9x^2)\sqrt{\arctan 3x}} = \begin{array}{|l|} t=\arctan 3x \\ \frac{1}{3}dt=\frac{dx}{1+9x^2} \end{array} = \frac{1}{3} \int \frac{dt}{\sqrt{t}} = \frac{2}{3}\sqrt{t}+C = \frac{2}{3}\sqrt{\arctan 3x}+C \end{gather*}
+
+
+\subsectionbookmark{18.95}
+
+\begin{gather*}\int \frac{dx}{(1+4x^2)(\arctan 2x)^2} = \begin{array}{|l|} t=\arctan 2x \\ \frac{1}{2}dt=\frac{dx}{1+4x^2} \end{array} = \frac{1}{2} \int \frac{dt}{t^2} = -\frac{1}{2t}+C = -\frac{1}{2\arctan 2x}+C \end{gather*}
+
+
+\subsectionbookmark{18.96}
+
+\begin{gather*}\int \frac{(\arctan x)^2}{x^2+1}dx = \begin{array}{|l|} t=\arctan x \\ dt=\frac{dx}{x^2+1} \end{array} = \int t^2 dt = \frac{1}{3}t^3+C = \frac{1}{3}\arctan^3 x+C\end{gather*}
+
+
+\subsectionbookmark{18.97}
+
+\begin{gather*}\int \frac{dx}{\sqrt{1-x^2}\arccos^2 x} = \begin{array}{|l|} t=\arccos x \\ -dt=\frac{dx}{\sqrt{1-x^2}} \end{array} = -\int \frac{dt}{t^2} = \frac{1}{t}+C = \frac{1}{\arccos x}+C\end{gather*}
+
+
+\subsectionbookmark{18.98}
+
+\begin{gather*}\int \frac{dx}{\sqrt{1-x^2}\arcsin x} = \begin{vmatrix} t=\arcsin x \\ dt=\frac{dx}{\sqrt{1-x^2}} \end{vmatrix} = \int \frac{dt}{t} = \ln|t|+C = \ln|\arcsin x|+C\end{gather*}
+
+
+\subsectionbookmark{18.99}
+
+\begin{gather*}\int \frac{x\arctan x dx}{(1+x^2)^2} = \begin{array}{|ll|}
+u=\arctan x & dv=\frac{x}{(x^2+1)^2}dx \\
+du=\frac{dx}{x^2+1} & v=-\frac{1}{2(x^2+1)}
+\end{array} = -\frac{\arctan x}{2(x^2+1)} + \frac{1}{2}\int \frac{dx}{(x^2+1)^2} =  \\
+= -\frac{\arctan x}{2(x^2+1)} + \frac{1}{4}\arctan x + \frac{x}{4(x^2+1)}+C\end{gather*}
+
+
+\subsectionbookmark{18.100}
+
+\begin{gather*}\int \frac{x\arcsin x dx}{(1-x^2)^{\frac{3}{2}}} = \begin{array}{|ll|}
+u=\arcsin x & dv=\frac{x}{(1-x^2)^{\frac{3}{2}}} \\
+du=\frac{dx}{\sqrt{1-x^2}} & v=\frac{1}{\sqrt{1-x^2}} \end{array} = \frac{\arcsin x}{\sqrt{1-x^2}} -\int \frac{dx}{1-x^2} =  \\
+= \frac{\arcsin x}{\sqrt{1-x^2}} - \ln\left|\frac{1+x}{1-x}\right|+C\end{gather*}
+
+
+\subsectionbookmark{18.101}
+
+\begin{gather*}\int x\arcsin x dx = \begin{array}{|ll|}
+u=\arcsin x & dv=xdx \\
+du=\frac{dx}{\sqrt{1-x^2}} & v=\frac{1}{2}x^2 \end{array} = \frac{1}{2}x^2\arcsin x-\frac{1}{2}\int \frac{x^2}{\sqrt{1-x^2}}dx =  \\
+= \frac{1}{2}x^2\arcsin x-\frac{1}{2}\int \frac{x^2-1+1}{\sqrt{1-x^2}}dx = \frac{1}{2}x^2\arcsin x + \frac{1}{2}\int \sqrt{1-x^2}dx-\frac{1}{2}\int \frac{dx}{\sqrt{1-x^2}} =  \\
+= \frac{1}{2}x^2\arcsin x + \frac{1}{4}\arcsin x+\frac{1}{4}x\sqrt{1-x^2}-\frac{1}{2}\arcsin x+C =  \\
+= \frac{1}{2}(x^2-\frac{1}{2})\arcsin x+\frac{1}{4}x\sqrt{1-x^2}+C\end{gather*}
+
+
+\subsectionbookmark{18.102}
+
+\begin{gather*}\int \frac{x\arctan x dx}{(x^2-1)^2} = \begin{array}{|ll|}
+u=\arctan x & dv=\frac{x}{(x^2-1)^2}dx \\
+du=\frac{dx}{x^2+1} & v=-\frac{1}{2(x^2-1)}
+\end{array} = -\frac{\arctan x}{2(x^2-1)} + \frac{1}{2}\int \frac{dx}{(x^2+1)(x^2-1)} =  \\
+= -\frac{\arctan x}{2(x^2-1)} - \frac{1}{4}\arctan x - \frac{1}{8}\ln|x+1| + \frac{1}{8}\ln|x-1|+C \\
+\int \frac{dx}{(x^2+1)(x^2-1)}\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\nonumber \frac{1}{(x^2+1)(x^2-1)} \equiv \frac{Ax+B}{x^2+1} + \frac{C}{x+1} + \frac{D}{x-1} \\
+1 \equiv (Ax+B)(x^2-1)+C(x-1)(x^2+1)+D(x+1)(x^2+1) \\
+1 \equiv (A+C+D)x^3+(B-C+D)x^2+(-A+C+D)x+(-A-C+D) \\
+\begin{cases} A+C+D=0 \\ B-C+D=0 \\ -A+C+D=0 \\ -B-C+D=1 \end{cases} \\
+\begin{cases} A=0 \\ B=-\frac{1}{2} \\ C=-\frac{1}{4} \\ D=\frac{1}{4} \end{cases} \\
+... = \int \frac{-\frac{1}{2}}{x^2+1}dx + \int \frac{-\frac{1}{4}}{x+1}dx + \int \frac{\frac{1}{4}}{x-1}dx =  \\
+= -\frac{1}{2}\arctan x -\frac{1}{4}\ln|x+1|+\frac{1}{4}\ln|x-1|+C\end{gather*}
+
+
+\subsectionbookmark{18.103}
+
+\begin{gather*}\int x^2\arctan x dx = \begin{array}{|ll|}
+u=\arctan x & dv=x^2dx \\
+du=\frac{dx}{x^2+1} & v=\frac{1}{3}x^3 \end{array} = \frac{1}{3}x^3\arctan x-\frac{1}{3}\int \frac{x^3}{x^2+1}dx =  \\
+= \frac{1}{3}x^3\arctan x-\frac{1}{3}\int \frac{x(x^2+1)-x}{x^2+1}dx = \frac{1}{3}x^3\arctan x-\frac{1}{6}x^2+\frac{1}{6}\ln|x^2+1|+C\end{gather*}
+
+
+\subsectionbookmark{18.104}
+
+\begin{gather*}\int \frac{\arctan e^{\frac{1}{2}x}}{e^{\frac{1}{2}x}(1+e^x)}dx = \begin{array}{|l|}
+t=e^{\frac{1}{2}x} \\
+\ln t = \frac{1}{2}x \\
+2\ln t = x \\
+\frac{2dt}{t} = dx \end{array} = \int \frac{2\arctan t}{t^2(t^2+1)}dt = \begin{array}{|ll|}
+u=\arctan t & dv=\frac{2dt}{t^2(t^2+1)} \\
+du=\frac{dt}{t^2+1} & v=\left(-2\arctan t-\frac{2}{t}\right)dx
+\end{array} =  \\
+= -2\arctan^2t-\frac{2\arctan t}{t}+2\int \frac{\arctan t}{t^2+1}+2\int \frac{dt}{t(t^2+1)} =  \\
+= -2\arctan^2t-\frac{2\arctan t}{t}+\arctan^2 t+2\int \frac{dt}{t(t^2+1)} =  \\
+= -\arctan^2t-\frac{2\arctan t}{t}+2\int \left(\frac{1}{t}-\frac{t}{t^2+1}\right)dt =  \\
+= -\arctan^2t-\frac{2\arctan t}{t}+2\ln|t|-\ln|t^2+1|+C =  \\
+= -\arctan^2e^{\frac{x}{2}}-2e^{-\frac{x}{2}}\arctan e^{\frac{x}{2}}+x-\ln|e^x+1|+C\end{gather*}
+
+
+\subsectionbookmark{18.105}
+
+\begin{gather*}\int \frac{\arcsin x dx}{x^2} = \begin{array}{|ll|}
+u=\arcsin x & dv=\frac{dx}{x^2} \\
+du=\frac{dx}{\sqrt{1-x^2}} & v=-\frac{1}{x}
+\end{array} = -\frac{\arcsin x}{x} + \int \frac{dx}{x\sqrt{1-x^2}} =  \\
+= -\frac{\arcsin x}{x} -\ln\left|\frac{1}{x}+\sqrt{\frac{1}{x^2}-1}\right|+C \\
+\int \frac{dx}{x\sqrt{1-x^2}} = \begin{array}{|l|}
+t=\frac{1}{x} \\ \frac{1}{t}=x \\ -\frac{dt}{t^2}=dx
+\end{array} = -\int \frac{dt}{t\sqrt{1-\frac{1}{t^2}}} = -\int \frac{dt}{\sqrt{t^2-1}} =  \\
+= -\ln|t+\sqrt{t^2-1}|+C = -\ln\left|\frac{1}{x}+\sqrt{\frac{1}{x^2}-1}\right|+C\end{gather*}
+
+
+\subsectionbookmark{18.106}
+
+\begin{gather*}\int \frac{\arcsin e^x}{e^x}dx = \begin{array}{|l|}
+t=e^x \\
+\ln t = x \\
+\frac{dt}{t}=dx \end{array} = \int \frac{\arcsin t}{t^2}dt = \begin{array}{|ll|}
+u=\arcsin t & dv=\frac{dt}{t^2} \\
+du=\frac{dx}{\sqrt{1-t^2}} & v=-\frac{1}{t} \end{array} =  \\
+= -\frac{\arcsin t}{t}+\int \frac{dt}{t\sqrt{1-t^2}} = -\frac{\arcsin t}{t} -\ln\left|\frac{1}{t}+\sqrt{\frac{1}{t^2}-1}\right|+C = \\ = -e^{-x}\arcsin e^x-\ln|e^{-x}+\sqrt{e^{-2x}-1}|+C\end{gather*}
+
+
+\subsectionbookmark{18.107}
+
+\begin{gather*}\int x^3\arctan x dx = \begin{array}{|ll|}
+u=\arctan x & dv=x^3dx \\
+du=\frac{dx}{x^2+1} & v=\frac{1}{4}x^4 \end{array} = \frac{1}{4}x^4\arctan x-\frac{1}{4}\int \frac{x^4}{x^2+1}dx = \\ = \frac{1}{4}x^4\arctan x-\frac{1}{4}\int \frac{(x^2-1)(x^2+1)+1}{x^2+1}dx = \\ = \frac{1}{4}x^4\arctan x-\frac{1}{12}x^3+\frac{1}{4}x-\frac{1}{4}\arctan x+C =\frac{1}{4}(x^4-1)\arctan x - \frac{1}{12}x(x^2-3)+C\end{gather*}
+
+
+\subsectionbookmark{18.108}
+
+\begin{gather*}\int (2x+3)\arccos (2x-3) dx = \begin{array}{|l|}
+t=2x-3 \\
+\frac{1}{2}dt=dx
+\end{array} = \frac{1}{2}\int (t+6)\arccos tdt = \\ = \begin{array}{|ll|}
+u=\arccos t & dv=(t+6)dt \\
+du=-\frac{dt}{\sqrt{1-t^2}} & v=\frac{1}{2}t^2+6t\end{array} = (\frac{1}{4}t^2+3t)\arccos t + \frac{1}{4} \int \frac{t^2+12t}{\sqrt{1-t^2}} = \\ = (\frac{1}{4}t^2+3t)\arccos t + \frac{1}{4} \int \frac{t^2-1+1+12t}{\sqrt{1-t^2}} = \\ = (\frac{1}{4}t^2+3t)\arccos t - \frac{1}{4}\int \sqrt{1-t^2}dt+\frac{1}{4}\int \frac{dt}{\sqrt{1-t^2}}+ \int \frac{3t}{\sqrt{1-t^2}} = \\ = (\frac{1}{4}t^2+3t)\arccos t - \frac{1}{8}\arcsin t-\frac{1}{8}t\sqrt{1-t^2}+\frac{1}{4}\arcsin t - 3\sqrt{1-t^2}+C = \\ = (\frac{1}{4}(2x-3)^2+3(2x-3))\arccos (2x-3) - \frac{1}{8}\arcsin (2x-3)-\frac{1}{8}(2x-3)\sqrt{1-(2x-3)^2}+\frac{1}{4}\arcsin (2x-3) - 3\sqrt{1-(2x-3)^2}+C \end{gather*}
+
+
+\subsectionbookmark{18.109}
+
+\begin{gather*}\int \frac{x\arctan x}{\sqrt{1+x^2}}dx = \begin{array}{|ll|}
+u=\arctan x & dv=\frac{x}{\sqrt{1+x^2}}dx \\
+du=\frac{dx}{x^2+1} & v=\sqrt{x^2+1}
+\end{array} = \sqrt{x^2+1}\arctan x - \int \frac{dx}{\sqrt{x^2+1}} = \\ = \sqrt{x^2+1}\arctan x - \ln|x+\sqrt{x^2+1}|+C\end{gather*}
+
+
+\subsectionbookmark{18.110}
+
+\begin{gather*}\int \sqrt{1-x^2}\arcsin x dx = \begin{array}{|ll|}
+u=\arcsin x & dv=\sqrt{1-x^2}dx \\
+du=\frac{dx}{\sqrt{1-x^2}} & v=\frac{1}{2}\arcsin x + \frac{1}{2}x\sqrt{1-x^2}
+\end{array} = \\ = \frac{1}{2}\arcsin^2x+\frac{1}{2}x\sqrt{1-x^2}\arcsin x - \frac{1}{2}\int \frac{\arcsin x}{\sqrt{1-x^2}}-\frac{1}{2}\int xdx = \\ = \frac{1}{2}\arcsin^2x+\frac{1}{2}x\sqrt{1-x^2}\arcsin x - \frac{1}{4}\arcsin^2 x-\frac{1}{4}x^4+C = \\ = \frac{1}{4}\arcsin^2x+\frac{1}{2}x\sqrt{1-x^2}\arcsin x -\frac{1}{4}x^4+C\end{gather*}
+
+
+\subsectionbookmark{18.111}
+
+\begin{gather*}\int x(1+x^2)\arctan x dx = \begin{array}{|ll|}
+u=\arctan x & dv=(x+x^3)dx \\
+du=\frac{dx}{x^2+1} & v=\frac{1}{2}x+\frac{1}{4}x^4
+\end{array} = \\ = (\frac{1}{2}x+\frac{1}{4}x^4)\arctan x - \frac{1}{4}\int \frac{x^4+2x}{x^2+1} = (\frac{1}{2}x+\frac{1}{4}x^4)\arctan x - \frac{1}{4}\int \frac{(x^2-1)(x^2+1)+1+2x}{x^2+1}dx = \\ = (\frac{1}{2}x+\frac{1}{4}x^4)\arctan x - \frac{1}{4}\int(x^2-1)dx-\frac{1}{4}\int \frac{dx}{x^2+1}-\frac{1}{4}\int \frac{2x}{x^2+1}dx = \\ =(\frac{1}{2}x+\frac{1}{4}x^4)\arctan x - \frac{1}{12}x^3+\frac{1}{4}x-\frac{1}{4}\arctan x-\frac{1}{4}\ln|x^2+1|+C = \\ =(\frac{1}{4}x^4+\frac{1}{2}x-\frac{1}{4})\arctan x - \frac{1}{12}x^3+\frac{1}{4}x-\frac{1}{4}\ln|x^2+1|+C\end{gather*}
+
+
+\subsectionbookmark{18.112}
+
+\begin{gather*}\int \arcsin \frac{2\sqrt{x}}{1+x}dx = \begin{array}{|ll|}
+u=\arcsin \frac{2\sqrt{x}}{1+x} & dv=dx \\
+du=-\frac{\sqrt{x}}{x(x+1)}dx & v=x
+\end{array} = x\arcsin \frac{2\sqrt{x}}{1+x} + \int \frac{\sqrt{x}}{x+1} = \\ = x\arcsin \frac{2\sqrt{x}}{1+x} + 2\sqrt{x} - 2\arctan (\sqrt{x})+C \\
+\int \frac{\sqrt{x}}{x+1} = \begin{array}{|l|}
+t^2=x \\
+2tdt=dx
+\end{array} = 2\int \frac{t^2}{t^2+1}dt = 2\int \frac{t^2+1-1}{t^2+1}dt = 2t-2\arctan t = \\ = 2\sqrt{x}-2\arctan (\sqrt{x})+C\end{gather*}
+
+\subsection{§ Całki funkcji wykładniczych i logarytmicznych.}
+
+\subsectionbookmark{18.118}
+
+\begin{gather*}
+  \int (e^{3x}+\sqrt{e^x})dx
+  = \frac{1}{3}e^{3x}+2\sqrt{e^x}+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int e^{ax}dx = \frac{1}{a}e^{ax}+C \text{, gdzie }a\neq 0$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\subsectionbookmark{18.119}
+
+\begin{gather*}\int \frac{e^x-e^{-x}}{e^x+e^{-x}}dx = \begin{array}{|l|} t=e^x+e^{-x} \\ dt=(e^x-e^{-x})dx \end{array} = \int \frac{dt}{t} = \ln|t|+C = \ln(e^x+e^{-x})+C\end{gather*}
+
+
+\subsectionbookmark{18.120}
+
+\begin{gather*}\int \frac{dx}{e^{2x}-1} =\begin{array}{|l|}
+t=e^{2x} \\
+\frac{1}{2}\ln t = x \\
+\frac{dt}{2t}=dx
+\end{array}= \frac{1}{2}\int \frac{dt}{t(t-1)} = \frac{1}{2} \left(\int \frac{dt}{t-1} - \int \frac{dt}{t}\right) = \\ = \frac{1}{2}\ln|t-1|-\frac{1}{2}\ln|t|+C = \frac{1}{2}\ln|e^{2x}+1|-x+C\end{gather*}
+
+
+\subsectionbookmark{18.121}
+
+\begin{gather*}\int \frac{dx}{e^x+e^{-x}} = \int \frac{e^xdx}{e^{2x}+1} =\begin{array}{|l|}
+t=e^x \\
+dt=e^xdx
+\end{array}= \int \frac{dt}{t^2+1} = \arctan (t)+C = \\ = \arctan (e^x)+C\end{gather*}
+
+
+\subsectionbookmark{18.122}
+
+\begin{gather*}\int \sqrt{e^x+1}dx=\begin{array}{|l|}
+t=\sqrt{e^x+1} \\
+t^2=e^x+1 \\
+2tdt=e^xdx
+\end{array}= \int \frac{2t^2}{t^2-1}dt = \int \frac{2(t^2-1)+2}{t^2-1}dt = \\ = \int 2dt+2\int \frac{dt}{t^2-1} = 2t+\int \frac{dt}{t-1}-\int \frac{dt}{t+1} = 2t+\ln\left|\frac{t-1}{t+1}\right|+C = \\ = 2\sqrt{e^x+1}+\ln\left|\frac{\sqrt{e^x+1}-1}{\sqrt{e^x+1}+1}\right|+C \\
+\nonumber \frac{1}{x^2-1}=\frac{\frac{1}{2}}{x-1}-\frac{\frac{1}{2}}{x+1}\end{gather*}
+
+
+\subsectionbookmark{18.123}
+
+\begin{gather*}\int \frac{e^x-1}{e^x+1}dx = \int \frac{e^x+1-2}{e^x+1}dx = \int dx -2\int \frac{dx}{e^x+1} = x - 2x + 2\ln|e^x+1|+C = \\ = 2\ln|e^x+1|-x+C \\
+\int \frac{dx}{e^x+1} =\begin{array}{|l|}
+t=e^x \\
+\ln t = x \\
+\frac{dt}{t}=dx
+\end{array}= \int \frac{dt}{t(t+1)} = \int \frac{dt}{t} - \int \frac{dt}{t+1} = \ln t - \ln|t+1| = \\ =x-\ln|e^x+1|+C\end{gather*}
+
+
+\subsectionbookmark{18.124}
+
+\begin{gather*}\int \frac{dx}{\sqrt{3+2e^x}}=\begin{array}{|l|}
+t=\sqrt{3+2e^x} \\
+t^2=2e^x+3 \\
+\frac{t^2-3}{2}=e^x \\
+tdt=e^xdx
+\end{array}= \int \frac{2dt}{t^2-3} = -2\int \frac{dt}{(\sqrt{3})^2-t^2} = \\ = -\frac{1}{\sqrt{3}}\ln\left|\frac{\sqrt{3}+t}{\sqrt{3}-t}\right|+C = -\frac{1}{\sqrt{3}}\ln\left|\frac{\sqrt{3}+ \sqrt{3+2e^x}}{\sqrt{3}-\sqrt{3+2e^x}}\right|+C\end{gather*}
+
+
+\subsectionbookmark{18.125}
+
+\begin{gather*}\int e^x\sqrt{1+e^x}dx =\begin{array}{|l|}
+t=1+e^x \\
+dt=e^xdx
+\end{array}= \int \sqrt{t}dt = \frac{2}{3}t^{\frac{3}{2}}+C = \frac{2}{3}\sqrt{(e^x+1)^3}+C\end{gather*}
+
+
+\subsectionbookmark{18.126}
+
+\begin{gather*}\int \frac{e^x}{(e^x-1)^2}dx =\begin{array}{|l|}
+t=e^x-1 \\
+dt=e^xdx
+\end{array}= \int \frac{dt}{t^2}=-\frac{1}{t}+C = -\frac{1}{e^x-1}+C\end{gather*}
+
+
+\subsectionbookmark{18.127}
+
+\begin{gather*}\int (e^x+e^{-x})^2dx = \int (e^{2x}+2+e^{-2x})dx = \frac{1}{2}(e^{2x}-e^{-2x})+2x+C\end{gather*}
+
+
+\subsectionbookmark{18.128}
+
+\begin{gather*}\int \frac{e^x}{e^x+5}dx = \int \frac{(e^x+5)'}{e^x+5}dx= \ln|e^x+5|+C\end{gather*}
+
+
+\subsectionbookmark{18.129}
+
+\begin{gather*}\int \frac{4e^x+6e^{-x}}{9e^x-4e^{-x}}dx = \int \frac{4e^{2x}+6}{9e^{2x}-4}dx =\begin{array}{|l|}
+t=e^x \\
+\ln t = x \\
+\frac{dt}{t} = dx
+\end{array}= \int \frac{4t^2+6}{t(9t^2-4)}dt = \int \frac{4t^2+6}{t(3t-2)(3t+2)}dt=...\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\nonumber \frac{4t^2+6}{t(3t-2)(3t+2)} \equiv \frac{A}{t}+\frac{B}{3t-2}+\frac{C}{3t+2} \\
+4t^2+6 \equiv A(9t^2-4)+Bt(3t+2)+Ct(3t-2) \\
+4t^2+6 \equiv (9A+3B+3C)t^2+(2B-2C)t+(-4A) \\
+\begin{cases} 9A+3B+3C=4 \\ 2B-2C=0 \\ -4A=6 \end{cases} \\
+\begin{cases} A=-\frac{3}{2} \\ B=\frac{35}{12} \\ C=\frac{35}{12} \end{cases} \\
+\nonumber ... = -\frac{3}{2}\int \frac{dt}{t}+\frac{35}{12}\int \frac{dt}{3t-2} + \frac{35}{12} \int \frac{dt}{3t+2} = -\frac{3}{2}\ln|t|+\frac{35}{36}\ln|9t^2-4|+C = \\ = -\frac{3}{2}x+\frac{35}{36}\ln|9e^{2x}-4|+C\end{gather*}
+
+
+\subsectionbookmark{18.130}
+
+\begin{gather*}\int \frac{dx}{e^x+e^{2x}} =\begin{array}{|l|}
+t=e^x \\
+\ln t = x \\
+\frac{dt}{t} = dx
+\end{array}= \int \frac{dt}{t^2(t+1)}\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*}\nonumber \frac{1}{t^2(t+1)} \equiv \frac{A}{t}+\frac{B}{t^2}+\frac{C}{t+1} \\
+1 \equiv At(t+1)+B(t+1)+Ct^2 \\
+1 \equiv (A+C)t^2+(A+B)t+B \\
+\begin{cases} A+C=0 \\ A+B=0 \\ B=1 \end{cases} \\
+\begin{cases} A=-1 \\ B=1 \\ C=1 \end{cases} \\
+\nonumber ...=\int \frac{-dt}{t}+\int \frac{dt}{t^2}+\int \frac{dt}{t+1} = -\ln|t|-\frac{1}{t}+\ln|t+1|+C = \\ = -x-e^{-x}+\ln|e^x+1|+C\end{gather*}
+
+
+\subsectionbookmark{18.131}
+
+\begin{gather*}\int \frac{e^x}{(e^x+a)^n}dx\end{gather*}
+dla \begin{gather*}\nonumber n=1 \\
+\int \frac{e^x}{e^x+a}dx = \ln|e^x+a|+C\end{gather*}
+dla \begin{gather*}\nonumber n \in N_+ -\{1\} \\
+\int \frac{e^x}{(e^x+a)^n}dx = \begin{array}{|l|} t=e^x+a \\ dt=e^xdx \end{array} = \int \frac{dt}{t^n} = -\frac{1}{(n-1)t^{n-1}}+C = -\frac{1}{(n-1)(e^x+a)^{n-1}}+C \end{gather*}
+
+
+\subsectionbookmark{18.132}
+
+\begin{gather*}\int \frac{e^xdx}{\sqrt{3-5e^{2x}}} = \begin{array}{|l|} t=e^x \\ dt=e^x \end{array} = \int \frac{dt}{\sqrt{3-5t^2}} = \frac{1}{\sqrt{3}}\int \frac{dt}{\sqrt{1-(\sqrt{\frac{5}{3}}t)^2}} = \begin{array}{|l|} u=\sqrt{\frac{5}{3}}t \\ \sqrt{\frac{3}{5}}du=dt \end{array} = \\ = \frac{1}{\sqrt{5}} \int \frac{du}{\sqrt{1-u^2}} = \frac{1}{\sqrt{5}} \arcsin u + C = \frac{1}{\sqrt{5}} \arcsin (\sqrt{\frac{5}{3}}e^x)+C\end{gather*}
+
+
+\subsectionbookmark{18.133}
+
+\begin{gather*}\int \frac{dx}{\sqrt{e^{2x}+4e^x+1}} = \begin{array}{|l|} t=e^x \\ \ln t = x \\ \frac{dt}{t}=dx \end{array} = \int \frac{dt}{t\sqrt{t^2+4t+1}} = \begin{array}{|l|} u=\frac{1}{t} \\ \frac{1}{u}=t \\ \frac{-du}{u^2}=dt \end{array} = -\int \frac{du}{u^2\sqrt{\frac{1}{u^2}+\frac{4}{u}+1}} = \\ = -\int \frac{du}{\sqrt{u^2+4u+1}} = -\int \frac{du}{\sqrt{(u+2)^2-3}} = -\ln|u+2+\sqrt{u^2+4u+1}|+C = \\ = -\ln|e^{-x}+2+\sqrt{e^{-2x}+4e^{-x}+1}|+C\end{gather*}
+
+
+\subsectionbookmark{18.134}
+
+\begin{gather*}\int x^3e^{-x}dx = \begin{array}{|ll|}
+u=x^3 & dv=e^{-x}dx \\
+du=3x^2dx & v=-e^{-x}
+\end{array} = -x^3e^{-x}+3\int x^2e^{-x}dx = \\ = \begin{array}{|ll|}
+u=x^2 & dv=e^{-x}dx \\
+du=2xdx & v=-e^{-x}
+\end{array} = -x^3e^{-x}-3x^2e^{-x}+6\int xe^{-x}dx = \begin{array}{|ll|}
+u=x & dv=e^{-x}dx \\
+du=dx & v=-e^{-x}
+\end{array} = \\ = -x^3e^{-x}-3x^2e^{-x}-6xe^{-x}+6\int e^{-x}dx = -x^3e^{-x}-3x^2e^{-x}-6xe^{-x}-6e^{-x}+C\end{gather*}
+
+
+\subsectionbookmark{18.135}
+
+\begin{gather*}\int \frac{dx}{x\ln x} = \begin{array}{|l|} t=\ln x \\ dt=\frac{dx}{x} \end{array} = \int \frac{dt}{t} = \ln|t|+C = \ln|\ln x|+C\end{gather*}
+
+
+\subsectionbookmark{18.136}
+
+\begin{gather*}\int \ln(x^2+1)dx = \begin{array}{|ll|}
+u=\ln(x^2+1) & dv=dx \\
+du=\frac{2x}{x^2+1}dx & v=x \end{array} = x\ln(x^2+1)+\int \frac{2x^2}{x^2+1}dx = \\ = x\ln(x^2+1)+\int 2dx-2\int \frac{dx}{x^2+1} = x\ln(x^2+1)+2x-2\arctan(x)+C\end{gather*}
+
+
+\subsectionbookmark{18.137}
+
+\begin{gather*}\int (\ln|x|)^2 dx = \begin{array}{|ll|}
+u=\ln^2|x| & dv=dx \\
+du=\frac{2\ln|x|}{x}dx & v=x \end{array} = x\ln^2|x|-2\int \ln|x| = \begin{array}{|ll|}
+u=\ln|x| & dv=dx \\
+du=\frac{dx}{x} & v=x \end{array} = \\ = x\ln^2|x|-2x\ln|x|+2\int dx = x\ln^2|x|-2x\ln|x|+2x+C\end{gather*}
+
+
+\subsectionbookmark{18.138}
+
+\begin{gather*}\int \ln(x+\sqrt{x^2+1})dx = \begin{array}{|ll|}
+u=\ln(x+\sqrt{x^2+1}) & dv=dx \\
+du=\frac{1}{\sqrt{x^2+1}} & v=x \end{array} = \\ = x\ln(x+\sqrt{x^2+1})-\int \frac{x}{\sqrt{x^2+1}}dx = x\ln(x+\sqrt{x^2+1})-\sqrt{x^2+1}+C\end{gather*}
+
+
+\subsectionbookmark{18.139}
+
+\begin{gather*}\int \ln|2+5x|dx = \begin{array}{|ll|}
+u=\ln|2+5x| & dv=dx \\
+du=\frac{5dx}{2+5x} & v=x
+\end{array} = x\ln|2+5x|-\int \frac{5x}{2+5x}dx = \\ = x\ln|2+5x|-\int \frac{2+5x-2}{2+5x}dx = x\ln|2+5x|-\int dx + 2\int \frac{dx}{2+5x} = \\ = x\ln|2+5x|-x+\frac{2}{5}\ln|2+5x|+C = (x+\frac{2}{5})\ln|2+5x|-x+C\end{gather*}
+
+
+\subsectionbookmark{18.140}
+
+\begin{gather*}\int \frac{dx}{x(1+\ln^2|x|)} = \begin{vmatrix} t=\ln|x| \\ dt=\frac{dx}{x} \end{vmatrix} = \int \frac{dt}{1+t^2} = \arctan (t) +C = \arctan (\ln|x|) + C \end{gather*}
+
+
+\subsectionbookmark{18.141}
+
+\begin{gather*}\int x^{-2}\ln|x|dx = \begin{array}{|ll|}
+u=\ln|x| & dv=\frac{dx}{x^2} \\
+du=\frac{dx}{x} & v=-\frac{1}{x} \end{array} = -\frac{\ln|x|}{x}+\int \frac{dx}{x^2} = -\frac{\ln|x|}{x}-\frac{1}{x}+C\end{gather*}
+
+
+\subsectionbookmark{18.142}
+
+\begin{gather*}\int (4+3x)^2\ln|x|dx =\int(9x^2+24x+16)\ln|x|dx = \begin{array}{|ll|}
+u=\ln|x| & dv=(9x^2+24x+16)dx \\
+du=\frac{dx}{x} & v=3x^3+12x^2+16x \end{array} = \\ = (3x^3+12x^2+16x)\ln|x|-\int (3x^2+12x+16)dx = \\ = (3x^3+12x^2+16x)\ln|x|-x^3-6x^2-16x+C\end{gather*}
+
+
+\subsectionbookmark{18.143}
+
+\begin{gather*}\int x^3\ln(x^2+3)dx = \frac{1}{2}\int 2x (x^2+3-3)\ln(x^2+3) = \begin{array}{|l|}
+t=x^2+3 \\ dt=2xdx \end{array} = \\ = \frac{1}{2}\int (t-3)\ln t dt = \begin{array}{|ll|}
+u=\ln t & dv=(t-3)dt \\
+du=\frac{dt}{t} & v=\frac{1}{2}t^2-3t
+\end{array} = \\ = \frac{1}{4}(t^2-6t)\ln t - \frac{1}{2}\int (\frac{1}{2}t-3)dt = \frac{1}{4}(t^2-6t)\ln t - \frac{1}{8}t^2+\frac{3}{2}t+C = \\ =  \frac{1}{4}(x^4-9)\ln|x^2+3|  - \frac{1}{8}(x^2+3)^2+\frac{3}{2}(x^2+3)+C\end{gather*}
+
+
+\subsectionbookmark{18.144}
+
+\begin{gather*}\int xa^xdx, \ a>1 \\
+= \begin{array}{|ll|}
+u=x & dv=a^xdx \\
+du=dx & v=\frac{a^x}{\ln a} \end{array} = \frac{xa^x}{\ln a} - \frac{1}{\ln a}\int a^xdx = \frac{xa^x}{\ln a} - \frac{a^x}{\ln^2 a}+C\end{gather*}

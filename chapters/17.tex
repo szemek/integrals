@@ -1,0 +1,1298 @@
+\section{Całki funkcji niewymiernych.}
+\subsection{§ Całki funkcji zawierających pierwiastki z wyrażenia liniowego.}
+
+\subsectionbookmark{17.6}
+
+\begin{gather*}\int \sqrt{2x+1}dx = \begin{vmatrix} t=2x+1 \\ \frac{1}{2}dt=dx \end{vmatrix} = \frac{1}{2} \int \sqrt{t}dt = \frac{1}{3}t^{\frac{3}{2}}+C = \frac{1}{3}(2x+1)^{\frac{3}{2}}+C\end{gather*}
+
+\subsectionbookmark{17.7}
+
+\begin{gather*}\int \frac{dx}{\sqrt{3+4x}} = \begin{vmatrix} t=\sqrt{3+4x} \\ t^2=3+4x \\ 2tdt=4dx \\ \frac{1}{2}tdt=dx \end{vmatrix} = \int \frac{\frac{1}{2}t}{t}dt = \frac{1}{2}t+C = \frac{1}{2}\sqrt{3+4x}+C\end{gather*}
+
+\subsectionbookmark{17.8}
+\begin{gather*}\int \frac{dx}{\sqrt[3]{3x-4}} = \begin{vmatrix} t=\sqrt[3]{3x-4} \\ t^3=3x-4 \\ 3t^2dt=3dx \\ t^2dt=dx \end{vmatrix} = \int \frac{t^2}{t}dt = \frac{1}{2}t^2+C = \frac{1}{2}(3x-4)^{\frac{2}{3}}+C\end{gather*}
+
+\subsectionbookmark{17.9}
+\begin{gather*}\int \frac{dx}{\sqrt[5]{(2x+1)^3}} = \begin{vmatrix} t=\sqrt[5]{2x+1} \\
+t^5=2x+1 \\
+5t^4dt=2dx \\
+\frac{5}{2}t^4dt=dx \end{vmatrix} = \int \frac{\frac{5}{2}t^4dt}{t^3} = \frac{5}{4}t^2+C = \frac{5}{4}\sqrt[5]{(2x+1)^2}+C\end{gather*}
+
+
+\subsectionbookmark{17.10}
+
+\begin{gather*}\int x\sqrt[3]{x-4}dx = \begin{vmatrix} t=\sqrt[3]{x-4} \\ t^3=x-4 \\ 3t^2dt=dx \\ x=t^3+4 \end{vmatrix} = \int (t^3+4)t \cdot 3t^2dt = \int (3t^6+12t^3)dt = \end{gather*}
+\begin{gather*}=  \frac{3}{7}t^7+3t^4+C = \frac{3}{7}t^4(t^3+7)+C = \frac{3}{7}\sqrt[3]{x-4}(x-4)(x-4+7)+C = \end{gather*}
+\begin{gather*}=\frac{3}{7}(x-4)(x+3)\sqrt[3]{x-4}+C=\frac{3}{7}(x^2-x-12)\sqrt[3]{x-4}+C\end{gather*}
+
+
+\subsectionbookmark{17.11}
+
+\begin{gather*}\int x\sqrt[3]{3x-1}dx = \begin{vmatrix} t=\sqrt[3]{3x-1} \\ t^3=3x-1 \\ 3t^2dt=3dx \\ t^2dt=dx \\ x=\frac{t^3+1}{3} \end{vmatrix} = \int \frac{t^3+1}{3} \cdot t \cdot t^2dt = \frac{1}{3} \int (t^6+t^3)dt = \end{gather*}
+\begin{gather*}= \frac{1}{21}t^7+\frac{1}{12}t^4 + C = \frac{1}{21}(3x-1)^{\frac{7}{3}}+\frac{1}{12}(3x-1)^{\frac{4}{3}}+C\end{gather*}
+
+
+\subsectionbookmark{17.12}
+
+\begin{gather*}\int x\sqrt{2+3x}dx = \begin{vmatrix} t=\sqrt{2+3x} \\ t^2=2+3x \\ 2tdt=3dx \\ \frac{2}{3}tdt=dx \\ x=\frac{t^2-2}{3} \end{vmatrix} = \int \frac{t^2-2}{3} \cdot t \cdot \frac{2}{3}tdt = \frac{2}{9} \int (t^4-2t^2)dt = \end{gather*}
+\begin{gather*}= \frac{2}{45}t^5-\frac{4}{27}t^3 +C= \frac{2}{45}(2+3x)^{\frac{5}{2}}-\frac{4}{27}(2+3x)^{\frac{3}{2}}+C\end{gather*}
+
+
+\subsectionbookmark{17.13}
+
+\begin{gather*}\int x\sqrt{1-5x}dx = \begin{vmatrix} t=\sqrt{1-5x} \\ t^2=1-5x \\ 2tdt=-5dx \\ -\frac{2}{5}tdt=dx \\ x=\frac{t^2-1}{-5} \end{vmatrix} = \int \frac{t^2-1}{-5} \cdot t \cdot \left( -\frac{2}{5}t \right) dt = \frac{2}{25} \int (t^4-t^2)dt = \end{gather*}
+\begin{gather*}=  \frac{2}{125}t^5-\frac{2}{75}t^3+C = \frac{2}{125}(1-5x)^{\frac{5}{2}} - \frac{2}{75}(1-5x)^{\frac{3}{2}}+C\end{gather*}
+
+\subsectionbookmark{17.14}
+
+\begin{gather*} \to \textbf{(17.10)} \end{gather*}
+
+\subsectionbookmark{17.15}
+
+\begin{gather*} \nonumber \int \frac{xdx}{\sqrt[4]{2x+3}} = \begin{vmatrix}
+u=x & dv=(2x+3)^{-\frac{1}{4}}dx \\
+du=dx & v=\frac{2}{3}(2x+3)^{\frac{3}{4}}
+\end{vmatrix} = \frac{2}{3}x(2x+3)^{\frac{3}{4}} - \int \frac{2}{3}(2x+3)^{\frac{3}{4}}dx = \\ = \frac{2}{3}x(2x+3)^{\frac{3}{4}} - \frac{4}{21}(2x+3)^{\frac{7}{4}}+C\end{gather*}
+
+
+\subsectionbookmark{17.16}
+
+\begin{gather*}\int \frac{x^2dx}{3\sqrt[3]{x+2}} = \left| \begin{array}{l} t=\sqrt[3]{x+2} \\ t^3=x+2 \\ x=t^3-2 \\ dx=3t^2dt \\ x^2=(t^3-2)^2 \end{array} \right| = \int (t^3-2)^2tdt = \int (t^7-4t^4+4t)dt = \end{gather*}
+\begin{gather*}= \frac{1}{8}t^8-\frac{4}{5}t^5+2t^2+C = \frac{1}{8}(x+2)^{\frac{8}{3}}-\frac{4}{5}(x+2)^{\frac{5}{3}}+2(x+2)^{\frac{2}{3}}+C\end{gather*}
+
+
+\subsectionbookmark{17.17}
+
+\begin{gather*}\int \frac{x^2+1}{\sqrt{3x+1}}dx = \int \frac{x^2dx}{\sqrt{3x+1}} + \int \frac{dx}{\sqrt{3x+1}} = \left| \begin{array}{l} t=\sqrt{3x+1} \\ t^2=3x+1 \\ x=\frac{t^2-1}{3} \\ dx=\frac{2}{3}tdt \end{array} \right|  = \end{gather*}
+\begin{gather*}= \int \frac{2}{3} \left( \frac{t^2-1}{3} \right)^2dt + \frac{2}{3}t = \frac{2}{27} \int (t^4-2t^2+1)dt + \frac{2}{3}t = \frac{2}{135}t^5 - \frac{4}{81}t^3 + \frac{20}{27}t + C  = \\= \frac{2}{135}(3x+1)^{\frac{5}{2}} - \frac{4}{81}(3x+1)^{\frac{3}{2}} + \frac{20}{27}\sqrt{3x+1} + C\end{gather*}
+
+
+\subsectionbookmark{17.18}
+
+\begin{gather*}\int x\sqrt[4]{2x+3}dx = \begin{vmatrix}
+u=x & dv=\sqrt[4]{2x+3}dx \\
+du=dx & v=\frac{2}{5}(2x+3)^{\frac{5}{4}}
+\end{vmatrix} = \frac{2}{5}x(2x+3)^{\frac{5}{4}} - \int \frac{2}{5}(2x+3)^{\frac{5}{4}}dx = \\ = \frac{2}{5}x(2x+3)^{\frac{5}{4}} - \frac{4}{45}(2x+3)^{\frac{9}{4}} + C\end{gather*}
+
+
+\subsectionbookmark{17.19}
+
+\begin{gather*}\int \frac{dx}{x\sqrt{x+a}} = \begin{vmatrix}
+t=\sqrt{x+a} \\
+t^2=x+a \\
+x=t^2-a \\
+dx=2tdt
+\end{vmatrix} = \int \frac{2}{t^2-a}dt = -2 \int \frac{dt}{(\sqrt{a})^2-t^2} = -\frac{1}{\sqrt{a}}\ln \left| \frac{\sqrt{a}+t}{\sqrt{a}-t} \right| + C = \end{gather*}
+\begin{gather*}= \frac{1}{\sqrt{a}}\ln \left| \frac{\sqrt{a}-\sqrt{x+a}}{\sqrt{a}+\sqrt{x+a}} \right|+C = \frac{1}{\sqrt{a}}\ln \left| \frac{\sqrt{x+a}-\sqrt{a}}{\sqrt{x+a}+\sqrt{a}} \right|+C\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \frac{dx}{a^2-x^2}=\frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right|+C \text{, gdzie } a>0 \wedge |x|\neq a$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\subsectionbookmark{17.20}
+
+\begin{gather*}\int \frac{dx}{x\sqrt{x-a}} = \begin{vmatrix}
+t=\sqrt{x-a} \\
+t^2=x-a \\
+x=t^2+a \\
+dx=2tdt
+\end{vmatrix} = \int \frac{2}{t^2+a}dt = \frac{2}{\sqrt{a}}\arctan \left( \frac{t}{\sqrt{a}} \right) +C = \frac{2}{\sqrt{a}}\arctan \sqrt{\frac{x-a}{a}} +C \end{gather*}
+
+
+\subsectionbookmark{17.21}
+
+\begin{gather*}\int \frac{\sqrt{x}}{x-1} = \begin{vmatrix}
+t=\sqrt{x} \\
+t^2=x \\
+dx=2tdt
+\end{vmatrix} = \int \frac{2t^2}{t^2-1}dt = \int 2dt + \int \frac{2}{t^2-1}dt = 2t - 2\int \frac{dt}{1-t^2} = \end{gather*}
+\begin{gather*}= 2t - \ln\left|\frac{1+t}{1-t}\right|+C = 2\sqrt{x} - \ln\left|\frac{1+\sqrt{x}}{1-\sqrt{x}}\right|+C = 2\sqrt{x}+\ln\left|\frac{\sqrt{x}-1}{\sqrt{x}+1}\right|+C\end{gather*}
+
+
+\subsectionbookmark{17.22}
+
+\begin{gather*}\int \frac{\sqrt{x+1}}{x}dx = \begin{vmatrix}
+t=\sqrt{x+1} \\
+t^2=x+1 \\
+x=t^2-1 \\
+dx=2tdt
+\end{vmatrix} = \int \frac{2t^2}{t^2-1}=...\end{gather*}
+korzystając z całki obliczonej w przykładzie (17.21) ostatecznie otrzymujemy:
+\begin{gather*} \nonumber ...=2\sqrt{x+1}+\ln\left|\frac{\sqrt{x+1}-1}{\sqrt{x+1}+1}\right|+C\end{gather*}
+
+
+\subsectionbookmark{17.23}
+
+\begin{gather*}\int \frac{1+\sqrt{x}}{1-\sqrt{x}}dx = \begin{vmatrix}
+t=\sqrt{x} \\
+t^2=x \\
+2tdt=dx
+\end{vmatrix} = \int \frac{(1+t) \cdot 2t}{1-t}dt = -2\int \frac{t^2+t}{t-1}dt = -2\int \frac{t(t-1)+2t}{t-1}dt = \end{gather*}
+\begin{gather*}= -2 \int tdt -2\int \frac{2(t-1)+2}{t-1} = -t^2-2\int2dt-4\int \frac{dt}{t-1} = \end{gather*}
+\begin{gather*}= -t^2-4t-4\ln|t-1|+C = -x-4\sqrt{x}-4\ln|\sqrt{x}-1|+C\end{gather*}
+
+
+\subsectionbookmark{17.24}
+
+\begin{gather*}\int \frac{dx}{(x+1)\sqrt{1-x}} = \begin{vmatrix}
+t=\sqrt{1-x} \\
+t^2=1-x \\
+-t^2+1=x \\
+-2tdt=dx
+\end{vmatrix} = \int \frac{-2t}{(-t^2+2)t}dt = \int \frac{2dt}{t^2-2} = \end{gather*}
+\begin{gather*}= -2 \int \frac{dt}{(\sqrt{2})^2-t^2} = -\frac{1}{\sqrt{2}}\ln\left|\frac{\sqrt{2}+t}{\sqrt{2}-t}\right|+C = \frac{1}{\sqrt{2}}\ln\left|\frac{\sqrt{1-x}-\sqrt{2}}{\sqrt{1-x}+\sqrt{2}}\right|+C\end{gather*}
+
+
+\subsectionbookmark{17.25}
+
+\begin{gather*}\int \sqrt{1+\sqrt{x}}dx = \begin{vmatrix}
+t=\sqrt{x} \\
+t^2=x \\
+2tdt=dx \end{vmatrix} = 2\int t\sqrt{t+1}dt = \begin{vmatrix}
+u=2t & dv=\sqrt{t+1}dt \\
+du=2dt & v=\frac{2}{3}(t+1)^{\frac{3}{2}}
+\end{vmatrix} = \end{gather*}
+\begin{gather*}= \frac{4}{3}t(t+1)^{\frac{3}{2}} - \frac{4}{3}\int (t+1)^{\frac{3}{2}}dt = \frac{4}{3}t(t+1)^{\frac{3}{2}}-\frac{8}{15}(t+1)^{\frac{5}{2}}+C = \end{gather*}
+\begin{gather*}= \frac{4}{3}\sqrt{x}(\sqrt{x}+1)^{\frac{3}{2}}-\frac{8}{15}(\sqrt{x}+1)^{\frac{5}{2}}+C\end{gather*}
+
+
+\subsectionbookmark{17.26}
+
+\begin{gather*}\int \frac{\sqrt[3]{x}dx}{x+\sqrt[6]{x^5}} = \begin{vmatrix}
+t=\sqrt[6]{x} \\
+t^6=x \\
+6t^5=dx \end{vmatrix} = \int \frac{6t^7}{t^6+t^5}dt = 6\int \frac{t^2}{t+1}dt = 6 \int \frac{(t-1)(t+1)+1}{t+1}dt = \\  = 6\int (t-1)dt + 6\int \frac{dt}{t+1} = 3t^2-6t+6ln|t+1|+C = 3\sqrt[3]{x}-6\sqrt[6]{x}+6\ln|\sqrt[6]{x}+1|+C \end{gather*}
+
+
+\subsectionbookmark{17.27}
+
+\begin{gather*}\int \frac{dx}{\sqrt{x}+2\sqrt[3]{x^2}} = \begin{vmatrix}
+t=\sqrt[6]{x} \\
+t^6=x \\
+6t^5=dx \end{vmatrix} = \int \frac{6t^5dt}{t^3+2t^4} = \int \frac{6t^2}{2t+1}dt = \int \frac{3t(2t+1)-3t}{2t+1}dt = \end{gather*}
+\begin{gather*}= \int 3t dt + \int \frac{-\frac{3}{2}(2t+1)+\frac{3}{2}}{2t+1}dt = \frac{3}{2}t^2 - \int \frac{3}{2}dt + \frac{3}{2}\int \frac{dt}{2t+1} = \end{gather*}
+\begin{gather*}= \frac{3}{2}t^2-\frac{3}{2}t+\frac{3}{4}\ln|2t+1|+C = \frac{3}{2}\sqrt[3]{x}-\frac{3}{2}\sqrt[6]{x}+\frac{3}{4}\ln|2\sqrt[6]{x}+1|+C\end{gather*}
+
+
+\subsectionbookmark{17.28}
+
+\begin{gather*}\int \frac{dx}{\sqrt{x-5}+\sqrt{x-7}} = \frac{1}{2}\int (\sqrt{x-5}-\sqrt{x-7})dx = \frac{1}{3}\left[ (x-5)^{\frac{3}{2}}-(x-7)^{\frac{3}{2}} \right]+C\end{gather*}
+
+
+\subsectionbookmark{17.29}
+
+\begin{gather*}\int \frac{dx}{x\sqrt{x+9}} = \begin{vmatrix}
+t=\sqrt{x+9} \\
+t^2=x+9 \\
+t^2-9=x \\
+2tdt=dx \end{vmatrix} = \int \frac{2dt}{t^2-9} = -2\int \frac{dt}{3^2-t^2} = -\frac{1}{3}\ln\left|\frac{3+t}{3-t}\right|+C = \end{gather*}
+\begin{gather*}= \frac{1}{3}\ln\left|\frac{t-3}{t+3}\right|+C = \frac{1}{3}\ln\left|\frac{\sqrt{x+9}-3}{\sqrt{x+9}+3}\right|+C\end{gather*}
+
+
+\subsectionbookmark{17.30}
+
+\begin{gather*}\int x^2\sqrt[3]{7-2x}dx = \begin{vmatrix}
+u=x^2 & dv=\sqrt[3]{7-2x}dx \\
+du=2xdx & v=-\frac{3}{8}(7-2x)^{\frac{4}{3}}
+\end{vmatrix} = \end{gather*}
+\begin{gather*}= -\frac{3}{8}x^2(7-2x)^{\frac{4}{3}} + \frac{3}{4} \int x(7-2x)^{\frac{4}{3}}dx = \begin{vmatrix}
+u=x & dv=(7-2x)^{\frac{4}{3}}dx \\
+du=dx & v=-\frac{3}{14}(7-2x)^{\frac{7}{3}}
+\end{vmatrix}  = \end{gather*}
+\begin{gather*}= -\frac{3}{8}x^2(7-2x)^{\frac{4}{3}} -\frac{9}{56}x(7-2x)^{\frac{7}{3}} + \frac{9}{56}\int (7-2x)^{\frac{7}{3}}dx = \end{gather*}
+\begin{gather*}= -\frac{3}{8}x^2(7-2x)^{\frac{4}{3}} -\frac{9}{56}x(7-2x)^{\frac{7}{3}} - \frac{27}{1120}(7-2x)^{\frac{10}{3}}+C\end{gather*}
+
+
+\subsectionbookmark{17.31}
+
+\begin{gather*}\int \frac{dx}{\sqrt{x+1}+\sqrt[3]{x+1}} = \begin{vmatrix}
+t=\sqrt[6]{x+1} \\
+t^2=\sqrt[3]{x+1} \\
+t^3=\sqrt{x+1} \\
+t^6=x+1 \\
+6t^5dt=dx
+\end{vmatrix} = \int \frac{6t^5dt}{t^3+t^2} = 6 \int \frac{t^3dt}{t+1} = 6 \int \frac{(t^2-t+1)(t+1)-1}{t+1}dt = \end{gather*}
+\begin{gather*}= 6 \int (t^2-t+1)dt - 6\int \frac{dt}{t+1} = 2t^3-3t^2+6t-6\ln|t+1|+C = \end{gather*}
+\begin{gather*}= 2\sqrt{x+1}-3\sqrt[3]{x+1}+6\sqrt[6]{x+1}-6\ln|\sqrt[6]{x+1}+1|+C\end{gather*}
+
+
+\subsectionbookmark{17.32}
+
+\begin{gather*}\int \sqrt{\frac{x-1}{x-2}} \cdot \frac{dx}{(x-1)^2} = \begin{vmatrix}
+t=\sqrt{\frac{x-1}{x-2}} \\
+t^2=\frac{x-1}{x-2} \\
+\frac{1}{t^2}=\frac{x-2}{x-1} \\
+\frac{1}{t^2}-1=-\frac{1}{x-1}\\
+\frac{-2dt}{t^3}=\frac{dx}{(x-1)^2}
+\end{vmatrix} = \int \frac{-2tdt}{t^3} = \int \frac{-2dt}{t^2} = \frac{2}{t}+C = 2\sqrt{\frac{x-2}{x-1}}+C \end{gather*}
+
+
+\subsectionbookmark{17.33}
+
+\begin{gather*}\int \sqrt{\frac{1-x}{1+x}}\cdot\frac{dx}{x} = \begin{vmatrix}
+t=\sqrt{\frac{1-x}{1+x}} & & t^2=\frac{1-x}{1+x} \\
+-t^2=\frac{x-1}{x+1} & & -t^2-1=-\frac{2}{x+1} \\
+\frac{2}{t^2+1}=x+1 & & \frac{-4tdt}{(t^2+1)^2}=dx \\
+\frac{-t^2+1}{t^2+1}=x & & \frac{t^2+1}{-t^2+1}=\frac{1}{x}
+\end{vmatrix} = \int t\cdot \frac{-4tdt}{(t^2+1)^2}\cdot \frac{t^2+1}{-t^2+1} = \end{gather*}
+\begin{gather*}= \int \frac{4t^2}{(t^2+1)(t-1)(t+1)}dt =...\end{gather*}
+rozkład na ułamki proste:
+\begin{gather*} \nonumber \frac{4t^2}{(t^2+1)(t-1)(t+1)} \equiv \frac{At+B}{t^2+1}+\frac{C}{t-1}+\frac{D}{t+1} \\
+4t^2 \equiv (At+B)(t^2-1)+C(t^3+t^2+t+1)+D(t^3-t^2+t-1) \\
+4t^2 \equiv (A+C+D)t^3+(B+C-D)t^2+(-A+C+D)t+(-B+C-D) \\
+\begin{cases} A+C+D=0 \\ B+C-D=4 \\ -A+C+D=0 \\ -B+C-D=0 \end{cases} \\
+\begin{cases} A=0 \\ B=2 \\ C=1 \\ D=-1 \end{cases}\end{gather*}
+\begin{gather*} \nonumber ...=\int \frac{2dt}{t^2+1} + \int \frac{dt}{t-1} - \int \frac{dt}{t+1} = 2\arctan t + \ln|t-1|-\ln|t+1|+C = \end{gather*}
+\begin{gather*}= 2\arctan \left(\sqrt{\frac{1-x}{1+x}}\right) + \ln\left|\sqrt{\frac{1-x}{1+x}}-1\right|- \ln\left|\sqrt{\frac{1-x}{1+x}}+1\right|+C\end{gather*}
+
+
+\subsectionbookmark{17.34}
+
+\begin{gather*}\int \frac{xdx}{\sqrt[3]{x+1}-\sqrt{x+1}} = \begin{vmatrix}
+t=\sqrt[6]{x+1} \\
+t^6=x+1 \\
+t^6-1=x \\
+6t^5dt=dx
+\end{vmatrix} = \int \frac{(t^6-1)\cdot 6t^5dt}{t^2-t^3}=-6\int \frac{t^3(t^6-1)}{t-1}dt = \end{gather*}
+\begin{gather*}= -6\int t^3(t^5+t^4+t^3+t^2+t+1)dt = -\frac{2}{3}t^9-\frac{3}{4}t^8-\frac{6}{7}t^7- t^6-\frac{6}{5}t^5-\frac{3}{2}t^4 + C = \end{gather*}
+\begin{gather*}= -\frac{2}{3}(x+1)^{\frac{3}{2}}-\frac{3}{4}(x+1)^{\frac{4}{3}} -\frac{6}{7}(x+1)^{\frac{7}{6}}-(x+1)- \frac{6}{5}(x+1)^{\frac{5}{6}}-\frac{3}{2}(x+1)^{\frac{2}{3}}+C\end{gather*}
+
+
+\subsectionbookmark{17.35}
+
+\begin{gather*}\int \frac{\sqrt[3]{x^2}-\sqrt{x}+1}{\sqrt[3]{x}-1} = \begin{vmatrix}
+t=\sqrt[6]{x} \\
+t^6=x\end{vmatrix} = \int \frac{(t^4-t^3+1)\cdot 6t^5dt}{t^2-1} = 6\int \frac{t^9-t^8+t^5}{t^2-1}dt=... \end{gather*}
+pisemne dzielenie wielomianów:
+\begin{gather*} \nonumber \begin{array}{lll}
+(t^9-t^8+t^5) & : & (t^2-1)  =  t^7-t^6+t^5-t^4+2t^3-t^2+2t-1 \\
+\underline{-t^9+t^7} & &  \\
+\qquad -t^8+t^7+t^5& & \\
+\qquad \ \ \underline{t^8-t^6} & &\\
+\qquad \qquad \qquad t^7-t^6+t^5 & & \\
+\qquad \qquad \quad \underline{-t^7+t^5}  & & \\
+\qquad \qquad \qquad \qquad -t^6+2t^5 & & \\
+\qquad \qquad \qquad \qquad \ \ \underline{t^6-t^4} & & \\
+\qquad \qquad \qquad \qquad \quad 2t^5-t^4 & & \\
+\qquad \qquad \qquad \qquad \quad \underline{-2t^5+2t^3} & & \\
+\qquad \qquad \qquad \qquad \quad -t^4+2t^3 & & \\
+\qquad \qquad \qquad \qquad \quad \ \ \underline{t^4-t^2} & & \\
+\qquad \qquad \qquad \qquad \quad \quad 2t^3-t^2 & & \\
+\qquad \qquad \qquad \qquad \quad \quad \underline{-2t^3+2t} & & \\
+\qquad \qquad \qquad \qquad \quad \quad \quad -t^2+2t & & \\
+\qquad \qquad \qquad \qquad \quad \quad \quad \ \ \underline{\underline{t^2-1}}& & \\
+\qquad \qquad \qquad \qquad \quad \quad \quad \quad 2t-1& & \\
+\end{array}\end{gather*}
+\begin{gather*} \nonumber ...=6 \int \left(t^7-t^6+t^5-t^4+2t^3-t^2+2t-1+\frac{2t-1}{t^2-1}\right)dt = \end{gather*}
+\begin{gather*}= \frac{3}{4}t^8-\frac{6}{7}t^7+t^6-\frac{6}{5}t^5+3t^4-2t^3+6t^2-6t+6\ln|t^2+1|+6\int \frac{dt}{1-t^2} = \end{gather*}
+\begin{gather*}= \frac{3}{4}x^{\frac{4}{3}}-\frac{6}{7}x^{\frac{7}{6}}+x-\frac{6}{5}x^{\frac{5}{6}} +3x^{\frac{2}{3}}-2\sqrt{x}+6\sqrt[3]{x}-6\sqrt[6]{x}+6\ln|\sqrt[3]{x}+1| +3\ln\left|\frac{1+\sqrt[6]{x}}{1-\sqrt[6]{x}}\right|+C
+\end{gather*}
+
+\subsection{§ Całki funkcji zawierających pierwiastek kwadratowy z trójmianu kwadratowego}
+
+
+\subsectionbookmark{17.51}
+
+\begin{gather*}\int \frac{(8x+3)dx}{\sqrt{4x^2+3x+1}} = 2\int \frac{(4x^2+3x+1)'}{2\sqrt{4x^2+3x+1}}dx = 2\sqrt{4x^2+3x+1}+C\end{gather*}
+
+  \begin{gather*}\int \frac{f'(x)}{2\sqrt{f(x)}}dx = \sqrt{f(x)}+C\end{gather*}
+
+
+\subsectionbookmark{17.52}
+
+\begin{gather*}\int \frac{(10x+15)dx}{\sqrt{36x^2+108x+77}} = \int \frac{\frac{5}{18}(36x^2+108x+77)'}{2\sqrt{36x^2+108x+77}}dx = \frac{5}{18}\sqrt{36x^2+108x+77}+C \end{gather*}
+
+
+\subsectionbookmark{17.53}
+
+\begin{gather*}\int \frac{dx}{\sqrt{2x-x^2}} = \int \frac{dx}{\sqrt{1-(x-1)^2}} = \arcsin (x-1)+C\end{gather*}
+
+
+\subsectionbookmark{17.54}
+
+\begin{gather*}\int \frac{dx}{\sqrt{7-6x-x^2}} = \int \frac{dx}{\sqrt{4^2-(x+3)^2}} = \arcsin \left( \frac{x+3}{4} \right)+C\end{gather*}
+
+
+\subsectionbookmark{17.55}
+
+\begin{gather*}\int \frac{dx}{\sqrt{1-9x^2}} = \begin{vmatrix} t=3x \\ \frac{1}{3}dt=dx \end{vmatrix} = \frac{1}{3}\int \frac{dt}{\sqrt{1-t^2}} = \frac{1}{3}\arcsin (t) +C = \frac{1}{3}\arcsin (3x)+C \end{gather*}
+
+
+\subsectionbookmark{17.56}
+
+\begin{gather*}\int \frac{dx}{\sqrt{(2r-x)x}} = \int \frac{dx}{\sqrt{r^2-(x-r)^2}} = \arcsin \left(\frac{x-r}{r}\right)+C\end{gather*}
+
+
+\subsectionbookmark{17.57}
+
+\begin{gather*}\int \frac{(x+3)dx}{\sqrt{1-4x^2}} = \int \frac{-\frac{1}{4}(1-4x^2)'}{2\sqrt{1-4x^2}}dx + \int \frac{3dx}{\sqrt{1-(2x)^2}} = -\frac{1}{4}\sqrt{1-4x^2}+\frac{3}{2}\arcsin(2x)+C \end{gather*}
+
+
+\subsectionbookmark{17.58}
+
+\begin{gather*}\int \frac{xdx}{\sqrt{1-2x-3x^2}}=\int \frac{-\frac{1}{3}(1-2x-3x^2)'}{2\sqrt{1-2x-3x^2}}dx-\int \frac{\frac{1}{3}dx}{\sqrt{1-2x-3x^2}} = \\  = -\frac{1}{3}\sqrt{1-2x-3x^2}-\frac{1}{3\sqrt{3}}\int \frac{dx}{\sqrt{\frac{1}{3}-\frac{2}{3}x+x^2}} = -\frac{1}{3}\sqrt{1-2x-3x^2}-\frac{1}{3\sqrt{3}}\int \frac{dx}{\sqrt{(\frac{2}{3})^2-(x+\frac{1}{3})^2}} = \end{gather*}
+\begin{gather*}= -\frac{1}{3}\sqrt{1-2x-3x^2} - \frac{1}{3\sqrt{3}}\arcsin \left(\frac{3x+1}{2}\right)+C \end{gather*}
+
+
+\subsectionbookmark{17.59}
+
+\begin{gather*}\int \sqrt{1-4x^2}dx = \begin{vmatrix} t=2x \\ dt=2dx \\ \frac{1}{2}dt=dx \end{vmatrix} = \frac{1}{2}\int \sqrt{1-t^2}dt = \frac{1}{2} \left( \frac{1}{2}\arcsin (t) - \frac{1}{2}t\sqrt{1-t^2} \right)+C = \\ = \frac{1}{4}\arcsin (2x) - \frac{1}{2}x\sqrt{1-4x^2}+C\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \sqrt{a^2-x^2}dx = \frac{a^2}{2}\arcsin \frac{x}{|a|}+\frac{x}{2}\sqrt{a^2-x^2}+C$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\subsectionbookmark{17.60}
+
+\begin{gather*}\int \frac{6x+5}{\sqrt{6+x-x^2}}dx = \int \frac{-3(6+x-x^2)'}{\sqrt{6+x-x^2}}dx+\int \frac{8dx}{\sqrt{6+x-x^2}} = \\  = \int \frac{-6(6+x-x^2)'}{2\sqrt{6+x-x^2}}dx+\int \frac{8dx}{\sqrt{(\frac{5}{2})^2-(x-\frac{1}{2})^2}} = -6\sqrt{6+x-x^2}+8\arcsin \left(\frac{2x-1}{5}\right)+C \end{gather*}
+
+
+\subsectionbookmark{17.61}
+
+\begin{gather*}\int \frac{x-5}{\sqrt{5+4x-x^2}}dx=\int \frac{-\frac{1}{2}(5+4x-x^2)'}{\sqrt{5+4x-x^2}}dx - \int \frac{3dx}{\sqrt{5+4x-x^2}}= \\  = -\sqrt{5+4x-x^2}-3\int \frac{dx}{\sqrt{3^2-(x-2)^2}} = -\sqrt{5+4x-x^2}-3\arcsin\left(\frac{x+2}{3}\right)+C \end{gather*}
+
+
+\subsectionbookmark{17.62}
+
+\begin{gather*}\int \frac{x+1}{\sqrt{8+2x-x^2}}dx = \int \frac{-\frac{1}{2}(8+2x-x^2)}{\sqrt{8+2x-x^2}}dx+\int \frac{2dx}{\sqrt{8+2x-x^2}}= \\  =-\sqrt{8+2x-x^2}+\int \frac{2dx}{\sqrt{3^2-(x-1)^2}}=-\sqrt{8+2x-x^2}+2\arcsin\left(\frac{x-1}{3}\right)+C \end{gather*}
+
+
+\subsectionbookmark{17.63}
+
+\begin{gather*}\int \sqrt{6x-x^2}dx = \int \sqrt{3^2-(x-3)^2}dx = \frac{9}{2}\arcsin \left(\frac{x-3}{3}\right)+\frac{1}{2}(x-3)\sqrt{6x-x^2}+C \end{gather*}
+
+
+\subsectionbookmark{17.64}
+
+\begin{gather*}\int \frac{2x-3}{\sqrt{3-2x-x^2}}dx = \int \frac{-(3-2x-x^2)'}{\sqrt{3-2x-x^2}}dx - \int \frac{5dx}{\sqrt{3-2x-x^2}}  = \\  = -2\sqrt{3-2x-x^2}-\int \frac{5dx}{\sqrt{2^2-(x+1)^2}} = -2\sqrt{3-2x-x^2}-5\arcsin\left(\frac{x+1}{2}\right)+C \end{gather*}
+
+
+\subsectionbookmark{17.65}
+
+\begin{gather*}\int \frac{dx}{\sqrt{x^2+3x+2}} = \ln|x+\frac{3}{2}+\sqrt{x^2+3x+2}|+C\end{gather*}
+
+  \begin{gather*}\int \frac{dx}{\sqrt{x^2+px+q}} = \ln|x+\tfrac{1}{2}p+\sqrt{x^2+px+q}|+C\end{gather*}
+
+
+\subsectionbookmark{17.66}
+
+\begin{gather*}\int \frac{dx}{\sqrt{4x^2+3x-1}} = \begin{vmatrix} t=2x \\ dt=2dx \\ \frac{1}{2}dt=dx \end{vmatrix} = \frac{1}{2}\int \frac{dt}{\sqrt{t^2+\frac{3}{2}t-1}} = \ln|t+\frac{3}{4}+\sqrt{t^2+\tfrac{3}{2}t-1}|+C = \\ = \ln|2x+\frac{3}{4}+\sqrt{4x^2+3x-1}|+C\end{gather*}
+
+
+\subsectionbookmark{17.67}
+
+\begin{gather*}\int \frac{dx}{\sqrt{x^2-x+m}} = \ln|x-\frac{1}{2}+\sqrt{x^2-x+m}|+C\end{gather*}
+
+
+\subsectionbookmark{17.68}
+
+\begin{gather*}\int \frac{dx}{\sqrt{(x-a)(x-3a)}} = \int \frac{dx}{\sqrt{x^2-4ax+3a^2}} = \ln|x-2a+\sqrt{(x-a)(x-3a)}|+C \end{gather*}
+
+
+\subsectionbookmark{17.69}
+
+\begin{gather*}\int \frac{(x+3)dx}{\sqrt{x^2+2x}} = \int \frac{\frac{1}{2}(x^2+2x)'}{\sqrt{x^2+2x}}+\int \frac{2dx}{\sqrt{x^2+2x}} = \sqrt{x^2+2x}+2\ln|x+1+\sqrt{x^2+2x}|+C \end{gather*}
+
+
+\subsectionbookmark{17.70}
+
+\begin{gather*}\int \frac{(3x+2)dx}{\sqrt{x^2-5x+19}} = \int \frac{\frac{3}{2}(x^2-5x+19)'}{\sqrt{x^2-5x+19}}dx + \int \frac{\frac{19}{2}dx}{\sqrt{x^2-5x+19}} = \end{gather*}
+\begin{gather*}= 3\sqrt{x^2-5x+19}+\frac{19}{2}\ln|x-\frac{5}{2}+\sqrt{x^2-5x+19}|+C\end{gather*}
+
+
+\subsectionbookmark{17.71}
+
+\begin{gather*}\int \frac{x+a}{\sqrt{x^2-ax}}dx = \int \frac{\frac{1}{2}(x^2-ax)'}{\sqrt{x^2-ax}}dx+\int \frac{\frac{3}{2}a}{\sqrt{x^2-ax}}dx = \end{gather*}
+\begin{gather*}= \sqrt{x^2-ax}+\frac{3}{2}a\ln|x-\frac{a}{2}+\sqrt{x^2-ax}|+C\end{gather*}
+
+
+\subsectionbookmark{17.72}
+
+\begin{gather*}\int \frac{3x-2}{\sqrt{4x^2-4x+5}}dx = \int \frac{\frac{3}{8}(4x^2-4x+5)'}{\sqrt{4x^2-4x+5}}dx-\int \frac{\frac{1}{2}dx}{\sqrt{4x^2-4+5}} = \\  = \frac{3}{4}\sqrt{4x^2-4x+5}-\frac{1}{4}\int \frac{dx}{\sqrt{x^2-x+\frac{5}{4}}} = \frac{3}{4}\sqrt{4x^2-4x+5}- \frac{1}{4}\ln|x-\frac{1}{2}+\sqrt{x^2-x+\tfrac{5}{4}}|+C \end{gather*}
+
+
+\subsectionbookmark{17.73}
+
+\begin{gather*}\int \frac{3x+2}{\sqrt{x^2-4x+5}}dx = \int \frac{\frac{3}{2}(x^2-4x+5)'}{\sqrt{x^2-4x+5}}+\int \frac{8dx}{\sqrt{x^2-4x+5}} = \end{gather*}
+\begin{gather*}= 3\sqrt{x^2-4x+5}+8\ln|x-2+\sqrt{x^2-4x+5}|+C\end{gather*}
+
+\subsectionbookmark{17.74}
+
+\begin{gather*}\int \frac{3x-4}{\sqrt{4x^2+5x-8}}dx = \int \frac{\frac{3}{2}x-2}{\sqrt{x^2+\frac{5}{4}x-2}}dx = \int \frac{\frac{3}{4}(x^2+\frac{5}{4}x-2)'}{\sqrt{x^2+\frac{5}{4}x-2}}dx-\int \frac{\frac{47}{16}dx}{\sqrt{x^2+\frac{5}{4}x-2}} = \end{gather*}
+\begin{gather*}= \frac{3}{2}\sqrt{x^2+\frac{5}{4}x-2}-\frac{47}{16}\ln|x+\frac{5}{8}+\sqrt{x^2+\frac{5}{4}x-2}|+C\end{gather*}
+
+
+\subsectionbookmark{17.75}
+
+\begin{gather*}
+  \int \frac{5x+2}{\sqrt{2x^2+8x-1}}dx
+  = \int \frac{\frac{5}{4}(2x^2+8x-1)'}{\sqrt{2x^2+8x-1}}-\int \frac{8dx}{\sqrt{2x^2+8x-1}} = \\
+  = \frac{5}{2}\sqrt{2x^2+8x-1}-\frac{8}{\sqrt{2}}\int \frac{dx}{\sqrt{x^2+4x-\frac{1}{2}}} = \\
+  = \frac{5}{2}\sqrt{2x^2+8x-1}-4\sqrt{2}\ln\left|x+2+\sqrt{x^2+4x-\frac{1}{2}}\right|+C
+\end{gather*}
+
+
+\subsectionbookmark{17.76}
+
+\begin{gather*}
+  \int \sqrt{2x+x^2}dx
+  = \int \sqrt{(x+1)^2-1}dx
+  = \frac{1}{2}(x+1)\sqrt{x^2+2x}-\frac{1}{2}\ln|x+1+\sqrt{x^2+2x}|+C
+\end{gather*}
+
+\begin{tikzpicture}
+  \node[mybox](box){%
+    \begin{minipage}{0.85\textwidth}
+      $\displaystyle \int \sqrt{x^2+k}dx = \frac{1}{2}x\sqrt{x^2+k}+\frac{1}{2}k\ln|x+\sqrt{x^2+k}|+C \text{, gdzie } x^2+k>0$
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\subsectionbookmark{17.77}
+
+\begin{gather*}
+  \int \frac{5x-4}{\sqrt{3x^2-2x+1}}dx
+  = \int \frac{\frac{5}{6}(3x^2-2x+1)'}{\sqrt{3x^2-2x+1}}-\int \frac{\frac{7}{3}dx}{\sqrt{3x^2-2x+1}} = \\
+  = \frac{5}{3}\sqrt{3x^2-2x+1}-\frac{7}{3\sqrt{3}}\int \frac{dx}{\sqrt{x^2-\frac{2}{3}x+\frac{1}{3}}} = \\
+  = \frac{5}{3}\sqrt{3x^2-2x+1}-\frac{7}{3\sqrt{3}}\ln\left|x-\frac{1}{3}+\sqrt{x^2-\frac{2}{3}x+\frac{1}{3}}\right|+C
+\end{gather*}
+
+\subsectionbookmark{17.78}
+
+\begin{gather*}\int \sqrt{3-2x-x^2}dx = \int \sqrt{2^2-(x+1)^2}dx = 2\arcsin \left(\frac{x+1}{2}\right) + \frac{1}{2}(x+1)\sqrt{3-2x-x^2}+C \end{gather*}
+
+
+\subsectionbookmark{17.79}
+
+\begin{gather*}\int \sqrt{x^2-4}dx = \frac{1}{2}x\sqrt{x^2-4}-2\ln|x+\sqrt{x^2-4}|+C\end{gather*}
+
+\subsectionbookmark{17.80}
+
+\begin{gather*}\int \sqrt{3x^2+10x+9}dx = \sqrt{3}\int \sqrt{x^2+\tfrac{10}{3}x+3}dx = \sqrt{3} \int \sqrt{(x+\tfrac{5}{3})^2+\tfrac{2}{9}} = \end{gather*}
+\begin{gather*}= \frac{\sqrt{3}}{2}(x+\frac{5}{3})\sqrt{x^2+\tfrac{10}{3}x+3}+\frac{\sqrt{3}}{9}\ln|x+\frac{5}{3}+\sqrt{x^2+\tfrac{10}{3}x+3}|+C\end{gather*}
+
+\subsectionbookmark{17.81}
+
+\begin{gather*}\int \sqrt{x^2-3x+2}dx = \int \sqrt{(x-\tfrac{3}{2})^2-\frac{1}{4}}dx = \end{gather*}
+\begin{gather*}= \frac{1}{2}(x-\frac{3}{2})\sqrt{x^2-3x+2}-\frac{1}{8}\ln|x-\frac{3}{2}+\sqrt{x^2-3x+2}|+C\end{gather*}
+
+\subsectionbookmark{17.82}
+
+\begin{gather*}\int \frac{x^2dx}{\sqrt{1-x^2}} = \int \frac{x^2-1}{\sqrt{1-x^2}}dx+\int \frac{dx}{\sqrt{1-x^2}} = -\int \frac{1-x^2}{\sqrt{1-x^2}}dx + \arcsin (x) = \end{gather*}
+ \begin{gather*}= -\int \sqrt{1-x^2}dx+\arcsin (x) = -\frac{1}{2}\arcsin (x) - \frac{1}{2}x\sqrt{1-x^2} + \arcsin (x) + C = \end{gather*}
+\begin{gather*}= -\frac{1}{2}x\sqrt{1-x^2}+\frac{1}{2}\arcsin (x)+C\end{gather*}
+
+
+\subsectionbookmark{17.83}
+
+\begin{gather*}\int \frac{x^2dx}{\sqrt{x^2+2x+2}} = \int \frac{x^2+2x+2}{\sqrt{x^2+2x+2}}dx - \int \frac{2x+2}{\sqrt{x^2+2x+2}}dx = \end{gather*}
+\begin{gather*}= \int \sqrt{x^2+2x+2}dx - \int \frac{(x^2+2x+2)'}{\sqrt{x^2+2x+2}}dx = \int \sqrt{(x+1)^2+1}dx - 2\sqrt{x^2+2x+2} = \end{gather*}
+\begin{gather*}= \frac{1}{2}(x+1)\sqrt{x^2+2x+2} + \frac{1}{2}\ln|x+1+\sqrt{x^2+2x+2}|-2\sqrt{x^2+2x+2}+C = \end{gather*}
+\begin{gather*}= \frac{1}{2}(x-3)\sqrt{x^2+2x+2} + \frac{1}{2}\ln|x+1+\sqrt{x^2+2x+2}|+C\end{gather*}
+
+
+\subsectionbookmark{17.84}
+
+\begin{gather*}\int \sqrt{\frac{x}{1-x}}dx = \begin{vmatrix} t=\sqrt{\frac{x}{1-x}} & t^2=\frac{x}{1-x} \\ t^2+1=\frac{1}{1-x} & 2tdt = \frac{dx}{(x-1)^2} \\ (t^2+1)^2=\frac{1}{(x-1)^2} \end{vmatrix} = \int \frac{2t^2}{(t^2+1)^2}dt = \int \frac{2(t^2+1)-2}{(t^2+1)^2}dt = \end{gather*}
+\begin{gather*}= 2\int \frac{dt}{t^2+1} - 2\int \frac{dt}{(t^2+1)^2} = 2\arctan (t) - \arctan (t) - \frac{t}{t^2+1} + C = \end{gather*}
+\begin{gather*}= \arctan \sqrt{\frac{x}{1-x}} - \sqrt{x-x^2} +C\end{gather*}
+
+
+\subsectionbookmark{17.85}
+
+\begin{gather*}\int \frac{2ax^2+1}{\sqrt{ax^2+2x+1}}dx, a>1\end{gather*}
+metoda współczynników nieoznaczonych
+\begin{gather*} \nonumber \mathcal{I} = \int \frac{2ax^2+a}{\sqrt{ax^2+2x+1}} \equiv (Px+Q)\sqrt{ax^2+2x+1} + K \int \frac{dx}{\sqrt{ax^2+2x+1}} \\
+\frac{2ax^2+1}{\sqrt{ax^2+2x+1}} \equiv P\sqrt{ax^2+2x+1}+\frac{(Px+Q)(ax+1)}{\sqrt{ax^2+2x+1}} + \frac{K}{\sqrt{ax^2+2x+1}} \\
+2ax^2+1 \equiv p(ax^2+2x+1)+(Px+Q)(ax+1)+K \\
+\begin{cases} 2Pa=2a \\ 3P+Qa=0 \\ P+Q+K=1 \end{cases} \\
+\begin{cases} P=1 \\ Q=-\frac{3}{a} \\ K=\frac{3}{a} \end{cases} \\
+\mathcal{I} = (x-\frac{3}{a})\sqrt{ax^2+2x+1}+\frac{3}{a}\int \frac{dx}{\sqrt{ax^2+2x+1}} = \end{gather*}
+\begin{gather*}= (x-\frac{3}{a})\sqrt{ax^2+2x+1} + \frac{3}{a\sqrt{a}}\int \frac{dx}{\sqrt{x^2+\frac{2}{a}x+\frac{1}{a}}} = \end{gather*}
+\begin{gather*}= (x-\frac{3}{a})\sqrt{ax^2+2x+1} + \frac{3}{a\sqrt{a}}\int \frac{dx}{\sqrt{(x+\frac{1}{a})^2+\frac{1}{a}-\frac{1}{a^2}}} = \end{gather*}
+\begin{gather*}= (x-\frac{3}{a})\sqrt{ax^2+2x+1} + \frac{3}{a\sqrt{a}}\ln\left|x+\frac{1}{a}+\sqrt{x^2+\frac{2}{a}x+\frac{1}{a}}\right|+C\end{gather*}
+
+\subsectionbookmark{17.86}
+
+\begin{gather*}
+  \int \frac{2x^2+3x+1}{\sqrt{x^2+1}}dx
+  = \int \frac{2(x^2+1)}{\sqrt{x^2+1}}dx+\int \frac{3x-1}{\sqrt{x^2+1}}dx = \\
+  = 2\int \sqrt{x^2+1}dx+\int \frac{\frac{3}{2}(x^2+1)'}{\sqrt{x^2+1}}dx-\int \frac{dx}{\sqrt{x^2+1}} = \\
+  = x\sqrt{x^2+1}+\ln|x+\sqrt{x^2+1}|+3\sqrt{x^2+1}- \ln|x+\sqrt{x^2+1}|+C = \\
+  = (x+3)\sqrt{x^2+1}+C\end{gather*}
+
+\subsectionbookmark{17.87}
+
+\begin{gather*}
+  \int \frac{2x^2-ax+a^2}{\sqrt{x^2+a^2}}dx, a\neq 0 \\
+  = \int \frac{2(x^2+a^2)}{\sqrt{x^2+a^2}}-\int \frac{ax+a^2}{\sqrt{x^2+a^2}}dx
+  = 2\int \sqrt{x^2+a^2}dx-a\int \frac{\frac{1}{2}(x^2+a^2)'+a}{\sqrt{x^2+a^2}}dx = \\
+  = x\sqrt{x^2+a^2} +a^2\ln|x+\sqrt{x^2+a^2}|-a\sqrt{x^2+a^2}-a^2\int \frac{dx}{\sqrt{x^2+a^2}} = \\
+  = x\sqrt{x^2+a^2} +a^2\ln|x+\sqrt{x^2+a^2}|-a\sqrt{x^2+a^2}-a^2\ln|x+\sqrt{x^2+a^2}|+C = \\
+  = (x-a)\sqrt{x^2+a^2}+C
+\end{gather*}
+
+\subsectionbookmark{17.88}
+
+\begin{gather*}
+  \int \frac{x^3-x+1}{\sqrt{x^2+2x+2}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^3-x+1}{\sqrt{x^2+2x+2}}dx \equiv (ax^2+bx+c)\sqrt{x^2+2x+2}+K\int \frac{dx}{\sqrt{x^2+2x+2}} \\
+\frac{x^3-x+1}{\sqrt{x^2+2x+2}} \equiv (2ax+bx)\sqrt{x^2+2x+2}+\frac{(ax^2+bx+c)(x+1)}{\sqrt{x^2+2x+2}}+ \frac{K}{\sqrt{x^2+2x+2}} \\
+x^3-x+1 \equiv (2ax+bx)(x^2+2x+2)+(ax^2+bx+c)(x+1)+K \\
+x^3-x+1 \equiv 3ax^3+(5a+2b)x^2+(4a+3b+c)x+(2b+c+K) \\
+\begin{cases} 3a=1 \\ 5a+2b=0 \\ 4a+3b+c=-1 \\ 2b+c+K=1 \end{cases} \\
+\begin{cases} a=\frac{1}{3} \\ b=-\frac{5}{6} \\ c=\frac{1}{6} \\ K=\frac{5}{2} \end{cases} \\
+\int \frac{x^3-x+1}{\sqrt{x^2+2x+2}}dx = (\frac{1}{3}x^2-\frac{5}{6}x+\frac{1}{6})\sqrt{x^2+2x+2}+ \frac{5}{2}\int \frac{dx}{\sqrt{x^2+2x+2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2-\frac{5}{6}x+\frac{1}{6})\sqrt{x^2+2x+2}+ \frac{5}{2}\ln|x+1+\sqrt{x^2+2x+2}|+C
+\end{gather*}
+
+\subsectionbookmark{17.89}
+\begin{gather*}
+  \int \frac{x^3+2x^2+x-1}{\sqrt{x^2+2x-1}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^3+2x^2+x-1}{\sqrt{x^2+2x-1}}dx \equiv (ax^2+bx+c)\sqrt{x^2+2x-1}+K\int \frac{dx}{\sqrt{x^2+2x-1}} \\
+\frac{x^3+2x^2+x-1}{\sqrt{x^2+2x-1}} \equiv (2ax+bx)\sqrt{x^2+2x-1}+\frac{(ax^2+bx+c)(x+1)}{\sqrt{x^2+2x-1}}+ \frac{K}{\sqrt{x^2+2x-1}} \\
+x^3-x+1 \equiv (2ax+bx)(x^2+2x-1)+(ax^2+bx+c)(x+1)+K \\
+x^3-x+1 \equiv 3ax^3+(5a+2b)x^2+(-2a+3b+c)x+(-b+c+K) \\
+\begin{cases} 3a=1 \\ 5a+2b=2 \\ -2a+3b+c=1 \\ -b+c+K=-1 \end{cases} \\
+\begin{cases} a=\frac{1}{3} \\ b=\frac{1}{6} \\ c=\frac{7}{6} \\ K=-2 \end{cases} \\
+\int \frac{x^3+2x^2+x-1}{\sqrt{x^2+2x-1}}dx = (\frac{1}{3}x^2+\frac{1}{6}x+\frac{7}{6})\sqrt{x^2+2x-1}-2\int \frac{dx}{\sqrt{x^2+2x-1}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2+\frac{1}{6}x+\frac{7}{6})\sqrt{x^2+2x-1}- 2\ln|x+1+\sqrt{x^2+2x-1}|+C\end{gather*}
+
+\subsectionbookmark{17.90}
+\begin{gather*}
+  \int \frac{x^3dx}{\sqrt{x^2-4x+3}} \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^3dx}{\sqrt{x^2-4x+3}} \equiv (ax^2+bx+c)\sqrt{x^2-4x+3}+K\int \frac{dx}{\sqrt{x^2-4x+3}} \\
+\frac{x^3}{\sqrt{x^2-4x+3}} \equiv (2ax+b)\sqrt{x^2-4x+3}+\frac{(ax^2+bx+c)(x-2)}{\sqrt{x^2-4x+3}}+ \frac{K}{\sqrt{x^2-4x+3}} \\
+x^3 \equiv (2ax+b)(x^2-4x+3)+(ax^2+bx+c)(x-2)+K \\
+x^3 \equiv 3ax^3+(-10a+2b)x^2+(6a-6b+c)x+(3b-2c+K) \\
+\begin{cases} 3a=1 \\ -10a+2b=0 \\ 6a-6b+c=0 \\ 3b-2c+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{3} \\ b=\frac{5}{3} \\ c=8 \\ K=11 \end{cases} \\
+\int \frac{x^3dx}{\sqrt{x^2-4x+3}} = (\frac{1}{3}x^2+\frac{5}{3}x+8)\sqrt{x^2-4x+3}+11\int \frac{dx}{\sqrt{x^2-4x+3}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2+\frac{5}{3}x+8)\sqrt{x^2-4x+3}+11\ln|x-2+\sqrt{x^2-4x+3}|+C\end{gather*}
+
+
+\subsectionbookmark{17.91}
+\begin{gather*}
+  \int \frac{3x^3+2}{\sqrt{x^2+x+1}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{3x^3+2}{\sqrt{x^2+x+1}}dx \equiv (ax^2+bx+c)\sqrt{x^2+x+1}+K\int \frac{dx}{\sqrt{x^2+x+1}} \\
+  \frac{3x^3+2}{\sqrt{x^2+x+1}} \equiv (2ax+b)\sqrt{x^2+x+1} + \frac{(ax^2+bx+c)(x+\frac{1}{2})}{\sqrt{x^2+x+1}} + \frac{K}{\sqrt{x^2+x+1}} \\
+  3x^3+2 \equiv (2ax+b)(x^2+x+1)+(ax^2+bx+c)(x+\frac{1}{2})+K \\
+  \begin{cases} 3a=3 \\ \frac{5}{2}a+2b=0 \\ 2a+\frac{3}{2}b+\frac{1}{2}c=0 \\ b+\frac{1}{2}c+K=2 \end{cases} \\
+  \begin{cases} a=1 \\ b=-\frac{5}{4} \\ c=-\frac{1}{8} \\ K=\frac{53}{16} \end{cases} \\
+  \int \frac{3x^3+2}{\sqrt{x^2+x+1}}dx
+  = (x^2-\frac{5}{4}x-\frac{1}{8})\sqrt{x^2+x+1}+\frac{53}{16}\int \frac{dx}{\sqrt{x^2+x+1}} = \\
+  = \int \frac{3x^3+2}{\sqrt{x^2+x+1}}dx
+  = (x^2-\frac{5}{4}x-\frac{1}{8})\sqrt{x^2+x+1}+\frac{53}{16}\int \ln|x+\frac{1}{2}+\sqrt{x^2+x+1}|+C
+\end{gather*}
+
+
+\subsectionbookmark{17.92}
+
+\begin{gather*}\int x^2\sqrt{4x-x^2}dx = \int \frac{x^2(4x-x^2)}{\sqrt{4x-x^2}}dx = \int \frac{-x^4+4x^3}{\sqrt{4x-x^2}}\end{gather*}
+metoda współczynników nieoznaczonych
+\begin{gather*}\int \frac{-x^4+4x^3}{\sqrt{4x-x^2}} \equiv (ax^3+bx^2+cx+d)\sqrt{4x-x^2} + K\int \frac{dx}{\sqrt{4x-x^2}} \\
+\frac{-x^4+4x^3}{\sqrt{4x-x^2}} \equiv (3ax^2+2bx+c)\sqrt{4x-x^2} + \frac{(ax^3+bx^2+cx+d)(2-x)}{\sqrt{4x-x^2}} + \frac{K}{\sqrt{4x-x^2}} \\
+-x^4+4x^3 \equiv (3ax^2+2bx+c)(2-x) + (ax^3+bx^2+cx+d)(2-x) + K \\
+\begin{cases} -4a=-1 \\ 14a-3b=4 \\ 10b-2c=0 \\ 6c-d=0 \\ 2d+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{4} \\ b=-\frac{1}{6} \\ c=-\frac{5}{6} \\ d=-5 \\ K=10 \end{cases} \\
+\int \frac{-x^4+4x^3}{\sqrt{4x-x^2}} = (\frac{1}{4}x^3-\frac{1}{6}x^2-\frac{5}{6}x+d)\sqrt{4x-x^2} + 10\int \frac{dx}{\sqrt{4x-x^2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{4}x^3-\frac{1}{6}x^2-\frac{5}{6}x-5)\sqrt{4x-x^2} + 10\int \frac{dx}{\sqrt{2^2+(x-2)^2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{4}x^3-\frac{1}{6}x^2-\frac{5}{6}x-5)\sqrt{4x-x^2} + 10\arcsin \left(\frac{x-2}{2}\right)+C
+\end{gather*}
+
+
+\subsectionbookmark{17.93}
+
+\begin{gather*}\int x\sqrt{6+x-x^2}dx = \int \frac{x(6+x-x^2)}{\sqrt{6+x-x^2}}dx = \int \frac{-x^3+x^2+6x}{\sqrt{6+x-x^2}}dx\end{gather*}
+metoda współczynników nieoznaczonych
+\begin{gather*}\int \frac{-x^3+x^2+6x}{\sqrt{6+x-x^2}}dx \equiv (ax^2+bx+c)\sqrt{6+x-x^2} + K\int \frac{dx}{\sqrt{6+x-x^2}} \\
+\frac{-x^3+x^2+6x}{\sqrt{6+x-x^2}} \equiv (2ax+b)\sqrt{6+x-x^2}+\frac{ax^2+bx+c)(\frac{1}{2}-x)}{\sqrt{6+x-x^2}} + \frac{K}{\sqrt{6+x-x^2}} \\
+-x^3+x^2+6x \equiv (2ax+b)(6+x-x^2)+(ax^2+bx+c)(\frac{1}{2}-x)+K \\
+\begin{cases} -3a=-1 \\ \frac{5}{2}a-2b=1 \\ 12a+\frac{3}{2}b-c=6 \\ 6b+\frac{1}{2}c+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{3} \\ b=-\frac{1}{12} \\ c=-\frac{17}{8} \\ K=\frac{25}{16} \end{cases} \\
+\int \frac{-x^3+x^2+6x}{\sqrt{6+x-x^2}}dx \equiv (\frac{1}{3}x^2-\frac{1}{12}x-\frac{17}{8})\sqrt{6+x-x^2} + \frac{25}{16}\int \frac{dx}{\sqrt{6+x-x^2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2-\frac{1}{12}x-\frac{17}{8})\sqrt{6+x-x^2} + \frac{25}{16}\int \frac{dx}{\sqrt{(\frac{5}{2})^2-(x-\frac{1}{2})^2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2-\frac{1}{12}x-\frac{17}{8})\sqrt{6+x-x^2} + \frac{25}{16}\arcsin \left(\frac{2x-1}{5}\right)+C\end{gather*}
+
+
+\subsectionbookmark{17.94}
+
+\begin{gather*}
+  \int \frac{x^4dx}{\sqrt{5x^2+4}} \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^4dx}{\sqrt{5x^2+4}} \equiv (ax^3+bx^2+cx+d)\sqrt{5x^2+4} + K\int \frac{dx}{\sqrt{5x^2+4}} \\
+\frac{x^4}{\sqrt{5x^2+4}} \equiv (3ax^2+2bx+c)\sqrt{5x^2+4}+\frac{(ax^3+bx^2+cx+d)\cdot 5x}{\sqrt{5x^2+4}}+\frac{K}{\sqrt{5x^2+4}} \\
+x^4 \equiv (3ax^2+2bx+c)(5x^2+4)+5x(ax^3+bx^2+cx+d)+K \\
+\begin{cases} 20a=1 \\ 15b=0 \\ 12a+10c=0 \\ 8b+5d=0 \\ 4c+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{20} \\ b=0 \\ c=-\frac{3}{50} \\ d=0 \\ K=\frac{6}{25} \end{cases} \\
+\int \frac{x^4dx}{\sqrt{5x^2+4}} = (\frac{1}{20}x^3-\frac{3}{50} x)\sqrt{5x^2+4} + \frac{6}{25}\int \frac{dx}{\sqrt{5x^2+4}} = \end{gather*}
+\begin{gather*}= (\frac{1}{20}x^3-\frac{3}{50} x)\sqrt{5x^2+4} + \frac{6}{25\sqrt{5}}\int \frac{dx}{\sqrt{x^2+\frac{4}{5}}} = \end{gather*}
+\begin{gather*}= (\frac{1}{20}x^3-\frac{3}{50} x)\sqrt{5x^2+4} + \frac{6\sqrt{5}}{125}\ln|x+\sqrt{x^2+\frac{4}{5}}|+C\end{gather*}
+
+
+\subsectionbookmark{17.95}
+\begin{gather*}
+  \int \frac{x^3+5x^2-3x+4}{\sqrt{x^2+x+1}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^3+5x^2-3x+4}{\sqrt{x^2+x+1}}dx \equiv (ax^2+bx+c)\sqrt{x^2+x+1} + K\int \frac{dx}{\sqrt{x^2+x+1}} \\
+\frac{x^3+5x^2-3x+4}{\sqrt{x^2+x+1}} \equiv (2ax+b)\sqrt{x^2+x+1} + \frac{(ax^2+bx+c)(x+\frac{1}{2})}{\sqrt{x^2+x+1}}+ \frac{K}{\sqrt{x^2+x+1}} \\
+x^3+5x^2-3x+4 \equiv (2ax+b)(x^2+x+1) + (ax^2+bx+c)(x+\frac{1}{2})+ K \\
+\begin{cases} 3a=1 \\ \frac{5}{2}a+2b=5 \\ 2a+\frac{3}{2}b+c=-3 \\ b+\frac{1}{2}c+K4 \end{cases} \\
+\begin{cases} a=\frac{1}{3} \\ b=\frac{25}{12} \\ c=-\frac{163}{24} \\ K=\frac{85}{16} \end{cases} \\
+\int \frac{x^3+5x^2-3x+4}{\sqrt{x^2+x+1}}dx = (\frac{1}{3}x^2+\frac{25}{12}x-\frac{163}{24})\sqrt{x^2+x+1} + \frac{85}{16}\int \frac{dx}{\sqrt{x^2+x+1}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2+\frac{25}{12}x-\frac{163}{24})\sqrt{x^2+x+1} + \frac{85}{16}\ln|x+\frac{1}{2}+\sqrt{x^2+x+1}|+C\end{gather*}
+
+
+\subsectionbookmark{17.96}
+
+\begin{gather*}
+  \int \frac{5x^2-2x+10}{\sqrt{3x^2-5x+8}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{5x^2-2x+10}{\sqrt{3x^2-5x+8}}dx \equiv (ax+b)\sqrt{3x^2-5x+8} + K\int \frac{dx}{\sqrt{3x^2-5x+8}} \\
+\frac{5x^2-2x+10}{\sqrt{3x^2-5x+8}} \equiv a\sqrt{3x^2-5x+8} + \frac{(ax+b)(3x-\frac{5}{2})}{\sqrt{3x^2-5x+8}} + \frac{K}{\sqrt{3x^2-5x+8}} \\
+5x^2-2x+10 \equiv a(3x^2-5x+8) + (ax+b)(3x-\frac{5}{2}) + K \\
+\begin{cases} 6a=5 \\ -\frac{15}{2}+3b=-2 \\ 8a-\frac{5}{2}b+K=10 \end{cases} \\
+\begin{cases} a=\frac{5}{6} \\ b=\frac{17}{12} \\ K=\frac{55}{8} \end{cases} \\
+\int \frac{5x^2-2x+10}{\sqrt{3x^2-5x+8}}dx = (\frac{5}{6}x+\frac{17}{12})\sqrt{3x^2-5x+8} + \frac{55}{8}\int \frac{dx}{\sqrt{3x^2-5x+8}} = \end{gather*}
+\begin{gather*}= (\frac{5}{6}x+\frac{17}{12})\sqrt{3x^2-5x+8} + \frac{55}{8\sqrt{3}}\int \frac{dx}{\sqrt{x^2-\frac{5}{3}x+\frac{8}{3}}} = \end{gather*}
+\begin{gather*}= (\frac{5}{6}x+\frac{17}{12})\sqrt{3x^2-5x+8} + \frac{55\sqrt{3}}{24}\ln|x-\frac{5}{6}+\sqrt{x^2-\frac{5}{3}x+\frac{8}{3}}|+C\end{gather*}
+
+
+\subsectionbookmark{17.97}
+
+\begin{gather*}
+  \int \frac{x^3+4x^2-6x+3}{\sqrt{5+6x-x^2}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^3+4x^2-6x+3}{\sqrt{5+6x-x^2}}dx \equiv (ax^2+bx+c)\sqrt{5+6x-x^2}+K\int \frac{dx}{\sqrt{5+6x-x^2}} \\
+\frac{x^3+4x^2-6x+3}{\sqrt{5+6x-x^2}} \equiv (2ax+b)\sqrt{5+6x-x^2}+\frac{(ax^2+bx+c)(3-x)}{\sqrt{5+6x-x^2}}+ \frac{K}{\sqrt{5+6x-x^2}} \\
+x^3+4x^2-6x+3 \equiv (2ax+b)(5+6x-x^2)+(ax^2+bx+c)(3-x)+K \\
+\begin{cases} -3a=1 \\ 15a-2b=4 \\ 10a+9b-c=-6 \\ 5b+3c+K=3 \end{cases} \\
+\begin{cases} a=-\frac{1}{3} \\ b=-\frac{9}{2} \\ c=-\frac{227}{6} \\ K=139 \end{cases} \\
+\int \frac{x^3+4x^2-6x+3}{\sqrt{5+6x-x^2}}dx = (-\frac{1}{3}x^2-\frac{9}{2}x-\frac{227}{6})\sqrt{5+6x-x^2}+139\int \frac{dx}{\sqrt{5+6x-x^2}} = \end{gather*}
+\begin{gather*}= (-\frac{1}{3}x^2-\frac{9}{2}x-\frac{227}{6})\sqrt{5+6x-x^2}+139\int \frac{dx}{\sqrt{(\sqrt{14})^2+(x-3)^2}} = \end{gather*}
+\begin{gather*}= (-\frac{1}{3}x^2-\frac{9}{2}x-\frac{227}{6})\sqrt{5+6x-x^2}+139\arcsin \left(\frac{x-3}{\sqrt{14}}\right)+C\end{gather*}
+
+
+\subsectionbookmark{17.98}
+
+\begin{gather*}\int x\sqrt{8+x-x^2}dx = \int \frac{x(8+x-x^2)}{\sqrt{8+x-x^2}}dx = \int \frac{-x^3+x^2+8x}{\sqrt{8+x-x^2}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{-x^3+x^2+8x}{\sqrt{8+x-x^2}}dx \equiv (ax^2+bx+c)\sqrt{8+x-x^2} + K\int \frac{dx}{\sqrt{8+x-x^2}} \\
+\frac{-x^3+x^2+8x}{\sqrt{8+x-x^2}} \equiv (2ax+b)\sqrt{8+x-x^2}+\frac{(ax^2+bx+c)(\frac{1}{2}-x)}{\sqrt{8+x-x^2}} + \frac{K}{\sqrt{8+x-x^2}} \\
+-x^3+x^2+8x \equiv (2ax+b)(8+x-x^2)+(ax^2+bx+c)(\frac{1}{2}-x)+K \\
+\begin{cases} -3a=-1 \\ \frac{5}{2}a-2b=1 \\ 16a+\frac{3}{2}b-c=8 \\ 8b+\frac{1}{2}c+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{3} \\ b=-\frac{1}{12} \\ c=-\frac{67}{24} \\ K=\frac{33}{16} \end{cases} \\
+\int \frac{-x^3+x^2+8x}{\sqrt{8+x-x^2}}dx = (\frac{1}{3}x^2-\frac{1}{12}x-\frac{67}{24})\sqrt{8+x-x^2} + \frac{33}{16}\int \frac{dx}{\sqrt{(\frac{\sqrt{33}}{2})^2-(x-\frac{1}{2})^2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{3}x^2-\frac{1}{12}x-\frac{67}{24})\sqrt{8+x-x^2} + \frac{33}{16}\arcsin \left(\frac{2x-1}{\sqrt{33}}\right)+C\end{gather*}
+
+
+\subsectionbookmark{17.99}
+
+\begin{gather*}\int (2x-5)\sqrt{2+3x-x^2}dx = \int \frac{(2x-5)(2+3x-x^2)}{\sqrt{2+3x-x^2}}dx = \int \frac{-2x^3+11x^2-11x-10}{\sqrt{2+3x-x^2}}dx \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{-2x^3+11x^2-11x-10}{\sqrt{2+3x-x^2}}dx \equiv (ax^2+bx+c)\sqrt{2+3x-x^2}+K\int \frac{dx}{\sqrt{2+3x-x^2}} \\
+ \frac{-2x^3+11x^2-11x-10}{\sqrt{2+3x-x^2}} \equiv (2ax+b)\sqrt{2+3x-x^2}+\frac{(ax^2+bx+c)(\frac{3}{2}-x)}{\sqrt{2+3x-x^2}}+ \frac{K}{\sqrt{2+3x-x^2}} \\
+-2x^3+11x^2-11x-10 \equiv (2ax+b)(2+3x-x^2)+(ax^2+bx+c)(\frac{3}{2}-x)+K \\
+\begin{cases} -3a=-2 \\ \frac{15}{2}a-2b=11 \\ 4a+\frac{9}{2}b-c=-11 \\ 2b+\frac{3}{2}c+K=-10 \end{cases} \\
+\begin{cases} a=\frac{2}{3} \\ b=-3 \\ c=\frac{1}{6} \\ K=-\frac{17}{4} \end{cases} \\
+\int \frac{-2x^3+11x^2-11x-10}{\sqrt{2+3x-x^2}}dx = (\frac{2}{3}x^2-3x+\frac{1}{6})\sqrt{2+3x-x^2}-\frac{17}{4}\int \frac{dx}{\sqrt{2+3x-x^2}} = \end{gather*}
+\begin{gather*}= (\frac{2}{3}x^2-3x+\frac{1}{6})\sqrt{2+3x-x^2}-\frac{17}{4}\int \frac{dx}{\sqrt{(\frac{\sqrt{17}}{2})^2-(x-\frac{3}{2})^2}} = \end{gather*}
+\begin{gather*}= (\frac{2}{3}x^2-3x+\frac{1}{6})\sqrt{2+3x-x^2}-\frac{17}{4}\arcsin\left(\frac{2x-3}{\sqrt{17}}\right)+C\end{gather*}
+
+
+\subsectionbookmark{17.100}
+
+\begin{gather*}
+  \int \frac{x^3dx}{\sqrt{2x^2+3}} \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^3dx}{\sqrt{2x^2+3}} \equiv (ax^2+bx+c)\sqrt{2x^2+3} + K\int \frac{dx}{\sqrt{2x^2+3}} \\
+\frac{x^3}{\sqrt{2x^2+3}} \equiv (2ax+b)\sqrt{2x^2+3} + \frac{(ax^2+bx+c)\cdot 2x}{\sqrt{2x^2+3}} + \frac{K}{\sqrt{2x^2+3}} \\
+x^3 \equiv (2ax+b)(2x^2+3)+2x(ax^2+bx+c)+K \\
+\begin{cases} 6a=1 \\ 4b=0 \\ 6a+2c=0 \\ 3b+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{6} \\ b=0 \\ c=-\frac{1}{2} \\ K=0 \end{cases} \\
+\int \frac{x^3dx}{\sqrt{2x^2+3}} = (\frac{1}{6}x^2-\frac{1}{2})\sqrt{2x^2+3}+C\end{gather*}
+
+
+\subsectionbookmark{17.101}
+
+\begin{gather*}
+  \int \frac{x^5dx}{\sqrt{2x^2+3}} \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^5dx}{\sqrt{2x^2+3}} \equiv (ax^4+bx^3+cx^2+dx+e)\sqrt{2x^2+3}+K\int \frac{dx}{\sqrt{2x^2+3}} \\
+\frac{x^5}{\sqrt{2x^2+3}} \equiv (4ax^3+3bx^2+2cx+d)\sqrt{2x^2+3}+\frac{(ax^4+bx^3+cx^2+dx+e)\cdot 2x}{\sqrt{2x^2+3}}+\frac{K}{\sqrt{2x^2+3}} \\
+x^5 \equiv (4ax^3+3bx^2+2cx+d)(2x^2+3)+2x(ax^4+bx^3+cx^2+dx+e)+K \\
+\begin{cases} 10a=1 \\ 8b=0 \\ 12a+6c=0 \\ 9b+4d=0 \\ 3d+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{10} \\ b=0 \\ c=-\frac{1}{5} \\ d=0 \\ e=\frac{3}{5} \\ K=0 \end{cases} \\
+\int \frac{x^5dx}{\sqrt{2x^2+3}} = (\frac{1}{10}x^4-\frac{1}{5}x^2+\frac{3}{5})\sqrt{2x^2+3}+C\end{gather*}
+
+
+\subsectionbookmark{17.102}
+
+\begin{gather*}
+  \int \frac{x^4dx}{\sqrt{3+2x+x^2}} \\
+  \text{metoda współczynników nieoznaczonych} \\
+  \int \frac{x^4dx}{\sqrt{3+2x+x^2}} \equiv (ax^3+bx^2+cx+d)\sqrt{3+2x+x^2}+K\int \frac{dx}{\sqrt{3+2x+x^2}} \\
+ \frac{x^4}{\sqrt{3+2x+x^2}} \equiv (3ax^2+2bx+c)\sqrt{3+2x+x^2} + \frac{(ax^3+bx^2+cx+d)(x+1)}{\sqrt{3+2x+x^2}}+\frac{K}{\sqrt{3+2x+x^2}} \\
+x^4 \equiv (3ax^2+2bx+c)(x^2+2x+3) + (ax^3+bx^2+cx+d)(x+1)+K \\
+\begin{cases} 4a=1 \\ 7a+3b=0 \\ 9a+5b+2c=0 \\ 6b+3c+d=0 \\ 3c+d+K=0 \end{cases} \\
+\begin{cases} a=\frac{1}{4} \\ b=-\frac{7}{12} \\ c=\frac{1}{3} \\ d=\frac{5}{2} \\ K=-\frac{7}{2} \end{cases} \\
+\int \frac{x^4dx}{\sqrt{3+2x+x^2}} \equiv (\frac{1}{4}x^3-\frac{7}{12}x^2+\frac{1}{3}x+\frac{5}{2})\sqrt{3+2x+x^2}-\frac{7}{2}\int \frac{dx}{\sqrt{3+2x+x^2}} = \end{gather*}
+\begin{gather*}= (\frac{1}{4}x^3-\frac{7}{12}x^2+\frac{1}{3}x+\frac{5}{2})\sqrt{3+2x+x^2}- \frac{7}{2}\ln|x+1+\sqrt{3+2x+x^2}|+C\end{gather*}
+
+
+\subsectionbookmark{17.103}
+
+\begin{gather*}
+  \int \frac{dx}{x\sqrt{10x-x^2}} =
+  \begin{vmatrix}
+    t=\dfrac{1}{x} \\
+    \dfrac{1}{t}=x \\
+    -\dfrac{dt}{t^2}=dx
+  \end{vmatrix}
+  = \int \dfrac{-\dfrac{dt}{t^2}}{\dfrac{1}{t}\sqrt{\dfrac{10}{t}-\dfrac{1}{t^2}}}
+  = \int \frac{-dt}{t\sqrt{\dfrac{10}{t}-\dfrac{1}{t^2}}}
+  = -\int \frac{dt}{\sqrt{10t-1}} = \\
+  = - \int \frac{\dfrac{1}{10}(10t-1)'}{\sqrt{10t-1}}dt
+  = -\frac{1}{5}\sqrt{10t-1}+C
+  = -\frac{1}{5}\sqrt{\dfrac{10}{x}-1}+C
+\end{gather*}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x\sqrt{10x-x^2}}} =
+\begin{vmatrix}
+  \sqrt{10x-x^2}=xt \\
+  10x-x^2=x^2t^2 \\
+  10-x=xt^2 \\
+  x+xt^2=10 \\
+  x(1+t^2)=10\\
+  x=\dfrac{10}{1+t^2} \\
+  \mbox{d}x=\dfrac{-20t}{(1+t^2)^2}\mbox{d}t \\
+  \sqrt{10x-x^2}=\dfrac{10t}{1+t^2}
+\end{vmatrix}
+= \int{\frac{1+t^2}{10}\cdot \frac{1+t^2}{10t}\cdot \frac{-20t}{(1+t^2)^2}}\mbox{d}t = \\
+= -\frac{1}{5} \int{\mbox{d}t}
+= -\frac{1}{5} t + C
+= -\frac{1}{5}\frac{\sqrt{10x-x^2}}{x}+C
+\end{gather*}
+
+\subsectionbookmark{17.104}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(x+1)\sqrt{x^2-1}}} =
+\begin{vmatrix}
+  \sqrt{x^2-1}=(x+1)t\\
+  x^2-1=(x+1)^2t^2\\
+  x-1=(x+1)t^2\\
+  x-1=xt^2+t^2\\
+  x-xt^2=1+t^2\\
+  x(1-t^2)=1+t^2\\
+  x=\dfrac{1+t^2}{1-t^2}\\
+  x=-1+\dfrac{2}{1-t^2}\\
+  \mbox{d}x=\dfrac{4t}{(1-t^2)^2}\mbox{d}t\\
+  x+1=\dfrac{2}{1-t^2}\\
+  \sqrt{x^2-1}=\dfrac{2t}{1-t^2}
+\end{vmatrix}
+= \int{\frac{1-t^2}{2}\cdot \frac{1-t^2}{2t}\cdot \frac{4t}{(1-t^2)^2}\mbox{d}t} = \\
+= \int{\mbox{d}t} = t + C
+= \frac{\sqrt{x^2-1}}{x+1} + C
+\end{gather*}
+
+\subsectionbookmark{17.105}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(x+2)\sqrt{4-x^2}}} =
+\begin{vmatrix}
+  \sqrt{4-x^2}=(x+2)t\\
+  4-x^2=(x+2)^2t^2\\
+  2-x=(x+2)t^2\\
+  2-x=xt^2+2t^2\\
+  x+xt^2=2-2t^2\\
+  x(1+t^2)=2-2t^2\\
+  x=\dfrac{2-2t^2}{t^2+1}\\
+  x=-2+\dfrac{4}{1+t^2}\\
+  \mbox{d}x=-\dfrac{8t}{(1+t^2)^2}\\
+  x+2=\dfrac{4}{1+t^2}\\
+  \sqrt{4-x^2}=\dfrac{4t}{1+t^2}
+\end{vmatrix}
+= \int{\frac{1+t^2}{4}\cdot\frac{1+t^2}{4t}\cdot \frac{-8t}{(1+t^2)^2}\mbox{d}t} = \\
+= -\frac{1}{2}\int{\mbox{d}t}
+= -\frac{1}{2}t + C
+= -\frac{1}{2}\cdot\frac{\sqrt{4-x^2}}{2+x}+C
+\end{gather*}
+
+\subsectionbookmark{17.106}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x\sqrt{x^2+x-1}}} =
+\begin{vmatrix}
+  \sqrt{x^2+x-1}=t-x\\
+  x^2+x-1=t^2-2tx+x^2\\
+  x-1=t^2-2tx\\
+  2tx+x=t^2+1\\
+  x(2t+1)=t^2+1\\
+  x=\dfrac{t^2+1}{2t+1}\\
+  \mbox{d}x=\dfrac{2t\cdot(2t+1)-2(t^2+1)}{(2t+1)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{2t^2+2t-2}{(2t+1)^2}\mbox{d}t\\
+  \sqrt{x^2+x-1} = t-\dfrac{t^2+1}{2t+1} \\
+  \sqrt{x^2+x-1}=\dfrac{t^2+t-1}{2t+1}
+\end{vmatrix}
+= \int{\frac{2t+1}{t^2+1}\cdot\frac{2t+1}{t^2+t-1}\cdot\frac{2(t^2+t-1)}{(2t+1)^2}\mbox{d}t} = \\
+= 2\int{\frac{\mbox{d}t}{t^2+1}}
+= 2\arctan{t}+C = \\
+= 2\arctan{(x+\sqrt{x^2+x-1})}+C
+\end{gather*}
+
+\subsectionbookmark{17.107}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x\sqrt{x^2-2x-1}}} =
+\begin{vmatrix}
+  \sqrt{x^2-2x-1}=t-x\\
+  x^2-2x-1=t^2-2tx+x^2\\
+  -2x-1=t^2-2tx\\
+  t^2+1=2tx-2x\\
+  x(2t-2)=t^2+1\\
+  x=\dfrac{t^2+1}{2t-2}\\
+  \mbox{d}x=\dfrac{2t(2t-2)-2(t^2+1)}{(2t-2)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{2t^2-4t-2}{(2t-2)^2}\mbox{d}t\\
+  \sqrt{x^2-2x-1} = t-\dfrac{t^2+1}{2t-2} \\
+  \sqrt{x^2-2x-1} = \dfrac{t^2-2t-1}{2t-2}
+\end{vmatrix}
+= \int{\frac{2t-2}{t^2+1}\cdot\frac{2t-2}{t^2-2t-1}\cdot\frac{2(t^2-2t-1)}{(2t-2)^2}\mbox{d}t} = \\
+= 2\int{\frac{\mbox{d}t}{t^2+1}}
+= 2\arctan{t} + C = \\
+= 2\arctan{(x+\sqrt{x^2-2x-1})}+C
+\end{gather*}
+
+\subsectionbookmark{17.108}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(2x-1)\sqrt{x^2-1}}} =
+\begin{vmatrix}
+  \sqrt{x^2-1}=t-x\\
+  x^2-1=t^2-2tx+x^2\\
+  -1=t^2-2tx\\
+  2tx=t^2+1\\
+  x=\dfrac{t^2+1}{2t}\\
+  \mbox{d}x=\dfrac{t^2-1}{2t^2}\mbox{d}t\\
+  \sqrt{x^2-1}=t-\dfrac{t^2+1}{2t}\\
+  \sqrt{x^2-1}=\dfrac{t^2-1}{2t}\\
+  2x-1=\dfrac{t^2-t+1}{t}\\
+\end{vmatrix}
+= \int{\frac{t}{t^2-t+1}\cdot\frac{2t}{t^2-1}\cdot\frac{t^2-1}{2t^2}\mbox{d}t} = \\
+= \int{\frac{\mbox{d}t}{t^2-t+1}}
+= \int{\frac{\mbox{d}t}{\left(t-\dfrac{1}{2}\right)^2+\dfrac{3}{4}}} = \\
+= \frac{4}{3}\int{\frac{\mbox{d}t}{\left(\dfrac{2t-1}{\sqrt{3}}\right)^2+1}}
+= \frac{2}{\sqrt{3}}\arctan{\left(\frac{2t-1}{\sqrt{3}}\right)}+C = \\
+= \frac{2}{\sqrt{3}}\arctan{\left(\frac{2x+2\sqrt{x^2-1}-1}{\sqrt{3}}\right)}+C
+\end{gather*}
+
+\subsectionbookmark{17.109}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(x+1)\sqrt{1+2x-3x^2}}} =
+\begin{vmatrix}
+  \sqrt{1+2x-3x^2}=xt+1\\
+  1+2x-3x^2=x^2t^2+2xt+1\\
+  2x-3x^2=x^2t^2+2xt\\
+  2-3x=xt^2+2t\\
+  2-2t=xt^2+3x\\
+  x(t^2+3)=2-2t\\
+  x=\dfrac{2-2t}{t^2+3}\\
+  \mbox{d}x=\dfrac{2(t^2-2t-3)}{(t^2+3)^{2}}\mbox{d}t\\
+  x+1=\dfrac{t^2-2t+5}{t^2+3}\\
+  \sqrt{1+2x-3x^2} = \dfrac{2-2t}{t^2+3} \cdot t+1 \\
+  \sqrt{1+2x-3x^2} = \dfrac{-(t^2-2t-3)}{t^2+3}
+\end{vmatrix} \\
+= \int{\frac{t^2+3}{t^2-2t+5} \cdot \frac{t^2+3}{-(t^2-2t-3)} \cdot \frac{2(t^2-2t-3)}{(t^2+3)^{2}}\mbox{d}t}
+= -2\int{\frac{\mbox{d}t}{t^2-2t+5}} = \\
+= -2\int{\frac{\mbox{d}t}{(t-1)^2+4}}
+= -\frac{1}{2}\int{\frac{\mbox{d}t}{1+\left(\dfrac{t-1}{2}\right)^2}}
+= -\arctan{\left(\frac{t-1}{2}\right)}+C = \\
+= -\arctan{\left(\frac{\sqrt{1+2x-3x^2}-x-1}{2x}\right)} + C
+\end{gather*}
+
+\subsectionbookmark{17.110}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(3-2x)\sqrt{x^2-4x+3}}} =
+\begin{vmatrix}
+  \sqrt{x^2-4x+3}=t-x\\
+  x^2-4x+3=t^2-2tx+x^2\\
+  -4x+3=t^2-2tx\\
+  2tx-4x=t^2-3\\
+  x(2t-4)=t^2-3\\
+  x=\dfrac{t^2-3}{2t-4}\\
+  \mbox{d}x=\dfrac{2(t^2-4t+3)}{(2t-4)^{2}}\mbox{d}t\\
+  3-2x = \dfrac{-2(t^2-3t+3)}{2t-4}\\
+  \sqrt{x^2-4x+3} = t-\dfrac{t^2-3}{2t-4} \\
+  \sqrt{x^2-4x+3} = \dfrac{t^2-4t+3}{2t-4}\\
+\end{vmatrix} = \\
+= \int{\frac{2t-4}{-2(t^2-3t+3)} \cdot \frac{2t-4}{t^2-4t+3} \cdot \frac{2(t^2-4t+3)}{(2t-4)^{2}}\mbox{d}t}
+= -\int{\frac{\mbox{d}t}{t^2-3t+3}} = \\
+= -\int{\frac{\mbox{d}t}{\left(t-\dfrac{3}{2}\right)^2+\dfrac{3}{4}}}
+= -\dfrac{4}{3}\int{\dfrac{\mbox{d}t}{1+\left(\dfrac{2t-3}{\sqrt{3}}\right)^2}}
+= -\dfrac{2}{\sqrt{3}}\arctan{\left(\dfrac{2t-3}{\sqrt{3}}\right)}+C =\\
+= -\dfrac{2}{\sqrt{3}}\arctan{\left(\dfrac{2x+2\sqrt{x^2-4x+3}-3}{\sqrt{3}}\right)}+C
+\end{gather*}
+
+\subsectionbookmark{17.111}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x\sqrt{x^2+x+1}}} =
+\begin{vmatrix}
+  \sqrt{x^2+x+1}=xt+1\\
+  x^2+x+1=x^2t^2+2xt+1\\
+  x^2+x=x^2t^2+2xt\\
+  x+1=xt^2+2t\\
+  x-xt^2=2t-1\\
+  x(1-t^2)=2t-1\\
+  x=\dfrac{2t-1}{1-t^2}\\
+  \mbox{d}x=\dfrac{2(t^2-t+1)}{(1-t^2)^2}\mbox{d}t\\
+  \sqrt{x^2+x+1} = \dfrac{2t-1}{1-t^2} \cdot t+1 \\
+  \sqrt{x^2+x+1} = \dfrac{t^2-t+1}{1-t^2}
+\end{vmatrix}
+= \int{\frac{1-t^2}{2t-1}\cdot \frac{1-t^2}{t^2-t+1}\cdot \frac{2(t^2-t+1)}{\left(1-t^2\right)^2}\mbox{d}t} \\
+= \int{\frac{2}{2t-1}\mbox{d}t}
+= \ln{\left|2t-1\right|}+C = \ln{\left|\frac{2\sqrt{x^2+x+1}-x-2}{x}\right|}+C
+\end{gather*}
+
+\subsectionbookmark{17.112}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x\sqrt{x^2-1}}} =
+\begin{vmatrix}
+  \sqrt{x^2-1}=t-x\\
+  x^2-1=t^2-2tx+x^2\\
+  -1=t^2-2tx\\
+  2tx=t^2+1\\
+  x=\dfrac{t^2+1}{2t}\\
+  \mbox{d}x=\dfrac{t^2-1}{2t^2}\mbox{d}t\\
+  \sqrt{x^2-1}=t-\dfrac{t^2+1}{2t} \\
+  \sqrt{x^2-1}=\dfrac{t^2-1}{2t}
+\end{vmatrix}
+= \int{\frac{2t}{t^2+1}\cdot\frac{2t}{t^2-1}\cdot\frac{t^2-1}{2t^2}\mbox{d}t}
+= \int{\frac{2\mbox{d}t}{t^2+1}} = \\
+= 2\arctan{t}+C
+= 2\arctan{(x+\sqrt{x^2-1})}+C
+\end{gather*}
+
+
+\subsectionbookmark{17.113}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(a-x)\sqrt{a^2-x^2}}} =
+\begin{vmatrix}
+  \sqrt{a^2-x^2}=(a-x)t\\
+  a^2-x^2=(a-x)^2t^2\\
+  a+x=(a-x)t^2\\
+  a+x=at^2-xt^2\\
+  x+xt^2=at^2-a\\
+  x(1+t^2)=at^2-a\\
+  x=\dfrac{at^2-a}{1+t^2}\\
+  x=a-\dfrac{2a}{1+t^2}\\
+  \mbox{d}x=\dfrac{4at}{(1+t^2)^2}\mbox{d}t
+\end{vmatrix}
+= \int{\frac{1+t^2}{2a}\cdot\frac{1+t^2}{2at}\cdot\frac{4at}{(1+t^2)^2}\mbox{d}t} = \\
+= \frac{1}{a}\int{\mbox{d}t}
+= \frac{1}{a}\cdot t + C
+= \frac{1}{a}\cdot \frac{\sqrt{a^2-x^2}}{a-x} + C
+\end{gather*}
+
+\subsectionbookmark{17.114}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{\left(x-2\right)\sqrt{x^2-6x+1}}} =
+\begin{vmatrix}
+  \sqrt{x^2-6x+1}=t-x\\
+  x^2-6x+1=t^2-2tx+x^2\\
+  -6x+1=t^2-2tx\\
+  2tx-6x=t^2-1\\
+  x(2t-6)=t^2-1\\
+  x=\dfrac{t^2-1}{2t-6}\\
+  \mbox{d}x=\dfrac{2(t^2-6t+1)}{(2t-6)^{2}}\mbox{d}t\\
+  x-2=\dfrac{t^2-1}{2t-6}-2 \\
+  x-2=\dfrac{t^2-4t+11}{2t-6}\\
+  \sqrt{x^2-6x+1} = t-\dfrac{t^2-1}{2t-6} \\
+  \sqrt{x^2-6x+1} = \dfrac{t^2-6t+1}{2t-6}
+\end{vmatrix}
+= 2\int{\frac{2t-6}{t^2-4t+11}\cdot\frac{2t-6}{t^2-6t+1}\cdot\frac{t^2-6t+1}{\left(2t-6\right)^{2}}\mbox{d}t} = \\
+= 2\int{\frac{\mbox{d}t}{t^2-4t+11}}
+= 2\int{\dfrac{\mbox{d}t}{\left(t-2\right)^2+7}}
+= \frac{2}{7}\int{\dfrac{\mbox{d}t}{1+\left(\dfrac{t-2}{\sqrt{7}}\right)^2}} = \\
+= \frac{2}{\sqrt{7}}\arctan{\left(\frac{t-2}{\sqrt{7}}\right)}+C
+= \frac{2}{\sqrt{7}}\arctan{\left(\frac{x-2+\sqrt{x^2-6x+1}}{\sqrt{7}}\right)}+C
+\end{gather*}
+
+
+\subsectionbookmark{17.115}
+
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x^2\sqrt{4-x^2}}} =
+\begin{vmatrix}
+  \sqrt{4-x^2}=(x+2)t\\
+  4-x^2=(x+2)^2t^2\\
+  2-x=(x+2)t^2\\
+  2-x=xt^2+2t^2\\
+  2-2t^2=x+xt^2\\
+  2-2t^2=x(1+t^2)\\
+  x=\dfrac{2-2t^2}{1+t^2}\\
+  \mbox{d}x=\dfrac{-8t}{(1+t^2)^2}\mbox{d}t\\
+  \sqrt{4-x^2}=\dfrac{4t}{1+t^2}
+\end{vmatrix}
+= -\int{\frac{(1+t^2)^2}{(2-2t^2)^2}\cdot\frac{1+t^2}{4t}\cdot\frac{8t}{(1+t^2)^2}\mbox{d}t} = \\
+= -\frac{1}{2}\int{\frac{1+t^2}{(1-t^2)^2}\mbox{d}t}
+= -\frac{1}{4}\int{\frac{(1+t)^2+(1-t)^2}{(1-t)^2(1+t)^2}\mbox{d}t} = \\
+= -\frac{1}{4}\left(\int{\frac{\mbox{d}t}{(1+t)^2}}+\int{\frac{\mbox{d}t}{(1-t)^2}}\right)
+= -\frac{1}{4}\left(\frac{1}{1-t}-\frac{1}{1+t}\right)+C = \\
+= -\frac{1}{4} \cdot \frac{2t}{1-t^2}+C = -\frac{1}{4}\frac{\sqrt{4-x^2}}{x}+C
+\end{gather*}
+
+
+
+\subsectionbookmark{17.116}
+
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(x-1)^2\sqrt{10x-x^2}}} =
+\begin{vmatrix}
+  \sqrt{10x-x^2}=xt\\
+  10x-x^2=x^2t^2\\
+  10-x=xt^2\\
+  10=x+xt^2\\
+  10=x(1+t^2)\\
+  x=\dfrac{10}{1+t^2}\\
+  \mbox{d}x=\dfrac{-20t}{(1+t^2)^2}\mbox{d}t\\
+  x-1=\dfrac{9-t^2}{1+t^2}\\
+  \sqrt{10x-x^2}=\dfrac{10t}{1+t^2}
+\end{vmatrix}
+= -2\int{\frac{(1+t^2)^2}{(9-t^2)^2}\cdot \frac{1+t^2}{10t}\cdot \frac{10t}{(1+t^2)^2}\mbox{d}t} = \\
+= -2\int{\frac{1+t^2}{(9-t^2)^2}\mbox{d}t} \\
+  -2 \int{\frac{1+t^2}{(9-t^2)^2}\mbox{d}t}
+    \equiv
+  \int{\frac{A}{3-t}\mbox{d}t}+\int{\frac{B}{(3-t)^2}\mbox{d}t}+\int{\frac{C}{3+t}\mbox{d}t}+\int{\frac{D}{(3+t)^2}\mbox{d}t} \\
+\begin{cases}
+  -A+C=0\\
+  -3A+B-3C+D=-2\\
+  9A+6B-9C-6D=0\\
+  27A+9B+27C+9D=-2
+\end{cases}\\
+\begin{cases}
+  A=\frac{4}{27}\\
+  B=-\frac{5}{9}\\
+  C=\frac{4}{27}\\
+  D=-\frac{5}{9}
+\end{cases}\\
+= \frac{4}{27}\int{\frac{1}{3-t}\mbox{d}t}-\frac{5}{9}\int{\frac{1}{(3-t)^2}\mbox{d}t}+\frac{4}{27}\int{\frac{1}{3+t}\mbox{d}t}-\frac{5}{9}\int{\frac{1}{(3+t)^2}\mbox{d}t}\\
+= \frac{4}{27}\ln{\left|\frac{3+t}{3-t}\right|}-\frac{5}{9}\cdot \frac{1}{3-t}+\frac{5}{9}\cdot \frac{1}{3-t}+C\\
+= \frac{4}{27}\ln{\left|\frac{3+t}{3-t}\right|}-\frac{10}{9} \cdot \frac{t}{9-t^2}\\
+= -\frac{1}{9}\frac{\sqrt{10x-x^2}}{x-1}+\frac{4}{27}\ln{\left|\frac{4x+5+3\sqrt{10x-x^2}}{x-1}\right|}+C
+\end{gather*}
+
+
+\subsectionbookmark{17.117}
+
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x^3\sqrt{x^2+1}}} =
+\begin{vmatrix}
+  \sqrt{x^2+1}=xt+1\\
+  x^2+1=x^2t^2+2xt+1\\
+  x^2=x^2t^2+2xt\\
+  x=xt^2+2t\\
+  x-xt^2=2t\\
+  x(1-t^2)=2t\\
+  x=\dfrac{2t}{1-t^2}\\
+  \mbox{d}x=\dfrac{2(1-t^2)+2t\cdot 2t}{(1-t^2)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{2(1+t^2)}{(1-t^2)^2}\mbox{d}t\\
+  \sqrt{x^2+1} = \dfrac{2t}{1-t^2} \cdot t+1 \\
+  \sqrt{x^2+1} = \dfrac{1+t^2}{1-t^2}
+\end{vmatrix}
+= \int{\frac{(1-t^2)^3}{8t^3}\cdot\frac{1-t^2}{1+t^2}\cdot\frac{2(1+t^2)}{(1-t^2)^2}\mbox{d}t} = \\
+= \frac{1}{4}\int{\frac{(1-t^2)^2}{t^3}\mbox{d}t}
+= \frac{1}{4}\left(\int{t\mbox{d}t}-2\int{\frac{\mbox{d}t}{t}}+\int{\frac{\mbox{d}t}{t^3}}\right) = \\
+= \frac{1}{4}\left(\frac{t^2}{2}-2\ln{\left|t\right|}-\frac{1}{2t^2}\right)+C
+= \frac{1}{8}\left(\frac{(t^2-1)(t^2+1)}{t^2}-4\ln{|t|}\right)+C = \\
+= -\frac{1}{2}\left(\frac{\sqrt{x^2+1}}{x^2}+\ln{\left|\frac{\sqrt{x^2+1}-1}{x}\right|}\right)+C
+\end{gather*}
+
+
+\subsectionbookmark{17.118}
+
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x^3\sqrt{2x^2+2x+1}}} =
+\begin{vmatrix}
+  \sqrt{2x^2+2x+1}=xt+1\\
+  2x^2+2x+1=x^2t^2+2xt+1\\
+  2x^2+2x=x^2t^2+2xt\\
+  2x+2=xt^2+2t\\
+  2x-xt^2=2t-2\\
+  x(2-t^2)=2t-2\\
+  x=\dfrac{2t-2}{2-t^2}\\
+  \mbox{d}x=\dfrac{2(2-t^2)+2t(2t-2)}{(2-t^2)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{2t^2-4t+4}{(2-t^2)^2}\mbox{d}t\\
+  \sqrt{2x^2+2x+1}=xt+1 \\
+  \sqrt{2x^2+2x+1}=\dfrac{2t^2-2t+2-t^2}{2-t^2}\\
+  \sqrt{2x^2+2x+1}=\dfrac{t^2-2t+2}{2-t^2}\\
+\end{vmatrix}
+= \int{\frac{(2-t^2)^3}{(2t-2)^3}\cdot \frac{2-t^2}{t^2-2t+2}\cdot \frac{2t^2-4t+4}{(2-t^2)^2}\mbox{d}t}\\
+= 2\int{\frac{(2-t^2)^2}{(2t-2)^3}\mbox{d}t}
+= \frac{1}{4}\int{\frac{(2-t^2)^2}{(t-1)^3}\mbox{d}t}\\
+= \frac{1}{4}\left(\int{t\mbox{d}t}+3\int{\mbox{d}t}+\int{\frac{2t^2-8t+7}{(t-1)^3}\mbox{d}t}\right)\\
+= \frac{1}{4}\left(\int{t\mbox{d}t}+3\int{\mbox{d}t}+\int{\frac{2}{t-1}\mbox{d}t}-\int{\frac{4}{(t-1)^2}\mbox{d}t}+\int{\frac{1}{(t-1)^3}\mbox{d}t}\right)\\
+= \frac{1}{4}\left(\frac{t^2}{2}+3t+2\ln{|t-1|}+\frac{4}{t-1}-\frac{1}{2}\cdot\frac{1}{(t-1)^2}\right)+C\\
+= -\frac{1}{2}\left(\frac{\sqrt{2x^2+2x+1}}{x^2}-3\frac{\sqrt{2x^2+2x+1}}{x}-\ln{\left|\frac{\sqrt{2x^2+2x+1}-x-1}{x}\right|}\right)+C
+\\ \square{} \\
+\int{\frac{2t^2-8t+7}{(t-1)^3}\mbox{d}t} \equiv \int{\frac{A}{t-1}\mbox{d}t} + \int{\frac{B}{(t-1)^2}\mbox{d}t} + \int{\frac{C}{(t-1)^3}\mbox{d}t}) \\
+\begin{cases}
+  A=2\\
+  -2A+B=-8\\
+  A-B+C=7
+\end{cases}\\
+\begin{cases}
+  A=2\\
+  B=-4\\
+  C=1
+\end{cases}\\
+\int{\frac{2t^2-8t+7}{(t-1)^3}\mbox{d}t} = \int{\frac{2}{t-1}\mbox{d}t} + \int{\frac{-4}{(t-1)^2}\mbox{d}t} + \int{\frac{1}{(t-1)^3}\mbox{d}t}) \\
+\end{gather*}
+
+
+\subsectionbookmark{17.119}
+
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(x-1)^3\sqrt{3-2x^2}}}
+= \int{\frac{\sqrt{3}\mbox{d}x}{(x-1)^3\sqrt{9-6x^2}}} = \\
+\begin{vmatrix}
+  \sqrt{9-6x^2}=xt+3\\
+  9-6x^2=x^2t^2+6xt+9\\
+  -6x^2=x^2t^2+6xt\\
+  -6x=xt^2+6t\\
+  xt^2+6x=-6t\\
+  x(t^2+6)=-6t\\
+  x=\dfrac{-6t}{t^2+6}\\
+  \mbox{d}x=\dfrac{-6(t^2+6)+12t^2}{(t^2+6)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{6t^2-36}{(t^2+6)^2}\mbox{d}t\\
+  x-1=\dfrac{-6t-t^2-6}{t^2+6}\\
+  \sqrt{9-6x^2}= \dfrac{-6t}{t^2+6} \cdot t+3 \\
+  \sqrt{9-6x^2}= \dfrac{-3t^2+18}{t^2+6}
+\end{vmatrix} \\
+= \int{\frac{(t^2+6)^3}{(t^2+6t+6)^3}\cdot\frac{t^2+6}{3t^2-18}\cdot\frac{6t^2-36}{(t^2+6)^2}\mbox{d}t}\\
+= 2\int{\frac{(t^2+6)^2}{(t^2+6t+6)^3}\mbox{d}t} = 2\int{\frac{(t^2+6)^2}{(t+3-\sqrt{3})^3(t+3+\sqrt{3})^3}\mbox{d}t} \\
+2 \int{\frac{(t^2+6)^2}{(t+3-\sqrt{3})^3(t+3+\sqrt{3})^3}\mbox{d}t}
+\equiv \int{\frac{A}{t+3-\sqrt{3}}\mbox{d}t}+\int{\frac{B}{(t+3-\sqrt{3})^2}\mbox{d}t}+\int{\frac{C}{(t+3-\sqrt{3})^3}\mbox{d}t}\\
++\int{\frac{D}{t+3+\sqrt{3}}\mbox{d}t}+\int{\frac{E}{(t+3+\sqrt{3})^2}\mbox{d}t}+\int{\frac{F}{(t+3+\sqrt{3})^3}\mbox{d}t}\\
+2(t^2+6)^2 \equiv A(t+3-\sqrt{3})^2(t+3+\sqrt{3})^3+B(t+3-\sqrt{3})(t+3+\sqrt{3})^3+C(t+3+\sqrt{3})^3\\+D(t+3-\sqrt{3})^3(t+3+\sqrt{3})^2+E(t+3-\sqrt{3})^3(t+3+\sqrt{3})+F(t+3-\sqrt{3})^3\\
+\begin{cases}
+  A=\frac{7}{3}\sqrt{3}\\
+  B=-6+\sqrt{3}\\
+  C=12\sqrt{3}-18\\
+  D=-\frac{7}{3}\sqrt{3}\\
+  E=-6-\sqrt{3}\\
+  F=-12\sqrt{3}-18\\
+\end{cases}\\
+= \frac{7}{3}\sqrt{3}\int{\frac{1}{t+3-\sqrt{3}}\mbox{d}t}+(-6+\sqrt{3})\int{\frac{1}{(t+3-\sqrt{3})^2}\mbox{d}t}
+  +(12\sqrt{3}-18)\int{\frac{1}{(t+3-\sqrt{3})^3}\mbox{d}t}\\-\frac{7}{3}\sqrt{3}\int{\frac{1}{t+3+\sqrt{3}}\mbox{d}t}
+    +(-6-\sqrt{3})\int{\frac{1}{(t+3+\sqrt{3})^2}\mbox{d}t}+(-12\sqrt{3}-18)\int{\frac{1}{(t+3+\sqrt{3})^3}\mbox{d}t} \\
+= (6-\sqrt{3})\frac{1}{t+3-\sqrt{3}}+(9-6\sqrt{3})\frac{1}{(t+3-\sqrt{3})^2}+(6+\sqrt{3})\frac{1}{t+3+\sqrt{3}} + \\
+  +(9+6\sqrt{3})\frac{1}{(t+3+\sqrt{3})^2}+\frac{7}{\sqrt{3}}\ln{\left|\frac{t+3-\sqrt{3}}{t+3+\sqrt{3}}\right|} + C = \\
+= -\frac{1}{2}(\frac{\sqrt{3-2x^2}}{(x-1)^2}+6\frac{\sqrt{3-2x^2}}{x-1})+7\ln{\left|\frac{\sqrt{3-2x^2}+2x-3}{x-1}\right|}+C
+\end{gather*}
+
+
+\subsectionbookmark{17.120}
+
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x^2\sqrt{1-4x+x^2}}}
+= \begin{vmatrix}
+  \sqrt{1-4x+x^2}=xt+1\\
+  1-4x+x^2=x^2t^2+2xt+1\\
+  -4x+x^2=x^2t^2+2xt\\
+  -4+x=xt^2+2t\\
+  x-xt^2=2t+4\\
+  x(1-t^2)=2t+4\\
+  x=\dfrac{2t+4}{1-t^2}\\
+  \mbox{d}x=\dfrac{2(1-t^2)+2t(2t+4)}{(2t+4)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{2t^2+8t+2}{(2t+4)^2}\mbox{d}t\\
+  \sqrt{1-4x+x^2}=\dfrac{2t+4}{1-t^2}\cdot t+1\\
+  \sqrt{1-4x+x^2}=\dfrac{t^2+4t+1}{1-t^2}
+\end{vmatrix} = \\
+= \int{\frac{(1-t^2)^2}{(2t+4)^2}\cdot\frac{1-t^2}{t^2+4t+1}\cdot \frac{2t^2+8t+2}{(2t+4)^2}\mbox{d}t}\\
+=-\frac{1}{2}\int{\frac{t^2-1}{(t+2)^2}\mbox{d}t}\\
+=-\frac{1}{2}\left(\int{\mbox{d}t}-4\int{\frac{\mbox{d}t}{t+2}}+3\int\frac{\mbox{d}t}{(t+2)^2}\right)\\
+=-\frac{1}{2}\left(t-4\ln{|t+2|}-\frac{3}{t+2}\right)+C\\
+=-\frac{\sqrt{1-4x+x^2}}{x}+2\ln{\left|\frac{\sqrt{1-4x+x^2}+2x-1}{x}\right|}+C
+\end{gather*}
+
+\subsectionbookmark{17.121}
+
+\begin{gather*} \int{\frac{\mbox{d}x}{x^3\sqrt{1+x^2}}} \to \textbf{17.117}\end{gather*}
+
+\subsectionbookmark{17.122}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{x^4\sqrt{3-2x+x^2}}}=\sqrt{3}\int{\frac{\mbox{d}x}{x^4\sqrt{9-6x+3x^2}}} = \\
+\begin{vmatrix}
+  \sqrt{9-6x+3x^2}=xt+3\\
+  9-6x+3x^2=x^2t^2+6xt+9\\
+  -6x+3x^2=x^2t^2+6xt\\
+  -6+3x=xt^2+6t\\
+  3x-xt^2=6t+6\\
+  x(3-t^2)=6t+6\\
+  x=\dfrac{6t+6}{3-t^2}\\
+  \mbox{d}x=\dfrac{6(3-t^2)+2t(6t+6)}{(3-t^2)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{6t^2+12t+18}{(3-t^2)^2}\mbox{d}t\\
+  \sqrt{9-6x+3x^2}=\dfrac{6t+6}{3-t^2} \cdot t+3 \\
+  \sqrt{9-6x+3x^2}=\dfrac{3t^2+6t+9}{3-t^2}
+\end{vmatrix} \\
+= \int{\frac{(3-t^2)^4}{1296(t+1)^4}\cdot\frac{3-t^2}{3t^2+6t+9}\cdot\frac{6t^2+12t+18}{(3-t^2)^2}\mbox{d}t}
+= \frac{1}{648}\int{\frac{(3-t^2)^3}{(1+t)^4}\mbox{d}t} \\
+= \frac{1}{648}\left(\int{(-t^2+4t-1)\mbox{d}t}-\int{\frac{-16t^3-36t^2+28}{(t+1)^4}\mbox{d}t}\right) = \\
+\begin{vmatrix} -16t^3-36t^2+28=-16(t+1)^3+12(t+1)^2+24(t+1)+8 \end{vmatrix} \\
+= \frac{1}{648}\left(-\int{t^2\mbox{d}t}+4\int{t\mbox{d}t}-\int{\mbox{d}t}+12\int{\frac{\mbox{d}t}{(t+1)^2}}+24\int{\frac{\mbox{d}t}{(t+1)^3}}+8\int{\frac{\mbox{d}t}{(1+t)^4}}-16\int{\frac{\mbox{d}t}{t+1}}\right)\\
+= \frac{1}{648}\left(-\frac{1}{3}t^3+2t^2-t-\frac{12}{t+1}-\frac{12}{(t+1)^2}-\frac{8}{3}\cdot\frac{1}{(t+1)^3}-16\ln{\left|t+1\right|}\right)+C\\
+= -\frac{1}{9} \cdot \frac{\sqrt{3-2x+x^2}}{x^3}-\frac{5}{54} \cdot \frac{\sqrt{3-2x+x^2}}{x^2}-\frac{1}{54} \cdot \frac{\sqrt{3-2x+x^2}}{x}-\frac{2\sqrt{3}}{81}\ln{\left|\frac{\sqrt{9-6x+3x^2}+x-3}{x}\right|}+C
+\end{gather*}
+
+\subsectionbookmark{17.123}
+
+\begin{gather*}
+\int{\frac{\mbox{d}x}{(x-2)^4\sqrt{1-4x+x^2}}}\\
+\begin{vmatrix}
+  \sqrt{1-4x+x^2}=t-x\\
+  1-4x+x^2=t^2-2tx+x^2\\
+  1-4x=t^2-2tx\\
+  t^2-1=2tx-4x\\
+  x(2t-4)=t^2-1\\
+  x=\dfrac{t^2-1}{2t-4}\\
+  \mbox{d}x=\dfrac{2t(2t-4)-2(t^2-1)}{(2t-4)^2}\mbox{d}t\\
+  \mbox{d}x=\dfrac{2t^2-8t+2}{(2t-4)^2}\mbox{d}t\\
+  x-2=\dfrac{t^2-1-4t+8}{2t-4}\\
+  x-2=\dfrac{t^2-4t+7}{2t-4}\\
+  \sqrt{1-4x+x^2}=t-\dfrac{t^2-1}{2t-4}\\
+  \sqrt{1-4x+x^2}=\dfrac{t^2-4t+1}{2t-4}
+\end{vmatrix} \\
+= \int{\frac{(2t-4)^4}{(t^2-4t+7)^4}\cdot\frac{2t-4}{t^2-4t+1}\cdot\frac{2t^2-8t+2}{(2t-4)^2}\mbox{d}t}\\
+= 2\int{\frac{(2t-4)^3}{(t^2-4t+7)^4}\mbox{d}t}\\
+= 8\int{\frac{(2t-4)(t^2-4t+7)-3(2t-4)}{(t^2-4t+7)^4}\mbox{d}t}\\
+= \int{\frac{8(2t-4)}{(t^2-4t+7)^3}\mbox{d}t}-\int{\frac{24(2t-4)}{(t^2-4t+7)^4}\mbox{d}t}\\
+= -\frac{4}{(t^2-4t+7)^2}+\frac{8}{(t^2-4t+7)^3}+C\\
+= \frac{1}{27} \cdot \frac{(2x^2-8x+11)\sqrt{1-4x+x^2}}{(x-2)^3}+C\\
+= \frac{2}{27} \cdot \frac{\sqrt{1-4x+x^2}}{x-2}+\frac{1}{9} \cdot \frac{\sqrt{1-4x+x^2}}{(x-2)^3}+C
+\end{gather*}
