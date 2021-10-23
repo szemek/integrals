@@ -1,0 +1,20 @@
+name: Build PDF
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: make dependencies
+
+    - name: Build PDF
+      run: make build
+
+    - name: Upload built PDF to transfer.sh
+      run: curl --upload-file ./int.pdf https://transfer.sh/int.pdf
